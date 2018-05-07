@@ -1,0 +1,53 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+library lpm;
+use lpm.all;
+
+-- ----------------------------------------------------------------
+
+entity myclshift is port(
+	data		 : std_logic_vector (3 downto 0);
+	direction : std_logic;
+	distance  : std_logic_vector (1 downto 0);
+	result	 : std_logic_vector (3 downto 0));
+	
+end entity;
+
+architecture mycomp_arch of myclshift is
+
+	-- ------------------------------------------------------------
+	-- components
+	-- ------------------------------------------------------------
+
+	component lpm_clshift is
+	generic( lpm_shifttype	: string;
+				lpm_type			: string;
+				lpm_width		: natural;
+				lpm_widthdist	: natural);
+				
+	port(	data		: in std_logic_vector (3 downto 0);
+			direction: in std_logic ;
+			distance	: in std_logic_vector (1 downto 0);
+			result	: out std_logic_vector (3 downto 0));
+	end component;
+	
+
+begin
+	-- ------------------------------------------------------------
+	-- component instanciation
+	-- ------------------------------------------------------------
+	
+	lpm_clshift_component : lpm_clshift
+	generic map (lpm_shifttype => "logical",
+					 lpm_type => "lpm_clshift",
+					 lpm_width => 4,
+					 lpm_widthdist => 2)
+	
+	port map (data => data,
+				 direction => direction,
+		       distance => distance,
+		       result => result);
+				 
+end architecture;

@@ -1,0 +1,136 @@
+Restore Archived Project report for reconfig_mif
+Sun May 06 23:44:55 2018
+Quartus II 32-bit Version 13.1.4 Build 182 03/12/2014 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Restore Archived Project Summary
+  3. Restore Archived Project Messages
+  4. Files Restored
+  5. Files Not Restored
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2014 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++-------------------------------------------------------------------------+
+; Restore Archived Project Summary                                        ;
++---------------------------------+---------------------------------------+
+; Restore Archived Project Status ; Successful - Sun May 06 23:44:55 2018 ;
+; Revision Name                   ; reconfig_mif                          ;
+; Top-level Entity Name           ; reconfig_mif                          ;
+; Family                          ; Cyclone III                           ;
++---------------------------------+---------------------------------------+
+
+
++-----------------------------------+
+; Restore Archived Project Messages ;
++-----------------------------------+
+Info: Successfully restored 'H:/FPGA/cyclone 3 pllrec/reconfig_mif.qar' into the 'H:/FPGA/cyclone 3 pllrec/reconfig_mif_restored/' directory
+Info: Generated report 'reconfig_mif.restore.rpt'
+Info (23030): Evaluation of Tcl script c:/altera/13.1/quartus/common/tcl/apps/qpm/qar.tcl was successful
+Info: Quartus II 32-bit Shell was successful. 0 errors, 64 warnings
+    Info: Peak virtual memory: 304 megabytes
+    Info: Processing ended: Sun May 06 23:44:55 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+
++----------------+
+; Files Restored ;
++----------------+
+; File Name      ;
++----------------+
+
+
++--------------------------------------+
+; Files Not Restored                   ;
++--------------------------------------+
+; File Name                            ;
++--------------------------------------+
+; In100MHz_out100MHz.bsf               ;
+; In100MHz_out100MHz.v                 ;
+; In100MHz_out100MHz_bb.v              ;
+; In100MHz_out200MHz.bsf               ;
+; In100MHz_out200MHz.v                 ;
+; In100MHz_out200MHz_bb.v              ;
+; In100MHz_out300MHz.bsf               ;
+; In100MHz_out300MHz.v                 ;
+; In100MHz_out300MHz_bb.v              ;
+; altpll0.bsf                          ;
+; altpll0.mif                          ;
+; altpll0.ppf                          ;
+; altpll0.v                            ;
+; altpll0_100.mif                      ;
+; altpll0_200.mif                      ;
+; altpll0_300.mif                      ;
+; altpll0_bb.v                         ;
+; altpll_reconfig0.bsf                 ;
+; altpll_reconfig0.v                   ;
+; altpll_reconfig0_bb.v                ;
+; db/add_sub_hpa.tdf                   ;
+; db/add_sub_k8a.tdf                   ;
+; db/altpll_6ig1.tdf                   ;
+; db/altsyncram_14b1.tdf               ;
+; db/altsyncram_8kt.tdf                ;
+; db/altsyncram_oo81.tdf               ;
+; db/altsyncram_tvc1.tdf               ;
+; db/altsyncram_v3b1.tdf               ;
+; db/cmpr_tnd.tdf                      ;
+; db/cntr_30l.tdf                      ;
+; db/cntr_9cj.tdf                      ;
+; db/cntr_pij.tdf                      ;
+; db/cntr_qij.tdf                      ;
+; db/cntr_sij.tdf                      ;
+; db/decode_2af.tdf                    ;
+; db/mux_0qc.tdf                       ;
+; reconfig_mif.cbx.xml                 ;
+; reconfig_mif.qpf                     ;
+; lpm_mux0.bsf                         ;
+; lpm_mux0.v                           ;
+; lpm_mux0_bb.v                        ;
+; reconfig_mif.asm.rpt                 ;
+; reconfig_mif.bdf                     ;
+; reconfig_mif.done                    ;
+; reconfig_mif.eda.rpt                 ;
+; reconfig_mif.fit.rpt                 ;
+; reconfig_mif.fit.smsg                ;
+; reconfig_mif.fit.summary             ;
+; reconfig_mif.flow.rpt                ;
+; reconfig_mif.map.rpt                 ;
+; reconfig_mif.map.summary             ;
+; reconfig_mif.pin                     ;
+; reconfig_mif.pof                     ;
+; reconfig_mif.qarlog                  ;
+; reconfig_mif.qsf                     ;
+; reconfig_mif.sof                     ;
+; reconfig_mif.sta.rpt                 ;
+; reconfig_mif.sta.summary             ;
+; reconfig_mif.svf                     ;
+; reconfig_mif_assignment_defaults.qdf ;
+; statem_mifselect.bsf                 ;
+; statem_mifselsect.v                  ;
+; assignment_defaults.qdf              ;
++--------------------------------------+
+
+

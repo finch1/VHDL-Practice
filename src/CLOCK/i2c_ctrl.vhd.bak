@@ -1,0 +1,69 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity i2c_ctrl is port(
+
+	data_cnt : in natural range 0 to 10;
+
+	clk, rst  : in std_logic;	
+	ena       : out std_logic;                    --latch in command
+	addr      : out std_logic_vector(7 downto 0); --address of target slave
+	data_wr   : out std_logic_vector(7 downto 0); --data to write to slave
+	add_inc	 : out std_logic;
+	busy      : in  std_logic;                    --indicates transaction in progress
+	data_rd   : in  std_logic_vector(7 downto 0); --data read from slave    
+	ack_error : in  std_logic;                    --flag if improper acknowledge from slave	
+	wr_req      : in  std_logic; 
+	rd_req	   : in  std_logic;
+	data_wr_req : in  std_logic_vector(7 downto 0);
+	data_rd_req : out std_logic_vector(7 downto 0));
+end i2c_ctrl;
+
+architecture rtl of i2c_ctrl is
+	type ctrl_state is(idle, start, wait_busy, stop);
+	signal ps, ns : ctrl_state;
+	-- Attribute to declare a specific encoding for the states
+	attribute syn_encoding				    : string;
+	attribute syn_encoding of ctrl_state : type is "11 01 10 00";
+
+	signal busy_prev : std_logic;
+
+begin
+	
+	process(clk, rst, wr_req)
+	begin
+		if rst = '0' then
+			ps <= idle;
+			ena <= '0';
+		elsif rising_edge(clk) then
+			ns <= ps;	
+		end if;
+
+		case ps is
+			when idle =>
+				if wr_req = '1' then
+					ns <= start;
+				else ns <= idle;
+				end if;
+			when start =>
+				addr <= data_rd(7 downto 1) & wr_req;
+				ena <= '1';
+				ns <= wait_busy;
+			when wait_busy => 
+				if busy_prev = '0' and busy = '1' then
+					add_inc <= '1';
+					data_wr <= data_rd;
+				end if;
+				if data_cnt = 0 then
+					ns <= stop;
+				else
+					ns <= wait_busy;
+				end if;
+			when stop =>
+				ena <= '0';
+				ns <= idle;
+		end case;
+	end process;
+end rtl;
+	
+		

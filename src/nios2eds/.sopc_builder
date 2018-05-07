@@ -1,0 +1,4 @@
+   kit_id = "sopc_kit_nios2";
+   nios2_ide_project_name = "Nios II Device Drivers";
+   kit_version = "13.0sp1";
+   kit_shell_path = "./bin;./bin/nios2-gnutools//bin;./bin/fs2/bin;./sdk2/bin";

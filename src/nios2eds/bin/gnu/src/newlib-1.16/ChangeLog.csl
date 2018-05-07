@@ -1,0 +1,803 @@
+2008-07-14  Andrew Jenner  <andrew@codesourcery.com>
+
+	* configure: Fix bug preventing libgloss from building.
+	* conigure.ac: Ditto.
+	libgloss/
+	* configure: Make spacing consistent.
+	* nios2/configure: Regenerate.
+	* nios2/nosysgettod.c: Fix type mismatch.
+
+2008-06-16  Andrew Jenner  <andrew@codesourcery.com>
+
+	NOT ASSIGNED TO FSF
+	COPYRIGHT ALTERA
+	Port from altera-quartus8 branch.
+
+2008-06-10  Nathan Froyd  <froydnj@codesourcery.com>
+
+	newlib/
+	* libc/sys/arm/Makefile.in: Regenerate.
+
+2008-06-06  Nathan Froyd  <froydnj@codesourcery.com>
+
+	Link-time support for PowerPC portable objects.
+
+	newlib/
+	* configure.host (aeabi_dir): New variable.
+	(arm-*-*, powerpc-*): Set it.
+	* configure.in: Set up AEABI_OBJECTLIST.
+	* libc/sys/arm/Makefile.am (lib_a_SOURCES): Remove files.
+	* libc/sys/arm/clibabi_math.c,
+	libc/sys/arm/aeabi.h,
+	libc/sys/arm/aeabi_atexit.c,
+	libc/sys/arm/aeabi_memclr.c,
+	libc/sys/arm/aeabi_memcpy.c,
+	libc/sys/arm/aeabi_memmove.c,
+	libc/sys/arm/aeabi_memset.c,
+	libc/sys/arm/clibabi_assert.c,
+	libc/sys/arm/clibabi_ctype.c,
+	libc/sys/arm/clibabi_ctype-gen.c,
+	libc/sys/arm/clibabi_errno.c,
+	libc/sys/arm/clibabi_limits.c,
+	libc/sys/arm/clibabi_locale.c,
+	libc/sys/arm/clibabi_setjmp.c,
+	libc/sys/arm/clibabi_signal.c,
+	libc/sys/arm/clibabi_signal_fns.S,
+	libc/sys/arm/clibabi_stdio.c,
+	libc/sys/arm/clibabi_time.c,
+	libc/sys/arm/clibabi_stdlib.c,
+	libc/sys/arm/hidden.h: Move to...
+	* libc/aeabi: ...here.  New directory.
+	* libc/configure.in (LIBC_AEABI_LIBC): New variable.
+	(HAVE_AEABI_DIR): Set if necessary.
+	Configure aeabi/Makefile.
+	* libc/configure: Regenerate.
+	* libc/Makefile.am (AEABI_SUBDIR): New variable.
+	(SUBDIRS): Add $(AEABI_SUBDIR).
+	(SUBLIBS): Add $(LIBC_AEABI_LIB).
+	* libc/argz/Makefile.in,
+	libc/ctype/Makefile.in,
+	libc/errno/Makefile.in,
+	libc/iconv/ccs/binary/Makefile.in,
+	libc/iconv/ccs/Makefile.in,
+	libc/iconv/ces/Makefile.in,
+	libc/iconv/lib/Makefile.in,
+	libc/iconv/Makefile.in,
+	libc/locale/Makefile.in,
+	libc/Makefile.in,
+	libc/misc/Makefile.in,
+	libc/posix/Makefile.in,
+	libc/reent/Makefile.in,
+	libc/search/Makefile.in,
+	libc/signal/Makefile.in,
+	libc/stdio64/Makefile.in,
+	libc/stdio/Makefile.in,
+	libc/stdlib/Makefile.in,
+	libc/string/Makefile.in,
+	libc/syscalls/Makefile.in,
+	libc/time/Makefile.in,
+	libc/unix/Makefile.in: Regenerate.
+	
+2008-04-26  Mark Mitchell  <mark@codesourcery.com>
+
+	* release-notes-csl.xml: Fix typos in previous note, again.
+
+	* release-notes-csl.xml: Fix typos in previous note.
+	
+	Issue #2942
+	* release-notes-csl.xml: New note.
+	newlib/
+	* libc/include/stdint.h (SIZE_MIN): Remove.
+	(SIZE_MAX): Define.
+	* testsuite/newlib.stdlib/stdlib.exp: New.
+	* testsuite/newlib.stdlib/size_max.c: Likewise.
+
+2008-03-20  Julian Brown  <julian@codesourcery.com>
+
+	newlib/
+	* libc/sys/arm/Makefile.am (lib_a_SOURCES): Add clibabi_assert.c,
+	clibabi_ctype.c, clibabi_errno.c, clibabi_limits.c, clibabi_locale.c,
+	clibabi_math.c, clibabi_setjmp.c, clibabi_signal.c,
+	clibabi_signal_fns.S, clibabi_stdio.c, clibabi_stdlib.c,
+	clibabi_time.c.
+	* libc/sys/arm/Makefile.in: Regenerate.
+	* libc/sys/arm/hidden.h: New file.
+	* libc/sys/arm/clibabi_assert.c: New file.
+	* libc/sys/arm/clibabi_ctype-gen.c: New file.
+	* libc/sys/arm/clibabi_ctype.c: New file.
+	* libc/sys/arm/clibabi_errno.c: New file.
+	* libc/sys/arm/clibabi_limits.c: New file.
+	* libc/sys/arm/clibabi_locale.c: New file.
+	* libc/sys/arm/clibabi_math.c: New file.
+	* libc/sys/arm/clibabi_setjmp.c: New file.
+	* libc/sys/arm/clibabi_signal.c: New file.
+	* libc/sys/arm/clibabi_signal_fns.S: New file.
+	* libc/sys/arm/clibabi_stdio.c: New file.
+	* libc/sys/arm/clibabi_stdlib.c: New file.
+	* libc/sys/arm/clibabi_time.c: New file.
+
+2008-02-02  Sandra Loosemore  <sandra@codesourcery.com>
+	
+	* release-notes-csl.xml: Fix mistaken uses of &csl_prod; to use
+	&csl_sgxx; instead.
+
+2008-01-30  Nathan Sidwell  <nathan@codesourcery.com>
+
+	* config-ml.in: Avoid double spaces in CC, CXX, F77, GCJ and
+	GFORTRAN values.
+
+2008-01-25  Kazu Hirata  <kazu@codesourcery.com>
+
+	* libgloss/arm/Makefile.in, libgloss/arm/arm.sc,
+	libgloss/arm/armv7m.specs, libgloss/arm/coff-redboot.ld,
+	libgloss/arm/crt0.S, libgloss/arm/elf-rdimon.specs,
+	libgloss/arm/elf-rdpmon.specs, libgloss/arm/elf-redboot.ld,
+	libgloss/arm/linux-crt0.c, libgloss/arm/redboot-crt0.S,
+	libgloss/arm/swi.h, libgloss/arm/syscalls.c, libgloss/arm/trap.S:
+	Revert all changes since the last merge from FSF mainline.
+
+2008-01-24  Kazu Hirata  <kazu@codesourcery.com>
+
+	Backport:
+	newlib/
+	2007-02-21  Patrick Mansfield <patmans@us.ibm.com>
+	* libc/reent/timer.c: Removed (split into two new files).
+	* libc/reent/timesr.c: New file for _times_r.
+	* libc/reent/gettimeofdayr.c: New file out _gettimeofday_r.
+	* reent/Makefile.in: Remove timer.c, add timesr.c and
+	gettimeofdayr.c.
+	* libc/reent/Makefile.am: Regenerate.
+
+	Revert:
+	2007-04-14  Nathan Sidwell  <nathan@codesourcery.com>
+	Bug 1389
+	newlib/
+	* libc/reent/timer.c: Split into ...
+	* libc/reent/times.c: ... this and ...
+	* libc/reent/gettimeofday.c: ... this.
+	* libc/reent/Makefile.am: Adjust.
+	* libc/reent/Makefile.in: Rebuilt.
+
+2008-01-23  Kazu Hirata  <kazu@codesourcery.com>
+
+	Revert:
+	2007-09-18  Nathan Sidwell  <nathan@codesourcery.com>
+	libgloss/
+	* m68k/cf-crt1.c (hardware_init): 51qe has no cache too.
+
+2008-01-22  Kazu Hirata  <kazu@codesourcery.com>
+
+	libgloss/
+	* m68k/io-_mcleanup.c, m68k/io-monconfig.c, m68k/io-moncontrol.c:
+	Remove.
+
+2007-10-12  Nathan Froyd  <froydnj@codesourcery.com>
+
+	newlib/
+	* libc/stdlib/wcsrtombs.c (_wcsrtombs_r): Fix off-by-one
+	error in comparison.
+
+2007-09-18  Nathan Sidwell  <nathan@codesourcery.com>
+
+	libgloss/
+	* m68k/cf-crt1.c (hardware_init): 51qe has no cache too.
+
+2007-08-31  Kazu Hirata  <kazu@codesourcery.com>
+
+	Backport:
+	newlib/
+	2007-07-06  Jeff Johnston  <jjohnstn@redhat.com>
+
+	* libc/include/sys/time.h (gettimeofday): Change to proper
+	prototype where second parameter is void *.
+	* libc/reent/gettimeofday.c (_gettimeofday_r): Change prototype
+	accordingly.
+	* libc/include/reent.h: Fix prototype for _gettimeofday_r.
+	* libc/sys/arm/syscalls.c: Fix gettimeofday function signature.
+	* libc/sys/rdos/gettod.c: Ditto.
+	* libc/sys/sh/syscalls.c: Ditto.
+	* libc/time/time.c (time): Change call to _gettimeofday_r
+	to pass NULL as 2nd argument.
+
+	libgloss/
+	2007-07-06  Jeff Johnston  <jjohnstn@redhat.com>
+	* arm/syscalls.c (gettimeofday): Change to POSIX signature
+	where second argument is passed as void *.
+	* bfin/syscalls.c (gettimeofday): Ditto.
+	* cris/gensyscalls (gettimeofday): Ditto.
+	* cris/linunistd.h (gettimeofday): Ditto.
+	* crx/time.c (gettimeofday): Ditto.
+	* frv/sim-time.c (gettimeofday): Ditto.
+	* i386/cygmon-salib.c (gettimeofday): Ditto.
+	* libnosys/gettod.c (gettimeofday): Ditto.
+	* m68k/io-gettimeofday.c (gettimeofday): Ditto.
+	* sparc/cygmon-salib.c (gettimeofday): Ditto.
+
+2007-08-31  Kazu Hirata  <kazu@codesourcery.com>
+
+	Revert:
+	2007-07-10  Vladimir Prus  <vladimir@codesourcery.com>
+		    Kazu Hirata  <kazu@codesourcery.com>
+	Issue 1777
+	* Makefile.in (FIDO_UNHOSTED_OBJS): New.
+	(UNHOSTED_OBJS): Include FIDO_UNHOSTED_OBJS.
+	(install_fido): Install fido_profiling.h
+	* fido_profiling.h: Change the return type of _mcleanup to
+	int.
+	* io-_mcleanup.c, io-monconfig.c, io-moncontrol.c: New.
+	* io.h (HOSTED_MONCONTROL, HOSTED_MONCONFIG, HOSTED_MCLEANUP):
+	New.
+
+2007-08-31  Kazu Hirata  <kazu@codesourcery.com>
+
+	libgloss/
+	* m68k/cf-crt1.c (__start1): Replace __INIT_SECTION__ and
+	__FINI_SECTION__ with _init and _fini, respectively.
+	* m68k/cf.sc: Likewise.
+
+2007-08-29  Daniel Jacobowitz  <dan@codesourcery.com>
+
+	libgloss/
+	* arm/syscalls.c (_stat): Use _close.
+
+2007-07-10  Vladimir Prus  <vladimir@codesourcery.com>
+	    Kazu Hirata  <kazu@codesourcery.com>
+
+	Issue 1777
+	* Makefile.in (FIDO_UNHOSTED_OBJS): New.
+	(UNHOSTED_OBJS): Include FIDO_UNHOSTED_OBJS.
+	(install_fido): Install fido_profiling.h
+	* fido_profiling.h: Change the return type of _mcleanup to
+	int.
+	* io-_mcleanup.c, io-monconfig.c, io-moncontrol.c: New.
+	* io.h (HOSTED_MONCONTROL, HOSTED_MONCONFIG, HOSTED_MCLEANUP):
+	New.
+
+2007-06-06  Joseph Myers  <joseph@codesourcery.com>
+
+	* Makefile.tpl (DEBUG_PREFIX_CFLAGS_FOR_TARGET): New.
+	(CFLAGS_FOR_TARGET, CXXFLAGS_FOR_TARGET): Include it.
+	* Makefile.in: Regenerate.
+	* configure.in (--with-debug-prefix-map): New.
+	* configure: Regenerate.
+
+2007-06-06  Paul Brook  <paul@codesourcery.com>
+
+	newlib/
+	* libc/stdlib/__atexit.c (__register_exitproc): Avoid calling malloc
+	if not present.
+
+2007-06-04  Nathan Sidwell  <nathan@codesourcery.com>
+
+	Bug 1679
+	libgloss/
+	* m68k/cf.sc: Fix typo in hex number.
+	* release-notes-csl.xml: Document.
+
+2007-05-18  Kazu Hirata  <kazu@codesourcery.com>
+
+	* cf-crt1.c (__start1): Replace __INIT_SECTION__ and
+	__FINI_SECTION__ with _init and _fini, respectively.
+	* cf.sc: Likewise.
+
+2007-05-18  Kazu Hirata  <kazu@codesourcery.com>
+
+	Issue 1626
+	libgloss/
+	* m68k/fido.sc: Replace __INIT_SECTION__ and __FINI_SECTION__ with
+	_init and _fini, respectively.
+	* m68k/fido-crt0.S: Likewise.
+
+2007-05-17  Kazu Hirata  <kazu@codesourcery.com>
+
+	newlib/
+	* libc/misc/fini.c: Fix the last commit that caused the file
+	to contain two copies of what fini.c should be.
+
+2007-05-16  Mark Mitchell  <mark@codesourcery.com>
+
+	newlib/
+	* libc/stdlib/__call_atexit.c (__libc_fini): Declare.
+	(register_fini): New function.
+	* libc/misc/init.c (_fini): Remove.
+	(__libc_fini_array): Likewise.
+	* libc/misc/fini.c: New file.
+	* libc/misc/Makefile.am (LIB_SOURCES): Add fini.c.
+	* libc/misc/Makefile.in: Regenerate.
+
+2007-05-12  Kazu Hirata  <kazu@codesourcery.com>
+
+	Issue 1596
+	libgloss/
+	* m68k/fido.sc (.data): Move .jcr to .text.  Catch .got.plt
+	and .got.
+
+2007-05-04  Mark Mitchell  <mark@codesourcery.com>
+
+	newlib/
+	* libc/include/stdlib.h (calloc): Declare with EXFUN_NOTHROW.
+	(free): Likewise.
+	(malloc): Likewise.
+	(realloc): Likewise.
+	(_malloc_r): Likewise.
+	(_callor_r): Likewise.
+	(_free_r): Likewise.
+	(_realloc_r): Likewise.
+	* libc/include/_ansi.h: Move C++ defines to top of file.
+	(_NOTHROW): New macro.
+	(_EXFUN_NOTHROW): Likewise.
+
+2007-05-04  Kazu Hirata  <kazu@codesourcery.com>
+
+	Backport from mainline:
+	2007-05-03  Kazu Hirata  <kazu@codesourcery.com>
+	* libc/machine/m68k/memcpy.S: Use sub.l followed by dbra.
+	* libc/machine/m68k/memset.S: Likewise.
+
+2007-05-02  Kazu Hirata  <kazu@codesourcery.com>
+
+	Issue 1523
+	libgloss/
+	* m68k/fido-_exit.c (_exit): Use stop #0x700.
+
+2007-05-02  Nathan Sidwell  <nathan@codesourcery.com>
+
+	* configure.in: Add --enable-libgloss option.
+	* configure: Rebuilt.
+
+2007-04-29  Paul Brook  <paul@codesourcery.com>
+
+	libgloss/
+	* arm/Makefile.in: Add rdimon-vfp-crt0.o and rdimonvfp-ram.ld.
+	* arm/crt0.S: Add VFP init code.
+
+2007-04-26  Julian Brown  <julian@codesourcery.com>
+
+	libc/sys/arm/
+	* swi.h (AngelSWIInsn, AngelSWIAsm): Use bkpt for ARMv6-M.
+
+	libgloss/arm/
+	* swi.h (AngelSWIInsn, AngelSWIAsm): Likewise.
+
+2007-04-23  Kazu Hirata  <kazu@codesourcery.com>
+
+	Issue 1254
+	newlib/
+	* libc/machine/m68k/Makefile.am (lib_a_SOURCES): Add memset.S.
+	* libc/machine/m68k/Makefile.in: Regenerate.
+	* libc/machine/m68k/memset.S: New.
+
+	/
+	* release-notes-csl.xml: Mention that memset has been
+	improved.
+
+2007-04-16  Paul Brook  <paul@codesourcery.com>
+
+	libgloss/
+	* arm/redboot-crt0.S: Disable for ARMV6-M.
+
+2007-04-14  Nathan Sidwell  <nathan@codesourcery.com>
+
+	Bug 1389
+	newlib/
+	* libc/reent/timer.c: Split into ...
+	* libc/reent/times.c: ... this and ...
+	* libc/reent/gettimeofday.c: ... this.
+	* libc/reent/Makefile.am: Adjust.
+	* libc/reent/Makefile.in: Rebuilt.
+
+2007-04-12  Kazu Hirata  <kazu@codesourcery.com>
+
+	* release-notes-csl.xml: Mention that memcpy has been
+	improved.
+
+2007-04-12  Nathan Sidwell  <nathan@codesourcery.com>
+
+	libgloss/
+	* m68k/cf.sc: Add CFM config object if needed.
+	* m68k/Makefile.in (m5213evb, m52235evb, cobra52235): Add CFM
+	attribute to ROM region.
+	(cf_region): Process trailing attributes.
+
+2007-04-11  Nathan Sidwell  <nathan@codesourcery.com>
+	    Richard Sandiford  <richard@codesourcery.com>
+	    Kazu Hirata  <kazu@codesourcery.com>
+
+	Issue 1254
+	newlib/
+	* libc/machine/m68k/Makefile.am (lib_a_SOURCES): Add memcpy.S.
+	* libc/machine/m68k/Makefile.in: Regenerate.
+	* libc/machine/m68k/memcpy.S: New.
+
+2007-04-10  Paul Brook  <paul@codesourcery.com>
+
+	libgloss/
+	* arm/crt0.S: Move CommandLine info block to .data.
+
+2007-04-10  Paul Brook  <paul@codesourcery.com>
+
+	libgloss/
+	* arm/crt0.S: Define __heap_base__ and __heap_limit__.
+	* arm/syscalls.c (_sbrk): Use them.
+
+2007-04-04  Sandra Loosemore  <sandra@codesourcery.com>
+
+	* release-notes-csl.xml: Copy-edit.
+
+2007-03-31  Paul Brook  <paul@codesourcery.com>
+
+	newlib/
+	* libc/include/sys/reent.h (_REENT_INIT): Adjust to match struct
+	layout.
+
+2007-03-30  Mark Mitchell  <mark@codesourcery.com>
+
+	libgloss/
+	* libc/stdlib/__call_atexit.c (__call_exitprocs): Handle atexit
+	functions registering additional atexit functions.
+
+2007-03-30  Paul Brook  <paul@codesourcery.com>
+
+	newlib/
+	* libc/machine/arm/setjmp.S: Don't bother saving IP.  Copy SP to IP
+	before saving.  Likewise when restoring.
+
+2007-03-30  Mark Mitchell  <mark@codesourcery.com>
+
+	libgloss/
+	* arm/arm.sc (.init): KEEP it.
+	(.fini): Likewise.
+
+2007-03-29  Nathan Sidwell  <nathan@codesourcery.com>
+
+	libgloss/
+	* rs6000/uboot-write.c: Rename __uart to __ns16550.
+
+2007-03-28  Daniel Jacobowitz  <dan@codesourcery.com>
+
+	libgloss/
+	* rs6000/uboot-write.c (write_ns16550): New.
+	(struct buffer_descriptor, __smc_immr, DPRAM_OFFSET, DPRAM_SMC1)
+	(write_smc): New.
+	(write): Use write_ns16550 and write_smc.
+
+2007-03-28  Paul Brook  <paul@codesourcery.com>
+
+	Merge ARMv6-M support.
+	libgloss/
+	* arm/crt0.S: Add ARMv6-M support.
+	* arm/redboot-crt0.S: Ditto.
+	* arm/linux-crt0.c: Exclude ARM code on ARMv6-M.
+	* arm/trap.S: Disable for ARMv6-M.
+
+	newlib/
+	* libc/machine/arm/setjmp.S: Add ARMv6-M implementation.
+
+2007-03-26  Daniel Jacobowitz  <dan@codesourcery.com>
+
+	libgloss/
+	* rs6000/uboot-align.c (struct regs, _trap_handler): New.
+	(_cs_alignment_c): Correct type of GPRS.  Only compile for
+	hard float.
+	* rs6000/uboot-crt0.S (.Lhandler, _handler, .Ltrap_handler): New.
+	(.Lalign_saved, __align_saved): Always include.  Expand save area.
+	(_start): Save and install more handlers.  Add missing syncs and
+	cache flushes.
+	(_exit): Always restore exception handlers.  Add missing syncs and
+	cache flushes.
+	(_DAR, _DSISR, _SRR0, _SRR1): New.
+	(STACK_SIZE): Increase.
+	(_handler): New.
+	(_cs_alignment_helper): Add missing sync.
+
+2007-03-22  Julian Brown  <julian@codesourcery.com>
+
+	libgloss/
+	* arm/arm.sc (SECTIONS): Add .vfp11_veneer.
+	* arm/coff-redboot.ld (SECTIONS): Likewise.
+	* arm/elf-redboot.ld (SECTIONS): Likewise.
+	* mcore/pe-cmb.ld (SECTIONS): Likewise.
+
+2007-03-22  Kazu Hirata  <kazu@codesourcery.com>
+
+	libgloss/
+	* m68k/fido.sc: Catch .ctors.* and .dtors.*.  Use KEEP for all
+	sections related to .ctor and .dtor.
+
+2007-03-22  Daniel Jacobowitz  <dan@codesourcery.com>
+
+	libgloss/
+	* rs6000/Makefile.in (UBOOT_OBJS): Use uboot-sbrk.o instead of sbrk.o.
+	(UBOOT_SOURCES): Update.
+	* rs6000/uboot-crt0.S (__atexit): Delete.
+	* rs6000/uboot-sbrk.c: New file.
+
+2007-03-21  Daniel Jacobowitz  <dan@codesourcery.com>
+
+	libgloss/
+	* rs6000/Makefile.in (UBOOT_OBJS): Add uboot-align.o.
+	(UBOOT_SOURCES): Add uboot-align.c.
+	(all, install): Limit to U-Boot and sim.
+	* rs6000/uboot-align.c: New file.
+	* rs6000/uboot-crt0.S: Correct .file.
+	(.Lalign_saved, .Lcs_alignment, .Lcs_alignment_helper): New got2
+	entries.
+	(__align_saved): New storage.
+	(_start): Install our alignment handler.
+	(_exit): Restore the alignment handler.
+	(_save_fp, _rest_fp, _cs_alignment, _cs_alignment_helper): New.
+
+2007-03-19  Mark Mitchell  <mark@codesourcery.com>
+
+	Issue #1338
+	newlib/
+	* libc/misc/init.c (__libc_fini_array): Iterate through
+	.fini_array in reverse order.
+
+2007-03-19  Daniel Jacobowitz  <dan@codesourcery.com>
+
+	libgloss/
+	* rs6000/Makefile.in (UBOOT_SOURCES): New.
+	(install-uboot): Install them.
+
+2007-03-19  Daniel Jacobowitz  <dan@codesourcery.com>
+
+	libgloss/
+	* rs6000/uboot.ld: Rewrite.  Do not set SEARCH_DIR or provide the
+	standard input files.  Do not mention sections specific to dynamic
+	linking.  Be more thorough supporting -ffunction-sections.  Remove
+	unused symbols and symbols defined in EABI crt files.  Align
+	__bss_end and __sbss_end.
+	* rs6000/uboot-crt0.S (_start): Save the MSR.  Disable interrupts.
+	(_exit): Restore the MSR.
+
+2007-03-16  Kazu Hirata  <kazu@codesourcery.com>
+
+	libgloss/
+	* m68k/fido.sc (.text): Catch .text.* and .rodata.*.
+	(.data): Catch .data.*.
+	(.bss): Catch .bss.*.
+
+2007-03-14  Daniel Jacobowitz  <dan@codesourcery.com>
+
+	libgloss/
+	* rs6000/Makefile.in (UBOOT_OBJS): Add uboot-read.o.
+	(install-uboot): Fix whitespace.
+	* rs6000/uboot-read.c: New file.
+
+2007-03-14  Daniel Jacobowitz  <dan@codesourcery.com>
+
+	libgloss/
+	* rs6000/uboot-crt0.S (_start): Handle __SPE__.
+
+2007-03-12  Nathan Sidwell  <nathan@codesourcery.com>
+
+	libgloss/rs6000/
+	* uboot-crt0.S: Save and restore callee save registers.  Align
+	stack.
+
+2007-03-10  Nathan Sidwell  <nathan@codesourcery.com>
+
+	libgloss/
+	* rs6000/Makefile.in (UBOOT_SCRIPTS, UBOOT_CRT0, UBOOT_BSP,
+	UBOOT_OBJS, UBOOT_INSTALL): New.
+	(UBOOT_BSP): New.
+	(install-uboot): New.
+	* uboot-write.c, uboot.ld, uboot-crt0.S: New.
+
+2007-03-10  Nathan Sidwell  <nathan@codesourcery.com>
+
+	libgloss/m68k/
+	* Makefile.in (m5253evb, m5253evb_regions, m5253evb_labels): New.
+	(CF_BOARDS): Add m5253evb.
+
+2007-03-09  Kazu Hirata  <kazu@codesourcery.com>
+
+	* release-notes-csl.xml: Follow the case conventions.
+
+2007-03-06  Nathan Sidwell  <nathan@codesourcery.com>
+
+	libgloss/m68k/
+	* Makefile.in (m5208evb, m5213evb, m52235evb, m5235evb, m5249c3,
+	m5272c3, m5275evb, m5282evb, m5329evb, m5485evb): Add cpu and
+	multilib columns.  Reformat ROM and RAM columns.
+	(m5208evb_regions, m5213evb_labels, m52235evb_labels,
+	m5249c3_regions, m5249c3_labels, m5272c3_regions,
+	m5275evb_regions, m5282evb_regions, m5329evb_regions,
+	m5485evb_regions, m5485evb_labels): New.
+	(cobra52235, cobra5272, cobra5282, cobra5329, cobra5475,
+	cobra5485):  Add cpu and multilib columns.  Reformat ROM and RAM
+	columns.
+	(cobra52235_labels, cobra5272_regions, cobra5282_regions,
+	cobra5329_regions, cobra5485_regions, cobra5485_labels): New.
+	(CF_MLIB): New.
+	(CF_BOARDS): Filter by multilib.
+	(CF_SCRIPTS): Append to it.
+	(CF_RAM_SCRIPTS, CF_ROM_SCRIPTS, CF_RAM_HOSTED_SCRIPTS,
+	CF_ROM_HOSTED_SCRIPTS): Move later.
+	(all_m68k, all_cf, all_fido): Move later in file.
+	(cf_region, cf_regions, cf_label, cf_labels): New.  Use them in
+	script generation.
+	(install_cf): Protect against there being no scripts.
+	* cf-crt0.S: Add SYM macros, add __early_hardware_init_hoot.
+	* cf-crt1.c (__start1): Iterate over regions array.
+	* cf-isv.S: Add SYM macros.
+	* cf.sc: Add EXTRA_REGIONS and EXTRA_LABELS processing.  Create
+	regions array.
+
+2007-02-21  Mark Mitchell  <mark@codesourcery.com>
+
+	newlib/
+	* libc/stdlib/strtod.c (strtof): Set errno to ERANGE for
+	out-of-range values.
+
+2007-02-14  Nathan Sidwell  <nathan@codesourcery.com>
+
+	libgloss/
+	* m68k/Makefile.in (CF_BOARDS): Adjust setting.
+	(CF_HOSTED_SCRIPTS): Replace with ...
+	(CF_RAM_HOSTED_SCRIPTS, CF_ROM_HOSTED_SCRIPTS): ... these.
+	(CF_SCRIPTS): Adjust.
+	(m%-ram.ld, m%-rom.ld, m%-ram-hosted.ld, m%-rom-hosted.ld): Adjust
+	with target specific rules.
+
+2007-02-02  Carlos O'Donell  <carlos@codesourcery.com>
+
+	* libgloss/arm/syscalls.c (struct poslog): Rename to...
+	(struct fdent): ... this.
+	(FILE_HANDLE_OFFSET): Remove.
+	(findslot): Return a struct fdent* if fd is valid, otherwise
+	return NULL. Call initialise_monitor_handles().
+	(newslot): New function.
+	(remap_handle): Remove.
+	(initialise_monitor_handles): Use stdout as fallback for
+	stderr.
+	(wrap): Rename to...
+	(checkerror): ... this.
+	(_swiread): Use checkerror() for the return of SWI calls.
+	Correct the use of r0.
+	(_read): Use findslot(). Return EBADF on bad handle.
+	(_swilseek): Call findslot(). Check for valid
+	whence. Check for negative offset when using SEEK_CUR,
+	and check for overflow. Use checkerror(). Check *_Flen
+	calls for errors.
+	(_swiwrite): Correct the use of r0.
+	(_write): Call findslot().
+	(_swiopen): Call findslot(). Check for valid flags. 
+	Use checkerror(). Call newslot(). Handle O_TRUNC,
+	and O_WRONLY. Return index into openfiles[] for fd.
+	(_swiclose): Correct the use of r0.
+	(_close): Handle stderr == stdout case. Only reclaim
+	handle if _swiclose succeeded.
+	(_getpid): Use __attribute__((unused)).
+	(_sbrk): Fix formatting.
+	(_swistat): New function.
+	(_stat): Call _swistat().
+	(_fstat): Call _swistat(). 
+	(_unlink): Correct the use of r0. 
+	(isatty): Call finslot(). Correct the use of r0. 
+	(_system): Call checkerror(). Correct the use of r0.
+	(_rename): Correct the use of r0.
+	* release-notes-csl.xml: Issue #1209. 
+
+2007-01-12  Joseph Myers  <joseph@codesourcery.com>
+	    Kazu Hirata  <kazu@codesourcery.com>
+
+	newlib/
+	* libc/machine/powerpc/setjmp.S (setjmp, longjmp): Add support
+	for E500V1 and E500V2.
+
+2007-01-10  Sandra Loosemore  <sandra@codesourcery.com>
+
+        newlib/
+        * libc/reent/impure.c (__sf_fake_stdin, __sf_fake_stdout)
+	(__sf_fake_stderr): Declare locally with weak attribute.
+
+2007-01-09  Mark Mitchell  <mark@codesourcery.com>
+	    Paul Brook  <paul@codesourcery.com>
+
+	newlib/
+	* libc/sys/arm/syscalls.c (CHECK_INIT): Remove.
+	(findslot): Call initialise_monitor_handles.
+	(remap_handle): Don't call CHECK_INIT.
+	(initialise_monitor_handles): Make sure to run only once.  Fix
+	multithreaded locking.
+
+2007-01-09  Kazu Hirata  <kazu@codesourcery.com>
+
+	newlib/
+	* libc/sys/arm/Makefile.am (extra_objs): Add $(lpfx)_exit.o
+	$(lpfx)_kill.o.
+	(EXTRA_lib_a_SOURCES): Add _exit.c and _kill.c.
+	* libc/sys/arm/Makefile.in: Regenerate.
+	* libc/sys/arm/_exit.c, libc/sys/arm/_kill.c: New.
+	* libc/sys/arm/libcfunc.c (do_AngelSWI): Remove.
+	* libc/sys/arm/swi.h (do_AngelSWI): New.
+	* libc/sys/arm/syscalls.c (do_AngelSWI): Remove.
+	(_unlink, _system, _rename): Cast arguments to do_AngelSWI to
+	int.
+
+2007-01-08  Nathan Sidwell  <nathan@codesourcery.com>
+
+	CSL #1176
+	libgloss/
+	* m68k/cf-crt0.S (_start): Remove erroneous extra _.
+	* m68k/cf.sc (ENTRY): Adjust entry.
+	(__stack): Use ram memory region operators.
+
+2007-01-08  Kazu Hirata  <kazu@codesourcery.com>
+
+	newlib/
+	* testsuite/lib/flags.exp (newlib_include_flags): Drop
+	-I${newlib_dir}.
+
+2007-01-08  Paul Brook  <paul@codesourcery.com>
+
+	newlib/
+	* libc/sys/arm/Makefile.am (lib_a_SOURCES): Add aeabi_memclr.c,
+	aeabi_memcpy.c, aeabi_memmove.c and aeabi_memset.c.
+	* libc/sys/arm/Makefile.in: Regenerate.
+	* libc/sys/arm/aeabi.h: New file.
+	* libc/sys/arm/aeabi_memclr.c: New file.
+	* libc/sys/arm/aeabi_memcpy.c: New file.
+	* libc/sys/arm/aeabi_memmove.c: New file.
+	* libc/sys/arm/aeabi_memset.c: New file.
+
+	libgloss/
+	* configure.in: Add check for .init_array.
+	* configure: Regenerate.
+
+	newlib/
+	* libc/include/sys/reent.h (_reent): Adjust _REENT_SMALL to be binary
+	compatible with normal layout
+
+	newlib/
+	* acconfig.h (_ATEXIT_DYNAMIC_ALLOC): Remove.
+	* configure.in: Remove --disable-newlib-atexit-dynamic-alloc.
+	* libc/stdlib/__atexit.c (__register_exitproc): Use weak reference to
+	malloc.  Only allocate dynamically if it is present.
+	* libc/stdlib/__call_atexit.c (__call_exitprocs): Use weak reference
+	to free.
+	* configure: Regenerate.
+	* newlib.hin: Regenerate.
+
+2007-01-05  Mark Mitchell  <mark@codesourcery.com>
+	    Paul Brook  <paul@codesourcery.com>
+	    Daniel Jacobowitz  <dan@codesourcery.com>
+
+	libgloss/
+	* arm/Makefile.in (ARMV7M_OBJS, ARMV7M_SPECS, ARMV7M_INSTALL):
+	New.
+	(all): Add ${ARMV7M_OBJS}.
+	(armv7m-crt0.o, armv7m, lm3s10x, lm3s301, lm3s31x, lm3s6xx,
+	lm3s8xx): New.
+	(install): Add ${ARMV7M_INSTALL}
+	(install-armv7m): New.
+	* arm/armv7m.specs: New.
+	* arm/crt0.S: Add V7M support.
+	* arm/syscalls.c (CHECK_INIT): Remove.
+	(findslot): Call initialise_monitor_handles.
+	(remap_handle): Do not call initialise_monitor_handles.
+	(initialise_monitor_handles): Make sure to run only once.
+
+2007-01-05  Paul Brook  <paul@codesourcery.com>
+
+	libgloss/
+	* arm/Makefile.in (RDPMON_CRT0): Add rdpmon-ram.ld.
+	(RDIMON_CRT0): Add rdimon-ram.ld.
+	(RDPMON_SCRIPTS, RDIMON_SCRIPTS): Remove.
+	(rdimon, rdpmon, %-ram.ld, %-rom.ld): New.
+	(install-rdpmon, install-rdimon): Don't install spec files.
+	* arm/arm.sc: New.
+	* arm/elf-rdimon.specs, arm/elf-rdpmon.spec: Remove.
+
+	libgloss/
+	* arm/Makefile.in (ALL_CFLAGS): Define and use.
+
+	libgloss/
+	* arm/syscalls.c (isatty): New.
+
+Local Variables:
+change-log-default-name: "ChangeLog.csl"
+mode: change-log
+End:

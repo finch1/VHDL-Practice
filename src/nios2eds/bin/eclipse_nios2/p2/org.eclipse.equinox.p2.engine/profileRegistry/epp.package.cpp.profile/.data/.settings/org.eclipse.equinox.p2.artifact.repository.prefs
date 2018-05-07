@@ -1,0 +1,14 @@
+#Thu Feb 16 14:04:19 EST 2012
+repositories/http\:__download.eclipse.org_releases_indigo/nickname=Indigo
+repositories/http\:__download.eclipse.org_technology_linuxtools_update/uri=http\://download.eclipse.org/technology/linuxtools/update
+repositories/http\:__download.eclipse.org_eclipse_updates_3.7/nickname=The Eclipse Project Updates
+repositories/http\:__download.eclipse.org_releases_indigo/enabled=true
+repositories/http\:__download.eclipse.org_technology_linuxtools_update/enabled=false
+repositories/http\:__download.eclipse.org_eclipse_updates_3.7/count=1
+repositories/http\:__download.eclipse.org_eclipse_updates_3.7/uri=http\://download.eclipse.org/eclipse/updates/3.7
+repositories/http\:__download.eclipse.org_technology_linuxtools_update/count=1
+eclipse.preferences.version=1
+repositories/http\:__download.eclipse.org_releases_indigo/uri=http\://download.eclipse.org/releases/indigo
+repositories/http\:__download.eclipse.org_technology_linuxtools_update/nickname=Linux Tools
+repositories/http\:__download.eclipse.org_releases_indigo/count=1
+repositories/http\:__download.eclipse.org_eclipse_updates_3.7/enabled=true

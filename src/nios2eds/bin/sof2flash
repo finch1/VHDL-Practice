@@ -1,0 +1,4 @@
+#!/bin/sh
+# To support spaces in the path
+IFS=
+. "${0%[\\/]*}/sh_jar.sh"

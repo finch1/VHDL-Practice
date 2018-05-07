@@ -1,0 +1,1085 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_mimic'
+Slack : 1.050
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 2.072
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDQSS'
+Slack : 2.414
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDQSS'
+Slack : 2.475
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDSS'
+Slack : 2.639
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDSS'
+Slack : 2.700
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 4.103
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 4.256
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_ac_fall'
+Slack : 5.603
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_ac_fall'
+Slack : 5.664
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 7.288
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 7.542
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'clk_clk'
+Slack : 19.248
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Setup 'altera_reserved_tck'
+Slack : 46.720
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.288
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.298
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'altera_reserved_tck'
+Slack : 0.357
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 0.358
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 0.360
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'clk_clk'
+Slack : 0.373
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.374
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_mimic'
+Slack : 1.128
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_ac_fall'
+Slack : 2.321
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_ac_fall'
+Slack : 2.373
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDQSS'
+Slack : 2.421
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDQSS'
+Slack : 2.473
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDSS'
+Slack : 2.590
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDSS'
+Slack : 2.642
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 5.611
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 6.048
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 7.094
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 7.533
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 8.331
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'altera_reserved_tck'
+Slack : 48.229
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'altera_reserved_tck'
+Slack : 0.883
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 0.897
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.899
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 1.008
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 1.902
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 2.100
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 4.738
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 4.744
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 4.745
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 4.746
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_1'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_19'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_2'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_20'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_21'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_22'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_23'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_24'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_3'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_4'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_5'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_8'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_17'
+Slack : 4.750
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_18'
+Slack : 4.750
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_6'
+Slack : 4.750
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_7'
+Slack : 4.750
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_capture'
+Slack : 4.760
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_mimic'
+Slack : 4.760
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_10'
+Slack : 4.796
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_12'
+Slack : 4.796
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_14'
+Slack : 4.796
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_15'
+Slack : 4.796
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_16'
+Slack : 4.796
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_27'
+Slack : 4.796
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_28'
+Slack : 4.796
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_29'
+Slack : 4.796
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_31'
+Slack : 4.796
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_32'
+Slack : 4.796
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_9'
+Slack : 4.796
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_11'
+Slack : 4.797
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_13'
+Slack : 4.797
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_25'
+Slack : 4.797
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_26'
+Slack : 4.797
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_30'
+Slack : 4.797
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_ac_fall'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_ac_rise'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDQSS'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDSS'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_ac_fall'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_ac_rise'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDQSS'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDSS'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_sdram_memory_mem_clk[0]_mimic_launch_clock'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 8.986
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk_clk'
+Slack : 9.685
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.619
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_mimic'
+Slack : 1.128
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDQSS'
+Slack : 2.440
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDQSS'
+Slack : 2.501
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDSS'
+Slack : 2.662
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDSS'
+Slack : 2.723
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 2.879
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 4.202
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 4.616
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_ac_fall'
+Slack : 5.781
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_ac_fall'
+Slack : 5.842
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 7.549
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 7.791
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'clk_clk'
+Slack : 19.332
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 47.112
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.288
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.292
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 0.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.312
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 0.320
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'clk_clk'
+Slack : 0.337
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.341
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_mimic'
+Slack : 1.097
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_ac_fall'
+Slack : 2.256
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_ac_fall'
+Slack : 2.311
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDQSS'
+Slack : 2.444
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDQSS'
+Slack : 2.499
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDSS'
+Slack : 2.616
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDSS'
+Slack : 2.671
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 6.085
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 6.207
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 7.303
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 7.805
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 8.513
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 48.489
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.790
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.810
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 0.810
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 0.915
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 1.751
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1.903
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 4.737
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 4.742
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 4.743
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 4.744
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_21'
+Slack : 4.748
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_23'
+Slack : 4.748
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_24'
+Slack : 4.748
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_1'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_19'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_2'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_20'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_3'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_4'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_5'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_6'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_7'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_8'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_17'
+Slack : 4.750
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_18'
+Slack : 4.750
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_22'
+Slack : 4.750
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_capture'
+Slack : 4.760
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_mimic'
+Slack : 4.760
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_29'
+Slack : 4.789
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_31'
+Slack : 4.789
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_32'
+Slack : 4.789
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_10'
+Slack : 4.790
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_11'
+Slack : 4.790
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_12'
+Slack : 4.790
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_13'
+Slack : 4.790
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_14'
+Slack : 4.790
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_15'
+Slack : 4.790
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_16'
+Slack : 4.790
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_27'
+Slack : 4.790
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_28'
+Slack : 4.790
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_9'
+Slack : 4.790
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_25'
+Slack : 4.791
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_26'
+Slack : 4.791
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_30'
+Slack : 4.791
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_ac_fall'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_ac_rise'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDQSS'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDSS'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_ac_fall'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_ac_rise'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDQSS'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDSS'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_sdram_memory_mem_clk[0]_mimic_launch_clock'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 8.969
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk_clk'
+Slack : 9.681
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.573
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_mimic'
+Slack : 1.528
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDQSS'
+Slack : 2.555
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDQSS'
+Slack : 2.562
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDSS'
+Slack : 2.751
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDSS'
+Slack : 2.758
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 4.492
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 5.572
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 5.589
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_ac_fall'
+Slack : 6.094
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_ac_fall'
+Slack : 6.101
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 8.465
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 8.629
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'clk_clk'
+Slack : 19.580
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Setup 'altera_reserved_tck'
+Slack : 48.319
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 0.138
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.139
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'altera_reserved_tck'
+Slack : 0.185
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 0.188
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'clk_clk'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 0.193
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 0.195
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_mimic'
+Slack : 0.775
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_ac_fall'
+Slack : 2.111
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_ac_fall'
+Slack : 2.112
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDQSS'
+Slack : 2.533
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDQSS'
+Slack : 2.534
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDSS'
+Slack : 2.732
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDSS'
+Slack : 2.733
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 6.666
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 7.388
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 8.271
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 8.508
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 9.039
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'altera_reserved_tck'
+Slack : 49.159
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 0.490
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 0.491
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'altera_reserved_tck'
+Slack : 0.493
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 0.546
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 1.068
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 1.171
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[1]'
+Slack : 4.749
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[3]'
+Slack : 4.753
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_30'
+Slack : 4.772
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_10'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_11'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_12'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_13'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_14'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_15'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_16'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_25'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_26'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_27'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_28'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_29'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_31'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_32'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_9'
+Slack : 4.773
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_capture'
+Slack : 4.778
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_mimic'
+Slack : 4.778
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[2]'
+Slack : 4.781
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|pll|altpll_component|auto_generated|pll1|clk[4]'
+Slack : 4.781
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_1'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_17'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_18'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_19'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_2'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_20'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_21'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_23'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_24'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_3'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_4'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_5'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_6'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_7'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_8'
+Slack : 4.783
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_dq_22'
+Slack : 4.784
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_ac_fall'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_ac_rise'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDQSS'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_n_ddr_sdram_memory_mem_clk_n[0]_tDSS'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_ac_fall'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_ac_rise'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDQSS'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ck_p_ddr_sdram_memory_mem_clk[0]_tDSS'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_ddr_sdram_memory_mem_clk[0]_mimic_launch_clock'
+Slack : 6.000
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ddr_sdram|nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_inst|clk|scan_clk|q_clock'
+Slack : 8.954
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk_clk'
+Slack : 9.441
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'altera_reserved_tck'
+Slack : 49.487
+TNS   : 0.000
+
+------------------------------------------------------------

@@ -1,0 +1,53 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  :  Slow 1200mV 85C Model Setup 'reconfig_clock'
+Slack : -5.521
+TNS   : -238.408
+
+Type  :  Slow 1200mV 85C Model Hold 'reconfig_clock'
+Slack : 0.483
+TNS   : 0.000
+
+Type  :  Slow 1200mV 85C Model Recovery 'reconfig_clock'
+Slack : -0.932
+TNS   : -14.466
+
+Type  :  Slow 1200mV 85C Model Removal 'reconfig_clock'
+Slack : 1.452
+TNS   : 0.000
+
+Type  :  Slow 1200mV 0C Model Setup 'reconfig_clock'
+Slack : -4.983
+TNS   : -204.211
+
+Type  :  Slow 1200mV 0C Model Hold 'reconfig_clock'
+Slack : 0.426
+TNS   : 0.000
+
+Type  :  Slow 1200mV 0C Model Recovery 'reconfig_clock'
+Slack : -0.737
+TNS   : -11.236
+
+Type  :  Slow 1200mV 0C Model Removal 'reconfig_clock'
+Slack : 1.321
+TNS   : 0.000
+
+Type  :  Fast 1200mV 0C Model Setup 'reconfig_clock'
+Slack : -3.343
+TNS   : -57.606
+
+Type  :  Fast 1200mV 0C Model Hold 'reconfig_clock'
+Slack : 0.223
+TNS   : 0.000
+
+Type  :  Fast 1200mV 0C Model Recovery 'reconfig_clock'
+Slack : 0.047
+TNS   : 0.000
+
+Type  :  Fast 1200mV 0C Model Removal 'reconfig_clock'
+Slack : 0.693
+TNS   : 0.000
+
+------------------------------------------------------------

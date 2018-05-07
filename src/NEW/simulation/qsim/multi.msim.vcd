@@ -1,0 +1,1252 @@
+$comment
+	File created using the following command:
+		vcd file multi.msim.vcd -direction
+$end
+$date
+	Sun Feb 05 15:06:01 2017
+$end
+$version
+	ModelSim Version 10.1d
+$end
+$timescale
+	1ps
+$end
+$scope module cpu_vlg_vec_tst $end
+$var reg 1 ! CLK_IN $end
+$var reg 1 " RST_IN $end
+$var wire 1 # arith_out [7] $end
+$var wire 1 $ arith_out [6] $end
+$var wire 1 % arith_out [5] $end
+$var wire 1 & arith_out [4] $end
+$var wire 1 ' arith_out [3] $end
+$var wire 1 ( arith_out [2] $end
+$var wire 1 ) arith_out [1] $end
+$var wire 1 * arith_out [0] $end
+$var wire 1 + sampler $end
+$scope module i1 $end
+$var wire 1 , gnd $end
+$var wire 1 - vcc $end
+$var wire 1 . unknown $end
+$var tri1 1 / devclrn $end
+$var tri1 1 0 devpor $end
+$var tri1 1 1 devoe $end
+$var wire 1 2 CLK_IN~input_o $end
+$var wire 1 3 inst1|altpll_component|auto_generated|wire_pll1_fbout $end
+$var wire 1 4 ~GND~combout $end
+$var wire 1 5 inst|sig_pc[0]~12_combout $end
+$var wire 1 6 RST_IN~input_o $end
+$var wire 1 7 inst|sig_pc[1]~4_combout $end
+$var wire 1 8 inst|sig_pc[1]~5 $end
+$var wire 1 9 inst|sig_pc[2]~6_combout $end
+$var wire 1 : inst|sig_pc[2]~7 $end
+$var wire 1 ; inst|sig_pc[3]~8_combout $end
+$var wire 1 < inst|sig_pc[3]~9 $end
+$var wire 1 = inst|sig_pc[4]~10_combout $end
+$var wire 1 > inst5|Decoder0~0_combout $end
+$var wire 1 ? inst5|reg[3][7]~q $end
+$var wire 1 @ inst4|Equal0~0_combout $end
+$var wire 1 A inst4|Add0|auto_generated|_~0_combout $end
+$var wire 1 B inst5|Decoder0~1_combout $end
+$var wire 1 C inst5|reg[2][7]~q $end
+$var wire 1 D inst5|reg[3][6]~q $end
+$var wire 1 E inst4|Add0|auto_generated|_~1_combout $end
+$var wire 1 F inst5|reg[2][6]~q $end
+$var wire 1 G inst5|reg[3][5]~q $end
+$var wire 1 H inst4|Add0|auto_generated|_~2_combout $end
+$var wire 1 I inst5|reg[2][5]~q $end
+$var wire 1 J inst5|reg[3][4]~q $end
+$var wire 1 K inst4|Add0|auto_generated|_~3_combout $end
+$var wire 1 L inst5|reg[2][4]~q $end
+$var wire 1 M inst5|reg[3][3]~q $end
+$var wire 1 N inst4|Add0|auto_generated|_~4_combout $end
+$var wire 1 O inst5|reg[2][3]~q $end
+$var wire 1 P inst5|reg[3][2]~q $end
+$var wire 1 Q inst4|Add0|auto_generated|_~5_combout $end
+$var wire 1 R inst5|reg[2][2]~q $end
+$var wire 1 S inst5|reg[3][1]~q $end
+$var wire 1 T inst4|Add0|auto_generated|_~6_combout $end
+$var wire 1 U inst5|reg[2][1]~q $end
+$var wire 1 V inst5|reg[3][0]~q $end
+$var wire 1 W inst4|Add0|auto_generated|_~7_combout $end
+$var wire 1 X inst5|reg[2][0]~q $end
+$var wire 1 Y inst4|Add0|auto_generated|result_int[0]~1_cout $end
+$var wire 1 Z inst4|Add0|auto_generated|result_int[1]~3 $end
+$var wire 1 [ inst4|Add0|auto_generated|result_int[2]~5 $end
+$var wire 1 \ inst4|Add0|auto_generated|result_int[3]~7 $end
+$var wire 1 ] inst4|Add0|auto_generated|result_int[4]~9 $end
+$var wire 1 ^ inst4|Add0|auto_generated|result_int[5]~11 $end
+$var wire 1 _ inst4|Add0|auto_generated|result_int[6]~13 $end
+$var wire 1 ` inst4|Add0|auto_generated|result_int[7]~15 $end
+$var wire 1 a inst4|Add0|auto_generated|result_int[8]~16_combout $end
+$var wire 1 b inst4|Add0|auto_generated|result_int[7]~14_combout $end
+$var wire 1 c inst4|Add0|auto_generated|result_int[6]~12_combout $end
+$var wire 1 d inst4|Add0|auto_generated|result_int[5]~10_combout $end
+$var wire 1 e inst4|Add0|auto_generated|result_int[4]~8_combout $end
+$var wire 1 f inst4|Add0|auto_generated|result_int[3]~6_combout $end
+$var wire 1 g inst4|Add0|auto_generated|result_int[2]~4_combout $end
+$var wire 1 h inst4|Add0|auto_generated|result_int[1]~2_combout $end
+$var wire 1 i inst1|altpll_component|auto_generated|wire_pll1_clk [4] $end
+$var wire 1 j inst1|altpll_component|auto_generated|wire_pll1_clk [3] $end
+$var wire 1 k inst1|altpll_component|auto_generated|wire_pll1_clk [2] $end
+$var wire 1 l inst1|altpll_component|auto_generated|wire_pll1_clk [1] $end
+$var wire 1 m inst1|altpll_component|auto_generated|wire_pll1_clk [0] $end
+$var wire 1 n inst|sig_pc [4] $end
+$var wire 1 o inst|sig_pc [3] $end
+$var wire 1 p inst|sig_pc [2] $end
+$var wire 1 q inst|sig_pc [1] $end
+$var wire 1 r inst|sig_pc [0] $end
+$var wire 1 s inst3|altsyncram_component|auto_generated|q_a [15] $end
+$var wire 1 t inst3|altsyncram_component|auto_generated|q_a [14] $end
+$var wire 1 u inst3|altsyncram_component|auto_generated|q_a [13] $end
+$var wire 1 v inst3|altsyncram_component|auto_generated|q_a [12] $end
+$var wire 1 w inst3|altsyncram_component|auto_generated|q_a [11] $end
+$var wire 1 x inst3|altsyncram_component|auto_generated|q_a [10] $end
+$var wire 1 y inst3|altsyncram_component|auto_generated|q_a [9] $end
+$var wire 1 z inst3|altsyncram_component|auto_generated|q_a [8] $end
+$var wire 1 { inst3|altsyncram_component|auto_generated|q_a [7] $end
+$var wire 1 | inst3|altsyncram_component|auto_generated|q_a [6] $end
+$var wire 1 } inst3|altsyncram_component|auto_generated|q_a [5] $end
+$var wire 1 ~ inst3|altsyncram_component|auto_generated|q_a [4] $end
+$var wire 1 !! inst3|altsyncram_component|auto_generated|q_a [3] $end
+$var wire 1 "! inst3|altsyncram_component|auto_generated|q_a [2] $end
+$var wire 1 #! inst3|altsyncram_component|auto_generated|q_a [1] $end
+$var wire 1 $! inst3|altsyncram_component|auto_generated|q_a [0] $end
+$var wire 1 %! inst3|altsyncram_component|auto_generated|ram_block1a8_PORTADATAOUT_bus [0] $end
+$var wire 1 &! inst3|altsyncram_component|auto_generated|ram_block1a11_PORTADATAOUT_bus [0] $end
+$var wire 1 '! inst3|altsyncram_component|auto_generated|ram_block1a9_PORTADATAOUT_bus [0] $end
+$var wire 1 (! inst3|altsyncram_component|auto_generated|ram_block1a10_PORTADATAOUT_bus [0] $end
+$var wire 1 )! inst3|altsyncram_component|auto_generated|ram_block1a7_PORTADATAOUT_bus [0] $end
+$var wire 1 *! inst1|altpll_component|auto_generated|pll1_CLK_bus [4] $end
+$var wire 1 +! inst1|altpll_component|auto_generated|pll1_CLK_bus [3] $end
+$var wire 1 ,! inst1|altpll_component|auto_generated|pll1_CLK_bus [2] $end
+$var wire 1 -! inst1|altpll_component|auto_generated|pll1_CLK_bus [1] $end
+$var wire 1 .! inst1|altpll_component|auto_generated|pll1_CLK_bus [0] $end
+$var wire 1 /! inst3|altsyncram_component|auto_generated|ram_block1a14_PORTADATAOUT_bus [0] $end
+$var wire 1 0! inst3|altsyncram_component|auto_generated|ram_block1a15_PORTADATAOUT_bus [0] $end
+$var wire 1 1! inst3|altsyncram_component|auto_generated|ram_block1a6_PORTADATAOUT_bus [0] $end
+$var wire 1 2! inst3|altsyncram_component|auto_generated|ram_block1a5_PORTADATAOUT_bus [0] $end
+$var wire 1 3! inst3|altsyncram_component|auto_generated|ram_block1a4_PORTADATAOUT_bus [0] $end
+$var wire 1 4! inst3|altsyncram_component|auto_generated|ram_block1a3_PORTADATAOUT_bus [0] $end
+$var wire 1 5! inst3|altsyncram_component|auto_generated|ram_block1a2_PORTADATAOUT_bus [0] $end
+$var wire 1 6! inst3|altsyncram_component|auto_generated|ram_block1a1_PORTADATAOUT_bus [0] $end
+$var wire 1 7! inst3|altsyncram_component|auto_generated|ram_block1a0_PORTADATAOUT_bus [0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+1"
+0*
+0)
+0(
+0'
+0&
+0%
+0$
+0#
+x+
+0,
+1-
+x.
+1/
+10
+11
+12
+x3
+04
+15
+16
+07
+08
+09
+1:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+0F
+0G
+0H
+0I
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+0R
+0S
+0T
+0U
+0V
+0W
+0X
+1Y
+0Z
+1[
+0\
+1]
+0^
+1_
+0`
+0a
+0b
+0c
+0d
+0e
+0f
+0g
+0h
+xm
+xl
+xk
+xj
+xi
+0r
+0q
+0p
+0o
+0n
+0$!
+0#!
+0"!
+0!!
+0~
+0}
+0|
+0{
+0z
+0y
+0x
+0w
+zv
+zu
+0t
+0s
+0%!
+0&!
+0'!
+0(!
+0)!
+x.!
+x-!
+x,!
+x+!
+x*!
+0/!
+00!
+01!
+02!
+03!
+04!
+05!
+06!
+07!
+$end
+#833
+13
+#5000
+0!
+0+
+02
+#10000
+1!
+1+
+12
+#10833
+03
+#15000
+0!
+0+
+02
+#20000
+1!
+1+
+12
+#20833
+13
+#25000
+0!
+0+
+02
+#30000
+1!
+1+
+12
+#30833
+03
+#35000
+0!
+0+
+02
+#40000
+1!
+1+
+12
+#40833
+13
+#45000
+0!
+0+
+02
+#50000
+1!
+1+
+12
+#50833
+03
+#55000
+0!
+0+
+02
+#60000
+1!
+1+
+12
+#60833
+13
+#65000
+0!
+0+
+02
+#70000
+1!
+1+
+12
+#70833
+03
+#75000
+0!
+0+
+02
+#80000
+1!
+1+
+12
+#80833
+13
+#85000
+0!
+0+
+02
+#90000
+1!
+1+
+12
+#90833
+03
+#95000
+0!
+0+
+02
+#100000
+1!
+1+
+12
+#100833
+13
+#105000
+0!
+0+
+02
+#110000
+1!
+1+
+12
+#110833
+03
+#115000
+0!
+0+
+02
+#120000
+1!
+1+
+12
+#120833
+13
+#125000
+0!
+0+
+02
+#130000
+1!
+1+
+12
+#130833
+03
+#135000
+0!
+0+
+02
+#140000
+1!
+1+
+12
+#140833
+13
+#145000
+0!
+0+
+02
+#150000
+1!
+1+
+12
+#150833
+03
+#155000
+0!
+0+
+02
+#160000
+1!
+1+
+12
+#160833
+13
+#165000
+0!
+0+
+02
+#170000
+1!
+1+
+12
+#170833
+03
+#175000
+0!
+0+
+02
+#180000
+1!
+1+
+12
+#180833
+13
+#185000
+0!
+0+
+02
+#190000
+1!
+1+
+12
+#190833
+03
+#195000
+0!
+0+
+02
+#200000
+1!
+1+
+12
+#200833
+13
+#205000
+0!
+0+
+02
+#210000
+1!
+1+
+12
+#210833
+03
+#215000
+0!
+0+
+02
+#220000
+1!
+1+
+12
+#220833
+13
+#225000
+0!
+0+
+02
+#230000
+1!
+1+
+12
+#230833
+03
+#235000
+0!
+0+
+02
+#240000
+1!
+1+
+12
+#240833
+13
+#245000
+0!
+0+
+02
+#250000
+1!
+1+
+12
+#250833
+03
+#255000
+0!
+0+
+02
+#260000
+1!
+1+
+12
+#260833
+13
+#265000
+0!
+0+
+02
+#270000
+1!
+1+
+12
+#270833
+03
+#275000
+0!
+0+
+02
+#280000
+1!
+1+
+12
+#280833
+13
+#285000
+0!
+0+
+02
+#290000
+1!
+1+
+12
+#290833
+03
+#295000
+0!
+0+
+02
+#300000
+1!
+1+
+12
+#300833
+13
+#305000
+0!
+0+
+02
+#310000
+1!
+1+
+12
+#310833
+03
+#315000
+0!
+0+
+02
+#320000
+1!
+1+
+12
+#320833
+13
+#325000
+0!
+0+
+02
+#330000
+1!
+1+
+12
+#330833
+03
+#335000
+0!
+0+
+02
+#340000
+1!
+1+
+12
+#340833
+13
+#345000
+0!
+0+
+02
+#350000
+1!
+1+
+12
+#350833
+03
+#355000
+0!
+0+
+02
+#360000
+1!
+1+
+12
+#360833
+13
+#365000
+0!
+0+
+02
+#370000
+1!
+1+
+12
+#370833
+03
+#375000
+0!
+0+
+02
+#380000
+1!
+1+
+12
+#380833
+13
+#385000
+0!
+0+
+02
+#390000
+1!
+1+
+12
+#390833
+03
+#395000
+0!
+0+
+02
+#400000
+1!
+1+
+12
+#400833
+13
+#405000
+0!
+0+
+02
+#410000
+1!
+1+
+12
+#410833
+03
+#415000
+0!
+0+
+02
+#420000
+1!
+1+
+12
+#420833
+13
+#425000
+0!
+0+
+02
+#430000
+1!
+1+
+12
+#430833
+03
+#435000
+0!
+0+
+02
+#440000
+1!
+1+
+12
+#440833
+13
+#445000
+0!
+0+
+02
+#450000
+1!
+1+
+12
+#450833
+03
+#455000
+0!
+0+
+02
+#460000
+1!
+1+
+12
+#460833
+13
+#465000
+0!
+0+
+02
+#470000
+1!
+1+
+12
+#470833
+03
+#475000
+0!
+0+
+02
+#480000
+1!
+1+
+12
+#480833
+13
+#485000
+0!
+0+
+02
+#490000
+1!
+1+
+12
+#490833
+03
+#495000
+0!
+0+
+02
+#500000
+1!
+1+
+12
+#500833
+13
+#505000
+0!
+0+
+02
+#510000
+1!
+1+
+12
+#510833
+03
+#515000
+0!
+0+
+02
+#520000
+1!
+1+
+12
+#520833
+13
+#525000
+0!
+0+
+02
+#530000
+1!
+1+
+12
+#530833
+03
+#535000
+0!
+0+
+02
+#540000
+1!
+1+
+12
+#540833
+13
+#545000
+0!
+0+
+02
+#550000
+1!
+1+
+12
+#550833
+03
+#555000
+0!
+0+
+02
+#560000
+1!
+1+
+12
+#560833
+13
+#565000
+0!
+0+
+02
+#570000
+1!
+1+
+12
+#570833
+03
+#575000
+0!
+0+
+02
+#580000
+1!
+1+
+12
+#580833
+13
+#585000
+0!
+0+
+02
+#590000
+1!
+1+
+12
+#590833
+03
+#595000
+0!
+0+
+02
+#600000
+1!
+1+
+12
+#600833
+13
+#605000
+0!
+0+
+02
+#610000
+1!
+1+
+12
+#610833
+03
+#615000
+0!
+0+
+02
+#620000
+1!
+1+
+12
+#620833
+13
+#625000
+0!
+0+
+02
+#630000
+1!
+1+
+12
+#630833
+03
+#635000
+0!
+0+
+02
+#640000
+1!
+1+
+12
+#640833
+13
+#645000
+0!
+0+
+02
+#650000
+1!
+1+
+12
+#650833
+03
+#655000
+0!
+0+
+02
+#660000
+1!
+1+
+12
+#660833
+13
+#665000
+0!
+0+
+02
+#670000
+1!
+1+
+12
+#670833
+03
+#675000
+0!
+0+
+02
+#680000
+1!
+1+
+12
+#680833
+13
+#685000
+0!
+0+
+02
+#690000
+1!
+1+
+12
+#690833
+03
+#695000
+0!
+0+
+02
+#700000
+1!
+1+
+12
+#700833
+13
+#705000
+0!
+0+
+02
+#710000
+1!
+1+
+12
+#710833
+03
+#715000
+0!
+0+
+02
+#720000
+1!
+1+
+12
+#720833
+13
+#725000
+0!
+0+
+02
+#730000
+1!
+1+
+12
+#730833
+03
+#735000
+0!
+0+
+02
+#740000
+1!
+1+
+12
+#740833
+13
+#745000
+0!
+0+
+02
+#750000
+1!
+1+
+12
+#750833
+03
+#755000
+0!
+0+
+02
+#760000
+1!
+1+
+12
+#760833
+13
+#765000
+0!
+0+
+02
+#770000
+1!
+1+
+12
+#770833
+03
+#775000
+0!
+0+
+02
+#780000
+1!
+1+
+12
+#780833
+13
+#785000
+0!
+0+
+02
+#790000
+1!
+1+
+12
+#790833
+03
+#795000
+0!
+0+
+02
+#800000
+1!
+1+
+12
+#800833
+13
+#805000
+0!
+0+
+02
+#810000
+1!
+1+
+12
+#810833
+03
+#815000
+0!
+0+
+02
+#820000
+1!
+1+
+12
+#820833
+13
+#825000
+0!
+0+
+02
+#830000
+1!
+1+
+12
+#830833
+03
+#835000
+0!
+0+
+02
+#840000
+1!
+1+
+12
+#840833
+13
+#845000
+0!
+0+
+02
+#850000
+1!
+1+
+12
+#850833
+03
+#855000
+0!
+0+
+02
+#860000
+1!
+1+
+12
+#860833
+13
+#865000
+0!
+0+
+02
+#870000
+1!
+1+
+12
+#870833
+03
+#875000
+0!
+0+
+02
+#880000
+1!
+1+
+12
+#880833
+13
+#885000
+0!
+0+
+02
+#890000
+1!
+1+
+12
+#890833
+03
+#895000
+0!
+0+
+02
+#900000
+1!
+1+
+12
+#900833
+13
+#905000
+0!
+0+
+02
+#910000
+1!
+1+
+12
+#910833
+03
+#915000
+0!
+0+
+02
+#920000
+1!
+1+
+12
+#920833
+13
+#925000
+0!
+0+
+02
+#930000
+1!
+1+
+12
+#930833
+03
+#935000
+0!
+0+
+02
+#940000
+1!
+1+
+12
+#940833
+13
+#945000
+0!
+0+
+02
+#950000
+1!
+1+
+12
+#950833
+03
+#955000
+0!
+0+
+02
+#960000
+1!
+1+
+12
+#960833
+13
+#965000
+0!
+0+
+02
+#970000
+1!
+1+
+12
+#970833
+03
+#975000
+0!
+0+
+02
+#980000
+1!
+1+
+12
+#980833
+13
+#985000
+0!
+0+
+02
+#990000
+1!
+1+
+12
+#990833
+03
+#995000
+0!
+0+
+02
+#1000000

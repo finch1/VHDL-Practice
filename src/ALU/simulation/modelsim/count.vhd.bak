@@ -1,0 +1,39 @@
+use ieee.std_logic_1164.all;
+
+package count_types is
+	subtype bit4 is std_logic_vector(3 downto 0);
+end count_types;
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.count_types.all;
+
+entity count is port(
+	clk, load, clear : in std_logic;
+	din : in bit4;
+	dout : inout bit4);
+end count;
+
+architecture synth of count is
+	signal count_val : bit4;
+begin
+	process(load, clear, din, dout)
+	begin
+		if load = '1' then
+			count_val <= din;
+		elsif clear = '1' then
+			count_val <= "0000";
+		else
+			count_val <= dout + "0001";
+		end if;
+	end process;
+	
+	process(clk)
+	begin
+		if rising_edge(clk) then
+			dout <= count_val;
+		end if;
+	end process;
+end synth;
+			

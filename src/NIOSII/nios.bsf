@@ -1,0 +1,180 @@
+/*
+WARNING: Do NOT edit the input and output ports in this file in a text
+editor if you plan to continue editing the block that represents it in
+the Block Editor! File corruption is VERY likely to occur.
+*/
+/*
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+*/
+(header "symbol" (version "1.1"))
+(symbol
+	(rect 0 0 464 440)
+	(text "nios" (rect 221 -1 236 11)(font "Arial" (font_size 10)))
+	(text "inst" (rect 8 424 20 436)(font "Arial" ))
+	(port
+		(pt 0 72)
+		(input)
+		(text "clk_clk" (rect 0 0 27 12)(font "Arial" (font_size 8)))
+		(text "clk_clk" (rect 4 61 46 72)(font "Arial" (font_size 8)))
+		(line (pt 0 72)(pt 192 72)(line_width 1))
+	)
+	(port
+		(pt 0 328)
+		(input)
+		(text "key_export" (rect 0 0 46 12)(font "Arial" (font_size 8)))
+		(text "key_export" (rect 4 317 64 328)(font "Arial" (font_size 8)))
+		(line (pt 0 328)(pt 192 328)(line_width 1))
+	)
+	(port
+		(pt 0 368)
+		(input)
+		(text "reset_reset_n" (rect 0 0 56 12)(font "Arial" (font_size 8)))
+		(text "reset_reset_n" (rect 4 357 82 368)(font "Arial" (font_size 8)))
+		(line (pt 0 368)(pt 192 368)(line_width 1))
+	)
+	(port
+		(pt 0 144)
+		(output)
+		(text "ddr_sdram_memory_mem_cs_n" (rect 0 0 139 12)(font "Arial" (font_size 8)))
+		(text "ddr_sdram_memory_mem_cs_n" (rect 4 133 154 144)(font "Arial" (font_size 8)))
+		(line (pt 0 144)(pt 192 144)(line_width 1))
+	)
+	(port
+		(pt 0 160)
+		(output)
+		(text "ddr_sdram_memory_mem_cke" (rect 0 0 133 12)(font "Arial" (font_size 8)))
+		(text "ddr_sdram_memory_mem_cke" (rect 4 149 148 160)(font "Arial" (font_size 8)))
+		(line (pt 0 160)(pt 192 160)(line_width 1))
+	)
+	(port
+		(pt 0 176)
+		(output)
+		(text "ddr_sdram_memory_mem_addr[12..0]" (rect 0 0 160 12)(font "Arial" (font_size 8)))
+		(text "ddr_sdram_memory_mem_addr[12..0]" (rect 4 165 196 176)(font "Arial" (font_size 8)))
+		(line (pt 0 176)(pt 192 176)(line_width 3))
+	)
+	(port
+		(pt 0 192)
+		(output)
+		(text "ddr_sdram_memory_mem_ba[1..0]" (rect 0 0 147 12)(font "Arial" (font_size 8)))
+		(text "ddr_sdram_memory_mem_ba[1..0]" (rect 4 181 178 192)(font "Arial" (font_size 8)))
+		(line (pt 0 192)(pt 192 192)(line_width 3))
+	)
+	(port
+		(pt 0 208)
+		(output)
+		(text "ddr_sdram_memory_mem_ras_n" (rect 0 0 142 12)(font "Arial" (font_size 8)))
+		(text "ddr_sdram_memory_mem_ras_n" (rect 4 197 160 208)(font "Arial" (font_size 8)))
+		(line (pt 0 208)(pt 192 208)(line_width 1))
+	)
+	(port
+		(pt 0 224)
+		(output)
+		(text "ddr_sdram_memory_mem_cas_n" (rect 0 0 143 12)(font "Arial" (font_size 8)))
+		(text "ddr_sdram_memory_mem_cas_n" (rect 4 213 160 224)(font "Arial" (font_size 8)))
+		(line (pt 0 224)(pt 192 224)(line_width 1))
+	)
+	(port
+		(pt 0 240)
+		(output)
+		(text "ddr_sdram_memory_mem_we_n" (rect 0 0 140 12)(font "Arial" (font_size 8)))
+		(text "ddr_sdram_memory_mem_we_n" (rect 4 229 154 240)(font "Arial" (font_size 8)))
+		(line (pt 0 240)(pt 192 240)(line_width 1))
+	)
+	(port
+		(pt 0 288)
+		(output)
+		(text "ddr_sdram_memory_mem_dm[1..0]" (rect 0 0 151 12)(font "Arial" (font_size 8)))
+		(text "ddr_sdram_memory_mem_dm[1..0]" (rect 4 277 178 288)(font "Arial" (font_size 8)))
+		(line (pt 0 288)(pt 192 288)(line_width 3))
+	)
+	(port
+		(pt 0 408)
+		(output)
+		(text "led_export" (rect 0 0 41 12)(font "Arial" (font_size 8)))
+		(text "led_export" (rect 4 397 64 408)(font "Arial" (font_size 8)))
+		(line (pt 0 408)(pt 192 408)(line_width 1))
+	)
+	(port
+		(pt 0 112)
+		(bidir)
+		(text "ddr_sdram_memory_mem_clk" (rect 0 0 129 12)(font "Arial" (font_size 8)))
+		(text "ddr_sdram_memory_mem_clk" (rect 4 101 148 112)(font "Arial" (font_size 8)))
+		(line (pt 0 112)(pt 192 112)(line_width 1))
+	)
+	(port
+		(pt 0 128)
+		(bidir)
+		(text "ddr_sdram_memory_mem_clk_n" (rect 0 0 140 12)(font "Arial" (font_size 8)))
+		(text "ddr_sdram_memory_mem_clk_n" (rect 4 117 160 128)(font "Arial" (font_size 8)))
+		(line (pt 0 128)(pt 192 128)(line_width 1))
+	)
+	(port
+		(pt 0 256)
+		(bidir)
+		(text "ddr_sdram_memory_mem_dq[15..0]" (rect 0 0 152 12)(font "Arial" (font_size 8)))
+		(text "ddr_sdram_memory_mem_dq[15..0]" (rect 4 245 184 256)(font "Arial" (font_size 8)))
+		(line (pt 0 256)(pt 192 256)(line_width 3))
+	)
+	(port
+		(pt 0 272)
+		(bidir)
+		(text "ddr_sdram_memory_mem_dqs[1..0]" (rect 0 0 152 12)(font "Arial" (font_size 8)))
+		(text "ddr_sdram_memory_mem_dqs[1..0]" (rect 4 261 184 272)(font "Arial" (font_size 8)))
+		(line (pt 0 272)(pt 192 272)(line_width 3))
+	)
+	(drawing
+		(text "clk" (rect 177 43 372 99)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "clk" (rect 197 67 412 144)(font "Arial" (color 0 0 0)))
+		(text "ddr_sdram_memory" (rect 74 83 244 179)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "mem_clk" (rect 197 107 436 224)(font "Arial" (color 0 0 0)))
+		(text "mem_clk_n" (rect 197 123 448 256)(font "Arial" (color 0 0 0)))
+		(text "mem_cs_n" (rect 197 139 442 288)(font "Arial" (color 0 0 0)))
+		(text "mem_cke" (rect 197 155 436 320)(font "Arial" (color 0 0 0)))
+		(text "mem_addr" (rect 197 171 442 352)(font "Arial" (color 0 0 0)))
+		(text "mem_ba" (rect 197 187 430 384)(font "Arial" (color 0 0 0)))
+		(text "mem_ras_n" (rect 197 203 448 416)(font "Arial" (color 0 0 0)))
+		(text "mem_cas_n" (rect 197 219 448 448)(font "Arial" (color 0 0 0)))
+		(text "mem_we_n" (rect 197 235 442 480)(font "Arial" (color 0 0 0)))
+		(text "mem_dq" (rect 197 251 430 512)(font "Arial" (color 0 0 0)))
+		(text "mem_dqs" (rect 197 267 436 544)(font "Arial" (color 0 0 0)))
+		(text "mem_dm" (rect 197 283 430 576)(font "Arial" (color 0 0 0)))
+		(text "key" (rect 173 299 364 611)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 197 323 430 656)(font "Arial" (color 0 0 0)))
+		(text "reset" (rect 163 339 356 691)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "reset_n" (rect 197 363 436 736)(font "Arial" (color 0 0 0)))
+		(text "led" (rect 176 379 370 771)(font "Arial" (color 128 0 0)(font_size 9)))
+		(text "export" (rect 197 403 430 816)(font "Arial" (color 0 0 0)))
+		(text " nios " (rect 444 424 924 858)(font "Arial" ))
+		(line (pt 193 52)(pt 193 76)(line_width 1))
+		(line (pt 194 52)(pt 194 76)(line_width 1))
+		(line (pt 193 92)(pt 193 292)(line_width 1))
+		(line (pt 194 92)(pt 194 292)(line_width 1))
+		(line (pt 193 308)(pt 193 332)(line_width 1))
+		(line (pt 194 308)(pt 194 332)(line_width 1))
+		(line (pt 193 348)(pt 193 372)(line_width 1))
+		(line (pt 194 348)(pt 194 372)(line_width 1))
+		(line (pt 193 388)(pt 193 412)(line_width 1))
+		(line (pt 194 388)(pt 194 412)(line_width 1))
+		(line (pt 192 32)(pt 272 32)(line_width 1))
+		(line (pt 272 32)(pt 272 424)(line_width 1))
+		(line (pt 192 424)(pt 272 424)(line_width 1))
+		(line (pt 192 32)(pt 192 424)(line_width 1))
+		(line (pt 0 0)(pt 464 0)(line_width 1))
+		(line (pt 464 0)(pt 464 440)(line_width 1))
+		(line (pt 0 440)(pt 464 440)(line_width 1))
+		(line (pt 0 0)(pt 0 440)(line_width 1))
+	)
+)

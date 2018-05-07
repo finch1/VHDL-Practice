@@ -1,0 +1,27 @@
+--library ieee;
+--use ieee.std_logic_1164.all;
+--use ieee.numeric_std.all;
+--use work.lcd_defs.all;
+--
+--entity lcd_top is port(
+--	clk, rst: in std_logic;
+--	lcd_en: out std_logic;
+--	lcd_wr: out std_logic := '0' ;
+--	lcd_rs 	: out std_logic;	
+--	lcd_bus	: out std_logic_vector(db_bits -1 downto 0));
+--end lcd_top;
+--
+--architecture arch of lcd_top is
+--
+--	signal lcd_write: std_logic;
+--	signal lcd_busy_s, lcd_busy_b:  std_logic;
+--	signal sel_dly:   unsigned(1 downto 0);
+--
+--begin
+--	lcd_control_unit: entity work.lcd_ctrl(arch)
+--	port map(clk => clk, rst => rst, sel_dly => sel_dly, lcd_write => lcd_write, lcd_busy_s => lcd_busy_s, lcd_busy_b => lcd_busy_b, lcd_rs => lcd_rs, lcd_bus => lcd_bus);
+--	
+--	lcd_transmit_unit: entity work.lcd(arch)
+--	port map(clk => clk, rst => rst, sel_dly => sel_dly, lcd_write => lcd_write, lcd_busy_s => lcd_busy_s, lcd_busy_b => lcd_busy_b, lcd_en => lcd_en);
+--
+--end arch;

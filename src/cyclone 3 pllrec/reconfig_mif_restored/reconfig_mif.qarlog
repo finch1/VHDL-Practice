@@ -1,0 +1,72 @@
+Quartus II Archive log --	D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.qarlog
+
+Archive:	D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.qar
+Date:		Tue Jan 29 07:25:13 2008
+Quartus II		8.0 Internal Build 143 01/22/2008 SJ Full Version
+
+	=========== Files Selected: ===========
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/In100MHz_out100MHz.bsf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/In100MHz_out100MHz.v
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/In100MHz_out100MHz_bb.v
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/In100MHz_out200MHz.bsf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/In100MHz_out200MHz.v
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/In100MHz_out200MHz_bb.v
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/In100MHz_out300MHz.bsf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/In100MHz_out300MHz.v
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/In100MHz_out300MHz_bb.v
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/altpll0.bsf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/altpll0.mif
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/altpll0.ppf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/altpll0.v
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/altpll0_100.mif
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/altpll0_200.mif
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/altpll0_300.mif
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/altpll0_bb.v
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/altpll_reconfig0.bsf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/altpll_reconfig0.v
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/altpll_reconfig0_bb.v
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/add_sub_hpa.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/add_sub_k8a.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/altpll_6ig1.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/altsyncram_14b1.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/altsyncram_8kt.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/altsyncram_oo81.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/altsyncram_tvc1.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/altsyncram_v3b1.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/cmpr_tnd.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/cntr_30l.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/cntr_9cj.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/cntr_pij.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/cntr_qij.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/cntr_sij.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/decode_2af.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/mux_0qc.tdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/reconfig_mif.cbx.xml
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/db/reconfig_mif.qpf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/lpm_mux0.bsf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/lpm_mux0.v
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/lpm_mux0_bb.v
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.asm.rpt
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.bdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.done
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.eda.rpt
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.fit.rpt
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.fit.smsg
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.fit.summary
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.flow.rpt
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.map.rpt
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.map.summary
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.pin
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.pof
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.qarlog
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.qsf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.sof
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.sta.rpt
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.sta.summary
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.svf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif_assignment_defaults.qdf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/statem_mifselect.bsf
+D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/statem_mifselsect.v
+c:/altera/80/quartus/bin/assignment_defaults.qdf
+	======= Total: 63 files to archive =======
+

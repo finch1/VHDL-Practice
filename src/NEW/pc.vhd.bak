@@ -1,0 +1,26 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity pc is 
+	generic(n : natural := 3);
+	port(
+		clk, rst : in std_logic;
+		pc_out   : out std_logic_vector(n downto 0));
+end pc;
+
+architecture arch of pc is
+	signal sig_pc : unsigned(n downto 0);
+begin
+	
+	process(clk, rst)
+	begin
+		if rst = '0' then
+			sig_pc <= (others => '0');
+		elsif rising_edge(clk) then
+			sig_pc <= sig_pc +1;
+		end if;
+	end process;
+	
+	pc_out <= std_logic_vector(sig_pc);
+end arch;
