@@ -1,2 +1,0 @@
-#!/bin/sh
-. "$SOPC_KIT_NIOS2/bin/sh_pl.sh" "$@"
