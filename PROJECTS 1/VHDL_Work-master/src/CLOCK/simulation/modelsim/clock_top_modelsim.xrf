@@ -1,0 +1,15 @@
+vendor_name = ModelSim
+source_file = 1, C:/altera/13.1/CLOCK/sec_gen.vhd
+source_file = 1, C:/altera/13.1/CLOCK/time_reg.vhd
+source_file = 1, C:/altera/13.1/CLOCK/i2c_master.vhd
+source_file = 1, C:/altera/13.1/CLOCK/tb_i2c_master.vhd
+source_file = 1, C:/altera/13.1/CLOCK/i2c_ctrl.vhd
+source_file = 1, C:/altera/13.1/CLOCK/reg_mem.vhd
+source_file = 1, C:/altera/13.1/CLOCK/time_keep.vhd
+source_file = 1, C:/altera/13.1/CLOCK/freq_calc.vhd
+source_file = 1, C:/altera/13.1/CLOCK/db/clock_top.cbx.xml
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_b.vhd
+source_file = 1, c:/altera/13.1/quartus/libraries/vhdl/ieee/timing_p.vhd
+design_name = time_keep

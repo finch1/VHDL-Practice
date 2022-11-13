@@ -1,0 +1,120 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\GOKU\Desktop\mymulti
+Plog_pkg
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 w1492457145
+Z5 dC:\Users\GOKU\Desktop\mymulti
+Z6 8log_pkg.vhd
+Z7 Flog_pkg.vhd
+l0
+L130
+V2X;V6fd1_[LO;a0S13Z;@0
+Z8 OV;C;10.1d;51
+33
+b1
+Z9 !s108 1492462496.175000
+Z10 !s90 -reportprogress|300|-2008|log_pkg.vhd|
+Z11 !s107 log_pkg.vhd|
+Z12 o-2008 -O0
+Z13 tExplicit 1
+!s100 JJ<V[`V[=PlFY3_VfF^hD3
+!i10b 1
+Bbody
+Z14 DPx4 work 7 log_pkg 0 22 2X;V6fd1_[LO;a0S13Z;@0
+R1
+R2
+R3
+l0
+L206
+VF[UI=YQSWeQiO7>bG<RTh0
+R8
+33
+R9
+R10
+R11
+R12
+R13
+nbody
+!s100 eK4358>J6?2eRGjK?nFUH3
+!i10b 1
+Emymult
+Z15 w1492457134
+R1
+R2
+R3
+R5
+Z16 8mymult.vhd
+Z17 Fmymult.vhd
+l0
+L16
+V3Z?cQl5e7L9]Jn?Ez[X@50
+R8
+33
+Z18 !s108 1492462496.240000
+Z19 !s90 -reportprogress|300|-2008|mymult.vhd|
+Z20 !s107 mymult.vhd|
+R12
+R13
+!s100 LGb9fgPS3NCDHS:?JkK_50
+!i10b 1
+Asimple
+R1
+R2
+R3
+DEx4 work 6 mymult 0 22 3Z?cQl5e7L9]Jn?Ez[X@50
+l38
+L26
+VFlBIK`OAaGmz8k2@gj6g@3
+!s100 <ND16M2CGkMN`iOZ2<mGk2
+R8
+33
+R18
+R19
+R20
+R12
+R13
+!i10b 1
+Etbmymult
+Z21 w1492462488
+R14
+R1
+R2
+R3
+R5
+Z22 8tbmymult.vhd
+Z23 Ftbmymult.vhd
+l0
+L21
+V7W8XNKC@j0@DDb`KB@cnY2
+!s100 OO0R=3jRTT^NmzOjoCIEA1
+R8
+33
+!i10b 1
+Z24 !s108 1492462496.299000
+Z25 !s90 -reportprogress|300|-2008|tbmymult.vhd|
+Z26 !s107 tbmymult.vhd|
+R12
+R13
+Atbsimple
+R14
+R1
+R2
+R3
+Z27 DEx4 work 8 tbmymult 0 22 7W8XNKC@j0@DDb`KB@cnY2
+l55
+L27
+V?A7[4LnZb2M]hG4:a0Q_70
+!s100 d@JfV=FfV;h[KN`AaI^me2
+R8
+33
+!i10b 1
+R24
+R25
+R26
+R12
+R13

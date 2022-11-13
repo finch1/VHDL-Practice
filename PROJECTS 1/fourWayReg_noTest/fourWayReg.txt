@@ -1,0 +1,16 @@
+# serParReg
+# 3/06/2018
+# shift left - shift right - parallel in - parallel out
+# File data format = (shsel, sin, din, sout, dout)
+#
+0	0	1	2	0
+1	1	1	0	0
+1	1	1	0	128
+1	1	1	0	192
+1	1	1	0	224
+1	1	1	0	240
+1	1	1	0	248
+1	1	1	0	252
+1	1	1	0	254
+1	1	1	1	255
+1	1	1	1	255

@@ -1,0 +1,315 @@
+//IP Functional Simulation Model
+//VERSION_BEGIN 8.0SP1 cbx_mgl 2008:06:02:292401 cbx_simgen 2008:06:02:292401  VERSION_END
+// synthesis VERILOG_INPUT_VERSION VERILOG_2001
+// altera message_off 10463
+
+
+
+// Legal Notice: © 2003 Altera Corporation. All rights reserved.
+// You may only use these  simulation  model  output files for simulation
+// purposes and expressly not for synthesis or any other purposes (in which
+// event  Altera disclaims all warranties of any kind). Your use of  Altera
+// Corporation's design tools, logic functions and other software and tools,
+// and its AMPP partner logic functions, and any output files any of the
+// foregoing (including device programming or simulation files), and any
+// associated documentation or information  are expressly subject to the
+// terms and conditions of the  Altera Program License Subscription Agreement
+// or other applicable license agreement, including, without limitation, that
+// your use is for the sole purpose of programming logic devices manufactured
+// by Altera and sold by Altera or its authorized distributors.  Please refer
+// to the applicable agreement for further details.
+
+
+//synopsys translate_off
+
+//synthesis_resources = lut 37 mux21 26 oper_decoder 1 
+`timescale 1 ps / 1 ps
+module  DFA_before_ingress_fifo
+	( 
+	clk,
+	in_data,
+	in_ready,
+	in_valid,
+	out_data,
+	out_ready,
+	out_valid,
+	reset_n) /* synthesis synthesis_clearbox=1 */;
+	input   clk;
+	input   [7:0]  in_data;
+	output   in_ready;
+	input   in_valid;
+	output   [15:0]  out_data;
+	input   out_ready;
+	output   out_valid;
+	input   reset_n;
+
+	reg	dfa_before_ingress_fifo_data0_register_0_86q;
+	reg	dfa_before_ingress_fifo_data0_register_1_36q;
+	reg	dfa_before_ingress_fifo_data0_register_2_35q;
+	reg	dfa_before_ingress_fifo_data0_register_3_34q;
+	reg	dfa_before_ingress_fifo_data0_register_4_33q;
+	reg	dfa_before_ingress_fifo_data0_register_5_32q;
+	reg	dfa_before_ingress_fifo_data0_register_6_31q;
+	reg	dfa_before_ingress_fifo_data0_register_7_30q;
+	reg	dfa_before_ingress_fifo_in_ready_d1_19q;
+	reg	dfa_before_ingress_fifo_out_valid_reg0_87q;
+	reg	dfa_before_ingress_fifo_state_d1_28q;
+	reg	dfa_before_ingress_fifo_state_register_29q;
+	reg	dfa_before_ingress_fifo_out_data_0_reg0_103q;
+	reg	dfa_before_ingress_fifo_out_data_10_reg0_93q;
+	reg	dfa_before_ingress_fifo_out_data_11_reg0_92q;
+	reg	dfa_before_ingress_fifo_out_data_12_reg0_91q;
+	reg	dfa_before_ingress_fifo_out_data_13_reg0_90q;
+	reg	dfa_before_ingress_fifo_out_data_14_reg0_89q;
+	reg	dfa_before_ingress_fifo_out_data_15_reg0_88q;
+	reg	dfa_before_ingress_fifo_out_data_1_reg0_102q;
+	reg	dfa_before_ingress_fifo_out_data_2_reg0_101q;
+	reg	dfa_before_ingress_fifo_out_data_3_reg0_100q;
+	reg	dfa_before_ingress_fifo_out_data_4_reg0_99q;
+	reg	dfa_before_ingress_fifo_out_data_5_reg0_98q;
+	reg	dfa_before_ingress_fifo_out_data_6_reg0_97q;
+	reg	dfa_before_ingress_fifo_out_data_7_reg0_96q;
+	reg	dfa_before_ingress_fifo_out_data_8_reg0_95q;
+	reg	dfa_before_ingress_fifo_out_data_9_reg0_94q;
+	reg	dfa_before_ingress_fifo_a_data0_0_18q;
+	reg	dfa_before_ingress_fifo_a_data0_1_17q;
+	reg	dfa_before_ingress_fifo_a_data0_2_16q;
+	reg	dfa_before_ingress_fifo_a_data0_3_15q;
+	reg	dfa_before_ingress_fifo_a_data0_4_14q;
+	reg	dfa_before_ingress_fifo_a_data0_5_13q;
+	reg	dfa_before_ingress_fifo_a_data0_6_12q;
+	reg	dfa_before_ingress_fifo_a_data0_7_11q;
+	reg	dfa_before_ingress_fifo_a_valid_10q;
+	wire	wire_dfa_before_ingress_fifo_a_ready_62m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_0_60m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_10_50m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_11_49m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_12_48m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_13_47m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_14_46m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_15_45m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_1_59m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_2_58m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_3_57m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_4_56m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_5_55m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_6_54m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_7_53m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_8_52m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_data_9_51m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_valid_0_44m_dataout;
+	wire	wire_dfa_before_ingress_fifo_b_valid_64m_dataout;
+	wire	wire_dfa_before_ingress_fifo_mem_write0_65m_dataout;
+	wire	wire_dfa_before_ingress_fifo_new_state_0_39m_dataout;
+	wire	wire_dfa_before_ingress_fifo_new_state_1_42m_dataout;
+	wire	wire_dfa_before_ingress_fifo_new_state_2_43m_dataout;
+	wire	wire_dfa_before_ingress_fifo_new_state_63m_dataout;
+	wire	wire_dfa_before_ingress_fifo_out_valid_1_134m_dataout;
+	wire	wire_dfa_before_ingress_fifo_state_38m_dataout;
+	wire  [1:0]   wire_dfa_before_ingress_fifo_decoder0_61_o;
+	wire  s_wire_dfa_before_ingress_fifo_always4_0_41_dataout;
+	wire  s_wire_dfa_before_ingress_fifo_in_ready_0_67_dataout;
+	wire  s_wire_vcc;
+
+	initial
+	begin
+		dfa_before_ingress_fifo_data0_register_0_86q = 0;
+		dfa_before_ingress_fifo_data0_register_1_36q = 0;
+		dfa_before_ingress_fifo_data0_register_2_35q = 0;
+		dfa_before_ingress_fifo_data0_register_3_34q = 0;
+		dfa_before_ingress_fifo_data0_register_4_33q = 0;
+		dfa_before_ingress_fifo_data0_register_5_32q = 0;
+		dfa_before_ingress_fifo_data0_register_6_31q = 0;
+		dfa_before_ingress_fifo_data0_register_7_30q = 0;
+	end
+	always @ ( posedge clk or  negedge reset_n)
+	begin
+		if (reset_n == 1'b0) 
+		begin
+			dfa_before_ingress_fifo_data0_register_0_86q <= 0;
+			dfa_before_ingress_fifo_data0_register_1_36q <= 0;
+			dfa_before_ingress_fifo_data0_register_2_35q <= 0;
+			dfa_before_ingress_fifo_data0_register_3_34q <= 0;
+			dfa_before_ingress_fifo_data0_register_4_33q <= 0;
+			dfa_before_ingress_fifo_data0_register_5_32q <= 0;
+			dfa_before_ingress_fifo_data0_register_6_31q <= 0;
+			dfa_before_ingress_fifo_data0_register_7_30q <= 0;
+		end
+		else if  (wire_dfa_before_ingress_fifo_mem_write0_65m_dataout == 1'b1) 
+		begin
+			dfa_before_ingress_fifo_data0_register_0_86q <= dfa_before_ingress_fifo_a_data0_0_18q;
+			dfa_before_ingress_fifo_data0_register_1_36q <= dfa_before_ingress_fifo_a_data0_1_17q;
+			dfa_before_ingress_fifo_data0_register_2_35q <= dfa_before_ingress_fifo_a_data0_2_16q;
+			dfa_before_ingress_fifo_data0_register_3_34q <= dfa_before_ingress_fifo_a_data0_3_15q;
+			dfa_before_ingress_fifo_data0_register_4_33q <= dfa_before_ingress_fifo_a_data0_4_14q;
+			dfa_before_ingress_fifo_data0_register_5_32q <= dfa_before_ingress_fifo_a_data0_5_13q;
+			dfa_before_ingress_fifo_data0_register_6_31q <= dfa_before_ingress_fifo_a_data0_6_12q;
+			dfa_before_ingress_fifo_data0_register_7_30q <= dfa_before_ingress_fifo_a_data0_7_11q;
+		end
+	end
+	initial
+	begin
+		dfa_before_ingress_fifo_in_ready_d1_19q = 0;
+		dfa_before_ingress_fifo_out_valid_reg0_87q = 0;
+		dfa_before_ingress_fifo_state_d1_28q = 0;
+		dfa_before_ingress_fifo_state_register_29q = 0;
+	end
+	always @ ( posedge clk or  negedge reset_n)
+	begin
+		if (reset_n == 1'b0) 
+		begin
+			dfa_before_ingress_fifo_in_ready_d1_19q <= 0;
+			dfa_before_ingress_fifo_out_valid_reg0_87q <= 0;
+			dfa_before_ingress_fifo_state_d1_28q <= 0;
+			dfa_before_ingress_fifo_state_register_29q <= 0;
+		end
+		else 
+		begin
+			dfa_before_ingress_fifo_in_ready_d1_19q <= s_wire_dfa_before_ingress_fifo_in_ready_0_67_dataout;
+			dfa_before_ingress_fifo_out_valid_reg0_87q <= wire_dfa_before_ingress_fifo_out_valid_1_134m_dataout;
+			dfa_before_ingress_fifo_state_d1_28q <= wire_dfa_before_ingress_fifo_state_38m_dataout;
+			dfa_before_ingress_fifo_state_register_29q <= wire_dfa_before_ingress_fifo_new_state_63m_dataout;
+		end
+	end
+	initial
+	begin
+		dfa_before_ingress_fifo_out_data_0_reg0_103q = 0;
+		dfa_before_ingress_fifo_out_data_10_reg0_93q = 0;
+		dfa_before_ingress_fifo_out_data_11_reg0_92q = 0;
+		dfa_before_ingress_fifo_out_data_12_reg0_91q = 0;
+		dfa_before_ingress_fifo_out_data_13_reg0_90q = 0;
+		dfa_before_ingress_fifo_out_data_14_reg0_89q = 0;
+		dfa_before_ingress_fifo_out_data_15_reg0_88q = 0;
+		dfa_before_ingress_fifo_out_data_1_reg0_102q = 0;
+		dfa_before_ingress_fifo_out_data_2_reg0_101q = 0;
+		dfa_before_ingress_fifo_out_data_3_reg0_100q = 0;
+		dfa_before_ingress_fifo_out_data_4_reg0_99q = 0;
+		dfa_before_ingress_fifo_out_data_5_reg0_98q = 0;
+		dfa_before_ingress_fifo_out_data_6_reg0_97q = 0;
+		dfa_before_ingress_fifo_out_data_7_reg0_96q = 0;
+		dfa_before_ingress_fifo_out_data_8_reg0_95q = 0;
+		dfa_before_ingress_fifo_out_data_9_reg0_94q = 0;
+	end
+	always @ ( posedge clk or  negedge reset_n)
+	begin
+		if (reset_n == 1'b0) 
+		begin
+			dfa_before_ingress_fifo_out_data_0_reg0_103q <= 0;
+			dfa_before_ingress_fifo_out_data_10_reg0_93q <= 0;
+			dfa_before_ingress_fifo_out_data_11_reg0_92q <= 0;
+			dfa_before_ingress_fifo_out_data_12_reg0_91q <= 0;
+			dfa_before_ingress_fifo_out_data_13_reg0_90q <= 0;
+			dfa_before_ingress_fifo_out_data_14_reg0_89q <= 0;
+			dfa_before_ingress_fifo_out_data_15_reg0_88q <= 0;
+			dfa_before_ingress_fifo_out_data_1_reg0_102q <= 0;
+			dfa_before_ingress_fifo_out_data_2_reg0_101q <= 0;
+			dfa_before_ingress_fifo_out_data_3_reg0_100q <= 0;
+			dfa_before_ingress_fifo_out_data_4_reg0_99q <= 0;
+			dfa_before_ingress_fifo_out_data_5_reg0_98q <= 0;
+			dfa_before_ingress_fifo_out_data_6_reg0_97q <= 0;
+			dfa_before_ingress_fifo_out_data_7_reg0_96q <= 0;
+			dfa_before_ingress_fifo_out_data_8_reg0_95q <= 0;
+			dfa_before_ingress_fifo_out_data_9_reg0_94q <= 0;
+		end
+		else if  (s_wire_dfa_before_ingress_fifo_always4_0_41_dataout == 1'b1) 
+		begin
+			dfa_before_ingress_fifo_out_data_0_reg0_103q <= wire_dfa_before_ingress_fifo_b_data_0_60m_dataout;
+			dfa_before_ingress_fifo_out_data_10_reg0_93q <= wire_dfa_before_ingress_fifo_b_data_10_50m_dataout;
+			dfa_before_ingress_fifo_out_data_11_reg0_92q <= wire_dfa_before_ingress_fifo_b_data_11_49m_dataout;
+			dfa_before_ingress_fifo_out_data_12_reg0_91q <= wire_dfa_before_ingress_fifo_b_data_12_48m_dataout;
+			dfa_before_ingress_fifo_out_data_13_reg0_90q <= wire_dfa_before_ingress_fifo_b_data_13_47m_dataout;
+			dfa_before_ingress_fifo_out_data_14_reg0_89q <= wire_dfa_before_ingress_fifo_b_data_14_46m_dataout;
+			dfa_before_ingress_fifo_out_data_15_reg0_88q <= wire_dfa_before_ingress_fifo_b_data_15_45m_dataout;
+			dfa_before_ingress_fifo_out_data_1_reg0_102q <= wire_dfa_before_ingress_fifo_b_data_1_59m_dataout;
+			dfa_before_ingress_fifo_out_data_2_reg0_101q <= wire_dfa_before_ingress_fifo_b_data_2_58m_dataout;
+			dfa_before_ingress_fifo_out_data_3_reg0_100q <= wire_dfa_before_ingress_fifo_b_data_3_57m_dataout;
+			dfa_before_ingress_fifo_out_data_4_reg0_99q <= wire_dfa_before_ingress_fifo_b_data_4_56m_dataout;
+			dfa_before_ingress_fifo_out_data_5_reg0_98q <= wire_dfa_before_ingress_fifo_b_data_5_55m_dataout;
+			dfa_before_ingress_fifo_out_data_6_reg0_97q <= wire_dfa_before_ingress_fifo_b_data_6_54m_dataout;
+			dfa_before_ingress_fifo_out_data_7_reg0_96q <= wire_dfa_before_ingress_fifo_b_data_7_53m_dataout;
+			dfa_before_ingress_fifo_out_data_8_reg0_95q <= wire_dfa_before_ingress_fifo_b_data_8_52m_dataout;
+			dfa_before_ingress_fifo_out_data_9_reg0_94q <= wire_dfa_before_ingress_fifo_b_data_9_51m_dataout;
+		end
+	end
+	initial
+	begin
+		dfa_before_ingress_fifo_a_data0_0_18q = 0;
+		dfa_before_ingress_fifo_a_data0_1_17q = 0;
+		dfa_before_ingress_fifo_a_data0_2_16q = 0;
+		dfa_before_ingress_fifo_a_data0_3_15q = 0;
+		dfa_before_ingress_fifo_a_data0_4_14q = 0;
+		dfa_before_ingress_fifo_a_data0_5_13q = 0;
+		dfa_before_ingress_fifo_a_data0_6_12q = 0;
+		dfa_before_ingress_fifo_a_data0_7_11q = 0;
+		dfa_before_ingress_fifo_a_valid_10q = 0;
+	end
+	always @ ( posedge clk or  negedge reset_n)
+	begin
+		if (reset_n == 1'b0) 
+		begin
+			dfa_before_ingress_fifo_a_data0_0_18q <= 0;
+			dfa_before_ingress_fifo_a_data0_1_17q <= 0;
+			dfa_before_ingress_fifo_a_data0_2_16q <= 0;
+			dfa_before_ingress_fifo_a_data0_3_15q <= 0;
+			dfa_before_ingress_fifo_a_data0_4_14q <= 0;
+			dfa_before_ingress_fifo_a_data0_5_13q <= 0;
+			dfa_before_ingress_fifo_a_data0_6_12q <= 0;
+			dfa_before_ingress_fifo_a_data0_7_11q <= 0;
+			dfa_before_ingress_fifo_a_valid_10q <= 0;
+		end
+		else if  (s_wire_dfa_before_ingress_fifo_in_ready_0_67_dataout == 1'b1) 
+		begin
+			dfa_before_ingress_fifo_a_data0_0_18q <= in_data[0];
+			dfa_before_ingress_fifo_a_data0_1_17q <= in_data[1];
+			dfa_before_ingress_fifo_a_data0_2_16q <= in_data[2];
+			dfa_before_ingress_fifo_a_data0_3_15q <= in_data[3];
+			dfa_before_ingress_fifo_a_data0_4_14q <= in_data[4];
+			dfa_before_ingress_fifo_a_data0_5_13q <= in_data[5];
+			dfa_before_ingress_fifo_a_data0_6_12q <= in_data[6];
+			dfa_before_ingress_fifo_a_data0_7_11q <= in_data[7];
+			dfa_before_ingress_fifo_a_valid_10q <= in_valid;
+		end
+	end
+	or(wire_dfa_before_ingress_fifo_a_ready_62m_dataout, s_wire_dfa_before_ingress_fifo_always4_0_41_dataout, ~{wire_dfa_before_ingress_fifo_decoder0_61_o[1]});
+	and(wire_dfa_before_ingress_fifo_b_data_0_60m_dataout, dfa_before_ingress_fifo_a_data0_0_18q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_10_50m_dataout, dfa_before_ingress_fifo_data0_register_2_35q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_11_49m_dataout, dfa_before_ingress_fifo_data0_register_3_34q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_12_48m_dataout, dfa_before_ingress_fifo_data0_register_4_33q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_13_47m_dataout, dfa_before_ingress_fifo_data0_register_5_32q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_14_46m_dataout, dfa_before_ingress_fifo_data0_register_6_31q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_15_45m_dataout, dfa_before_ingress_fifo_data0_register_7_30q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_1_59m_dataout, dfa_before_ingress_fifo_a_data0_1_17q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_2_58m_dataout, dfa_before_ingress_fifo_a_data0_2_16q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_3_57m_dataout, dfa_before_ingress_fifo_a_data0_3_15q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_4_56m_dataout, dfa_before_ingress_fifo_a_data0_4_14q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_5_55m_dataout, dfa_before_ingress_fifo_a_data0_5_13q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_6_54m_dataout, dfa_before_ingress_fifo_a_data0_6_12q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_7_53m_dataout, dfa_before_ingress_fifo_a_data0_7_11q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_8_52m_dataout, dfa_before_ingress_fifo_data0_register_0_86q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_data_9_51m_dataout, dfa_before_ingress_fifo_data0_register_1_36q, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_b_valid_0_44m_dataout, dfa_before_ingress_fifo_a_valid_10q, s_wire_dfa_before_ingress_fifo_always4_0_41_dataout);
+	and(wire_dfa_before_ingress_fifo_b_valid_64m_dataout, wire_dfa_before_ingress_fifo_b_valid_0_44m_dataout, wire_dfa_before_ingress_fifo_decoder0_61_o[1]);
+	and(wire_dfa_before_ingress_fifo_mem_write0_65m_dataout, dfa_before_ingress_fifo_a_valid_10q, ~{wire_dfa_before_ingress_fifo_decoder0_61_o[1]});
+	or(wire_dfa_before_ingress_fifo_new_state_0_39m_dataout, wire_dfa_before_ingress_fifo_state_38m_dataout, dfa_before_ingress_fifo_a_valid_10q);
+	and(wire_dfa_before_ingress_fifo_new_state_1_42m_dataout, wire_dfa_before_ingress_fifo_state_38m_dataout, ~{dfa_before_ingress_fifo_a_valid_10q});
+	assign		wire_dfa_before_ingress_fifo_new_state_2_43m_dataout = (s_wire_dfa_before_ingress_fifo_always4_0_41_dataout === 1'b1) ? wire_dfa_before_ingress_fifo_new_state_1_42m_dataout : wire_dfa_before_ingress_fifo_state_38m_dataout;
+	assign		wire_dfa_before_ingress_fifo_new_state_63m_dataout = (wire_dfa_before_ingress_fifo_decoder0_61_o[1] === 1'b1) ? wire_dfa_before_ingress_fifo_new_state_2_43m_dataout : wire_dfa_before_ingress_fifo_new_state_0_39m_dataout;
+	assign		wire_dfa_before_ingress_fifo_out_valid_1_134m_dataout = (s_wire_dfa_before_ingress_fifo_always4_0_41_dataout === 1'b1) ? wire_dfa_before_ingress_fifo_b_valid_64m_dataout : dfa_before_ingress_fifo_out_valid_reg0_87q;
+	assign		wire_dfa_before_ingress_fifo_state_38m_dataout = ((~ dfa_before_ingress_fifo_in_ready_d1_19q) === 1'b1) ? dfa_before_ingress_fifo_state_d1_28q : dfa_before_ingress_fifo_state_register_29q;
+	oper_decoder   dfa_before_ingress_fifo_decoder0_61
+	( 
+	.i({wire_dfa_before_ingress_fifo_state_38m_dataout}),
+	.o(wire_dfa_before_ingress_fifo_decoder0_61_o));
+	defparam
+		dfa_before_ingress_fifo_decoder0_61.width_i = 1,
+		dfa_before_ingress_fifo_decoder0_61.width_o = 2;
+	assign
+		in_ready = s_wire_dfa_before_ingress_fifo_in_ready_0_67_dataout,
+		out_data = {dfa_before_ingress_fifo_out_data_15_reg0_88q, dfa_before_ingress_fifo_out_data_14_reg0_89q, dfa_before_ingress_fifo_out_data_13_reg0_90q, dfa_before_ingress_fifo_out_data_12_reg0_91q, dfa_before_ingress_fifo_out_data_11_reg0_92q, dfa_before_ingress_fifo_out_data_10_reg0_93q, dfa_before_ingress_fifo_out_data_9_reg0_94q, dfa_before_ingress_fifo_out_data_8_reg0_95q, dfa_before_ingress_fifo_out_data_7_reg0_96q, dfa_before_ingress_fifo_out_data_6_reg0_97q, dfa_before_ingress_fifo_out_data_5_reg0_98q, dfa_before_ingress_fifo_out_data_4_reg0_99q, dfa_before_ingress_fifo_out_data_3_reg0_100q, dfa_before_ingress_fifo_out_data_2_reg0_101q, dfa_before_ingress_fifo_out_data_1_reg0_102q, dfa_before_ingress_fifo_out_data_0_reg0_103q},
+		out_valid = dfa_before_ingress_fifo_out_valid_reg0_87q,
+		s_wire_dfa_before_ingress_fifo_always4_0_41_dataout = ((~ dfa_before_ingress_fifo_out_valid_reg0_87q) | out_ready),
+		s_wire_dfa_before_ingress_fifo_in_ready_0_67_dataout = ((~ dfa_before_ingress_fifo_a_valid_10q) | wire_dfa_before_ingress_fifo_a_ready_62m_dataout),
+		s_wire_vcc = 1'b1;
+endmodule //DFA_before_ingress_fifo
+//synopsys translate_on
+//VALID FILE

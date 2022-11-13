@@ -1,0 +1,51 @@
+-- ----------------------------------------------------------------
+-- tb_adder.vhd
+-- 12/05/2018
+-- simple up counter testbench
+-- ----------------------------------------------------------------
+
+library ieee;
+library std;
+
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+use std.textio.all;
+use work.log_pkg.all;
+
+entity tb_addertxt is 
+end entity;
+
+architecture behaviour of tb_addertxt is
+
+	-- component declaration for the unit under testbench
+	component adder is port(
+		clk : in std_logic;
+		reset : in std_logic;
+		count : out unsigned(3 downto 0)
+	);
+	end component;
+	
+	-- declare inputs and initialize to 0
+	signal clk : std_logic := '0';
+	signal reset : std_logic := '0';
+	
+	-- declare outputs
+	signal count : unsigned(3 downto 0);
+	
+	-- define the period of clock
+	constant CLK_PERIOD : time := 10 ns;
+	
+	begin
+	
+		-- instantiate the unit under test
+		uut : adder port map(
+							clk => clk,
+							reset => reset,
+							count => count
+						);
+						
+		-- stimulus
+		process
+			-- stimulus file
+			constant file_name : string := "fourbitcountertest.txt";

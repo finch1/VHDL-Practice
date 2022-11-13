@@ -1,0 +1,71 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do multi_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -2008 -work work {C:/altera/13.1/NEW/sign_add_sub.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity sign_add_sub
+# -- Compiling architecture add_sub of sign_add_sub
+# 
+vsim -voptargs=+acc work.sign_add_sub
+# vsim -voptargs=+acc work.sign_add_sub 
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading ieee.numeric_std(body)
+# Loading work.sign_add_sub(add_sub)
+add wave sim:/sign_add_sub/*
+force -freeze sim:/sign_add_sub/a 1111 0
+force -freeze sim:/sign_add_sub/b 0001 0
+run
+force -freeze sim:/sign_add_sub/a 0000 0
+run
+force -freeze sim:/sign_add_sub/a 0101 0
+run
+run
+force -freeze sim:/sign_add_sub/a 0000 0
+run
+force -freeze sim:/sign_add_sub/a 0001 0
+run
+force -freeze sim:/sign_add_sub/a 0010 0
+run
+force -freeze sim:/sign_add_sub/a 0011 0
+run
+force -freeze sim:/sign_add_sub/a 0100 0
+run
+force -freeze sim:/sign_add_sub/a 0101 0
+run
+force -freeze sim:/sign_add_sub/a 0110 0
+run
+force -freeze sim:/sign_add_sub/a 0111 0
+run
+force -freeze sim:/sign_add_sub/a 1000 0
+run
+force -freeze sim:/sign_add_sub/a 1001 0
+run
+force -freeze sim:/sign_add_sub/a 1010 0
+run
+force -freeze sim:/sign_add_sub/a 1011 0
+run
+force -freeze sim:/sign_add_sub/a 1100 0
+run
+force -freeze sim:/sign_add_sub/a 1101 0
+run
+force -freeze sim:/sign_add_sub/a 1110 0
+run
+force -freeze sim:/sign_add_sub/a 1111 0
+run
+force -freeze sim:/sign_add_sub/a 0000 0
+run

@@ -1,0 +1,81 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1\NEW\simulation\qsim
+vcpu
+Z1 ISeBU[hilJUVdmGS>ME<QL2
+Z2 V7[:<mb`7H?kkjX`l>ozH;0
+Z3 dC:\altera\13.1\NEW\simulation\qsim
+Z4 w1486307160
+Z5 8multi.vo
+Z6 Fmulti.vo
+L0 31
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 o-work work -O0
+!i10b 1
+Z9 !s100 >JbdJjkb@3z4RAzz:en503
+!s85 0
+Z10 !s108 1486307160.767000
+Z11 !s107 multi.vo|
+Z12 !s90 -work|work|multi.vo|
+!s101 -O0
+vcpu_vlg_check_tst
+!i10b 1
+!s100 5KmVM4ZWK?nF^OiQY3mXg0
+Izl;2^n2f=5fO5X<8coO;U1
+Vm@ZLd779zDSbz@ndLP;f02
+R3
+Z13 w1486307158
+Z14 8CPU_Wform.vwf.vt
+Z15 FCPU_Wform.vwf.vt
+L0 59
+R7
+r1
+!s85 0
+31
+Z16 !s108 1486307160.859000
+Z17 !s107 CPU_Wform.vwf.vt|
+Z18 !s90 -work|work|CPU_Wform.vwf.vt|
+!s101 -O0
+R8
+vcpu_vlg_sample_tst
+!i10b 1
+!s100 JMik<G?3B9VAzlikmBF]J1
+IKJ2G2DP`?:06TL[Tl432P3
+V2FUXf]N903Jg6kP?PD<DC0
+R3
+R13
+R14
+R15
+L0 29
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8
+vcpu_vlg_vec_tst
+!i10b 1
+!s100 6@i3d_0iO_dOR@mJ>eQG]2
+IOK>LYg01d2dz=MJ2KCPP?2
+V^oh@7AnD6B>GBaHKVESIz3
+R3
+R13
+R14
+R15
+L0 279
+R7
+r1
+!s85 0
+31
+R16
+R17
+R18
+!s101 -O0
+R8

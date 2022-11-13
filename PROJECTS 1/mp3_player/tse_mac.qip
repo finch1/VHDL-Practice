@@ -1,0 +1,7 @@
+set_global_assignment -name IP_TOOL_NAME "Triple Speed Ethernet"
+set_global_assignment -name IP_TOOL_VERSION "8.0"
+set_global_assignment -name VERILOG_FILE [file join $::quartus(qip_path) "tse_mac.v"]
+set_global_assignment -name SEARCH_PATH  C:/altera/80/ip/triple_speed_ethernet/lib
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) tse_mac.v ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) tse_mac.qip ]
+set_global_assignment -name MISC_FILE [file join $::quartus(qip_path) tse_mac.html ]

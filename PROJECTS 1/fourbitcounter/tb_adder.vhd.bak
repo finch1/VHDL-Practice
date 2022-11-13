@@ -1,0 +1,27 @@
+-- ----------------------------------------------------------------
+-- tb_adder.vhd
+-- 12/05/2018
+-- simple up counter testbench
+-- ----------------------------------------------------------------
+
+library ieee;
+library std;
+
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+
+
+entity tb_adder is 
+end entity;
+
+architecture behaviour of tb_adder is
+
+	-- component declaration for the unit under testbench
+	component adder is port(
+		clk : in std_logic;
+		reset : in std_logic;
+		count : out unsigned(3 downto 0)
+	);
+	end component;
+	

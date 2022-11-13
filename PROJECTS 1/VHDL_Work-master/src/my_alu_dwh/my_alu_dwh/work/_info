@@ -1,0 +1,120 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\Users\GOKU\Desktop\my_alu_dwh\my_alu_dwh
+Plog_pkg
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 w1495398505
+Z5 dC:\Users\GOKU\Desktop\my_alu_dwh\my_alu_dwh
+Z6 8log_pkg.vhd
+Z7 Flog_pkg.vhd
+l0
+L130
+V_jaDKlH3YSZK<_^3iEeM[3
+Z8 OV;C;10.1d;51
+33
+b1
+Z9 !s108 1495428934.802000
+Z10 !s90 -reportprogress|300|-2008|log_pkg.vhd|
+Z11 !s107 log_pkg.vhd|
+Z12 o-2008 -O0
+Z13 tExplicit 1
+!s100 [Mj05i4bj`3?e7Ld4=@GH0
+!i10b 1
+Bbody
+Z14 DPx4 work 7 log_pkg 0 22 _jaDKlH3YSZK<_^3iEeM[3
+R1
+R2
+R3
+l0
+L210
+V[TD]:>9Y^IXULAJ<fNC:@3
+R8
+33
+R9
+R10
+R11
+R12
+R13
+nbody
+!s100 >P?0Ec@1mR1;>o5lokGUm1
+!i10b 1
+Emyalu
+Z15 w1492456217
+R1
+R2
+R3
+R5
+Z16 8myalu.vhd
+Z17 Fmyalu.vhd
+l0
+L18
+V^48afT4j]z7Za]z8b:9BY1
+R8
+33
+Z18 !s108 1495428934.959000
+Z19 !s90 -reportprogress|300|-2008|myalu.vhd|
+Z20 !s107 myalu.vhd|
+R12
+R13
+!s100 [5oKe^QjZX^T@_WQOQJNi3
+!i10b 1
+Abeh
+R1
+R2
+R3
+DEx4 work 5 myalu 0 22 ^48afT4j]z7Za]z8b:9BY1
+l47
+L35
+V72RFlZn60T2[]Wj6?c>Z]3
+!s100 zh1P@7Tdb8Xh8ZU10^^A40
+R8
+33
+R18
+R19
+R20
+R12
+R13
+!i10b 1
+Etbmyalu
+Z21 w1492886833
+R14
+R1
+R2
+R3
+R5
+Z22 8tbmyalu.vhd
+Z23 Ftbmyalu.vhd
+l0
+L23
+VGKGbiQhBZhHegjCiz^THT2
+!s100 =j<RUoEcUMk0<Zf5?8]LQ0
+R8
+33
+!i10b 1
+Z24 !s108 1495428935.019000
+Z25 !s90 -reportprogress|300|-2008|tbmyalu.vhd|
+Z26 !s107 tbmyalu.vhd|
+R12
+R13
+Atbmyalu_arch
+R14
+R1
+R2
+R3
+Z27 DEx4 work 7 tbmyalu 0 22 GKGbiQhBZhHegjCiz^THT2
+l69
+L31
+Z28 V?@VdAH>4VWC4e]9ze[S8f1
+Z29 !s100 nBL]0knEzDEn=5XR^=A[81
+R8
+33
+!i10b 1
+R24
+R25
+R26
+R12
+R13

@@ -1,0 +1,86 @@
+--
+--
+--library ieee;
+--use ieee.std_logic_1164.all;
+--use ieee.numeric_std.all;
+--
+--
+--
+--entity lcd_ctrl is 
+--generic(constant width : natural := 21);
+--
+--port(
+--	clk, rst : in std_logic;
+--	sel_dly	: out unsigned(1 downto 0);
+--	lcd_write: out std_logic;
+--	lcd_busy_s, lcd_busy_b	: in std_logic;
+--	lcd_rs 	: out std_logic;	
+--	lcd_bus	: out std_logic_vector(db_bits -1 downto 0)); --data out signals
+--end entity;
+--
+--architecture arch of lcd_ctrl is
+--	type state is(idle, initialize, data, address, command);
+--	signal lcd_state: state; 
+--
+--
+--	signal l_write: std_logic;
+--	signal dly_val: unsigned(1 downto 0);
+--	
+--begin
+--
+--	process(clk, rst)
+--		variable init_count: natural range 0 to 9;
+--		variable data_count: natural range 0 to 10;
+--	begin
+--		if rst = '0' then											
+--			lcd_state <= initialize; 			
+--			init_count := 0;
+--			data_count := 0;
+--			l_write <= '0';
+--		elsif rising_edge(clk) then
+--
+--			
+--			case lcd_state is
+--		
+--				when initialize =>
+--				
+--					lcd_bus <= lcd_cmd(init_count)(db_bits -1 downto 0);
+--					lcd_rs  <= lcd_cmd(init_count)(8);		
+--					dly_val <= unsigned(lcd_cmd(init_count)(10 downto 9));			
+--					l_write <= '1';
+--					if lcd_busy_s = '0' then
+--						l_write <= '0';
+--					end if;
+--						
+--					if lcd_busy_b = '0' then
+--						init_count := init_count +1;
+--							if init_count = 5 then
+--								lcd_state <= data; 						
+--							end if;
+--					end if;	
+--	
+--				when data =>
+--					lcd_bus <= lcd_data(data_count)(7 downto 0);
+--					lcd_rs  <= lcd_data(data_count)(8);
+--					dly_val <= unsigned(lcd_data(data_count)(10 downto 9));															
+--					l_write <= '1';
+--					if lcd_busy_s = '0' then
+--						l_write <= '0';
+--					end if;
+--					
+--					if lcd_busy_b = '0' then
+--						data_count := data_count +1;
+--						if data_count = 9 then 
+--							lcd_state <= idle;
+--						end if;					
+--					end if;	
+--					
+--				when others =>
+--			end case;
+--		end if;
+--	end process;
+--	
+--		
+--	lcd_write <= l_write;
+--	sel_dly <= dly_val;
+--end arch;

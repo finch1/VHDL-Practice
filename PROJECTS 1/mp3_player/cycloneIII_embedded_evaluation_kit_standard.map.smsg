@@ -1,0 +1,19 @@
+Warning (10268): Verilog HDL information at audio_codec_wm8731.v(429): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at audio_codec_wm8731.v(447): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at audio_codec_wm8731.v(461): always construct contains both blocking and non-blocking assignments
+Warning (10268): Verilog HDL information at sd_controller.v(369): always construct contains both blocking and non-blocking assignments
+Warning (10037): Verilog HDL or VHDL warning at cpu.v(1963): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at cpu.v(1965): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at cpu.v(2115): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at cpu.v(3017): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at cycloneiii_embedded_evaluation_kit_standard_sopc_clock_0.v(95): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at cycloneiii_embedded_evaluation_kit_standard_sopc_clock_0.v(104): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at cycloneiii_embedded_evaluation_kit_standard_sopc_clock_0.v(113): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at cycloneiii_embedded_evaluation_kit_standard_sopc_clock_0.v(239): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at cycloneiii_embedded_evaluation_kit_standard_sopc_clock_0.v(248): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at cycloneiii_embedded_evaluation_kit_standard_sopc_clock_0.v(257): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at cycloneiii_embedded_evaluation_kit_standard_sopc_clock_0.v(266): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at cycloneiii_embedded_evaluation_kit_standard_sopc_clock_0.v(275): conditional expression evaluates to a constant
+Warning (10262): Verilog HDL Event Control warning at pll.v(101): event expression is a constant
+Warning (10037): Verilog HDL or VHDL warning at pll.v(103): conditional expression evaluates to a constant
+Warning (10037): Verilog HDL or VHDL warning at touch_panel_spi.v(400): conditional expression evaluates to a constant

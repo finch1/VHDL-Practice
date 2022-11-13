@@ -1,0 +1,63 @@
+library ieee;
+    use ieee.std_logic_1164.all;
+    use ieee.numeric_std.all;
+
+entity alu is
+    generic( n : integer := 15);
+    port( a, b   : in std_logic_vector (n downto 0);
+	       opcode : in std_logic_vector (3 downto 0);
+			 cin    : in std_logic;
+    		 s 	  : in std_logic_vector(3 downto 0);
+			 cout   : out std_logic;			 
+	       y      : out std_logic_vector (n downto 0));
+end alu;
+
+architecture beh of alu is
+
+	 type instruction is(add, sub, l_or, l_and, l_not, l_xor, inc, dec, shl, shr, comp, ld, st, clr);
+--	 signal x : natural range 0 to 15 := to_integer(unsigned(opcode));
+	 
+    signal a_sig, b_sig: unsigned(n downto 0);
+    signal sum_sig, sub_sig: unsigned(n +1 downto 0);
+	 signal cin_sig : std_logic;
+	 
+	constant p : integer := 16;
+	constant m : integer := 4;
+	type arytype is array(m downto 0) of std_logic_vector (p -1 downto 0);
+	signal intsig, left, pass : arytype;
+	signal zeros : std_logic_vector(p -1 downto 0);	
+
+begin
+
+	zeros <= (others => '0');
+	intsig(0) <= a;
+	
+	muxgen : for j in 1 to m generate
+		pass(j) <= intsig(j-1);
+		left(j) <= intsig(j-1)(p -2**(j-1)-1 downto 0) & zeros(2**(j-1)-1 downto 0);
+		intsig(j)<= pass(j) when s(j-1) = '0' else left(j);
+	end generate;
+		
+    --convert to unsigned
+    a_sig <= unsigned(a);
+    b_sig <= (others => '0') when instruction'val(to_integer(unsigned(opcode))) = dec or instruction'val(to_integer(unsigned(opcode))) = inc else unsigned(b);
+	 
+	 cin_sig <= '1' when instruction'val(to_integer(unsigned(opcode))) = dec or instruction'val(to_integer(unsigned(opcode))) = inc else cin;
+	 
+    sum_sig <= (a_sig(n) & a_sig) + (b_sig(n) & b_sig) + ('0' & cin_sig); -- add a mux and register to increment 
+    sub_sig <= (a_sig(n) & a_sig) - (b_sig(n) & b_sig) - ('0' & cin_sig); -- same same to decrement
+	 
+	with to_integer(unsigned(opcode)) select
+	y	<= std_logic_vector(sum_sig(n downto 0)) 	when instruction'pos(add),
+			std_logic_vector(sub_sig(n downto 0)) 	when instruction'pos(sub),
+			a or  b											when instruction'pos(l_or),			
+			a and b											when instruction'pos(l_and),
+			  not a											when instruction'pos(l_not),												
+			a xor b											when instruction'pos(l_xor),
+			intsig(m)										when instruction'pos(shl),
+			(others => '0') when others;
+			
+	cout <= std_logic(sum_sig(n +1)) when instruction'val(to_integer(unsigned(opcode))) = add else
+			  std_logic(sub_sig(n +1)) when instruction'val(to_integer(unsigned(opcode))) = subs;
+end beh;
+

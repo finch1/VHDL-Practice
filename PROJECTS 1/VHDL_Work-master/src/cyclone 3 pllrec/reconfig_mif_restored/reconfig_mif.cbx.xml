@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="reconfig_mif">
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|altpll_reconfig0:inst1|altpll_reconfig0_pllrcfg_9961:altpll_reconfig0_pllrcfg_9961_component|altsyncram:altsyncram4" CBX_FILE_NAME="altsyncram_8kt.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|altpll_reconfig0:inst1|altpll_reconfig0_pllrcfg_9961:altpll_reconfig0_pllrcfg_9961_component|lpm_compare:cmpr7" CBX_FILE_NAME="cmpr_tnd.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|altpll_reconfig0:inst1|altpll_reconfig0_pllrcfg_9961:altpll_reconfig0_pllrcfg_9961_component|lpm_counter:cntr1" CBX_FILE_NAME="cntr_30l.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|lpm_mux0:inst11|lpm_mux:lpm_mux_component" CBX_FILE_NAME="mux_0qc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|altpll_reconfig0:inst1|altpll_reconfig0_pllrcfg_9961:altpll_reconfig0_pllrcfg_9961_component|lpm_add_sub:add_sub5" CBX_FILE_NAME="add_sub_hpa.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|altpll_reconfig0:inst1|altpll_reconfig0_pllrcfg_9961:altpll_reconfig0_pllrcfg_9961_component|lpm_counter:cntr15" CBX_FILE_NAME="cntr_pij.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|altpll_reconfig0:inst1|altpll_reconfig0_pllrcfg_9961:altpll_reconfig0_pllrcfg_9961_component|lpm_counter:cntr2" CBX_FILE_NAME="cntr_9cj.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|altpll_reconfig0:inst1|altpll_reconfig0_pllrcfg_9961:altpll_reconfig0_pllrcfg_9961_component|lpm_add_sub:add_sub6" CBX_FILE_NAME="add_sub_k8a.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|altpll_reconfig0:inst1|altpll_reconfig0_pllrcfg_9961:altpll_reconfig0_pllrcfg_9961_component|lpm_counter:cntr12" CBX_FILE_NAME="cntr_30l.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|altpll_reconfig0:inst1|altpll_reconfig0_pllrcfg_9961:altpll_reconfig0_pllrcfg_9961_component|lpm_counter:cntr16" CBX_FILE_NAME="cntr_30l.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|altpll_reconfig0:inst1|altpll_reconfig0_pllrcfg_9961:altpll_reconfig0_pllrcfg_9961_component|lpm_counter:cntr3" CBX_FILE_NAME="cntr_pij.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|altpll_reconfig0:inst1|altpll_reconfig0_pllrcfg_9961:altpll_reconfig0_pllrcfg_9961_component|lpm_decode:decode11" CBX_FILE_NAME="decode_2af.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|In100MHz_out100MHz:inst14|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_v3b1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|In100MHz_out200MHz:inst4|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_tvc1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|In100MHz_out300MHz:inst12|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_14b1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|altpll0:inst|altpll:altpll_component" CBX_FILE_NAME="altpll_6ig1.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|altpll_reconfig0:inst1|altpll_reconfig0_pllrcfg_9961:altpll_reconfig0_pllrcfg_9961_component|lpm_counter:cntr13" CBX_FILE_NAME="cntr_qij.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|reconfig_mif|altpll_reconfig0:inst1|altpll_reconfig0_pllrcfg_9961:altpll_reconfig0_pllrcfg_9961_component|lpm_counter:cntr14" CBX_FILE_NAME="cntr_sij.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

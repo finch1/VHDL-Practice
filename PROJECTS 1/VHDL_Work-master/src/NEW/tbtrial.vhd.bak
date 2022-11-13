@@ -1,0 +1,72 @@
+--signal vs variable test
+library ieee;
+use ieee.std_logic_1164.all;
+--use ieee.numeric_std.all;
+use ieee.std_logic_arith.all;
+
+entity tbtrial is
+end entity;
+
+architecture beh of tbtrial is
+	signal b, c, d : unsigned(3 downto 0) := (others => '0');
+	signal usig_a, usig_b : unsigned(3 downto 0) := (others => '0');
+	signal sig_a, sig_b : signed(3 downto 0) := (others => '0');
+	signal temp : std_logic_vector(3 downto 0) := (others => '0');	
+	constant time_30 : time := 30 ns;
+
+begin
+	p0 : process
+	 variable a : unsigned(3 downto 0) := (others => '0');
+	begin
+		wait for time_30;
+		a := a +1;
+		case a is 
+			when "0001" => 
+				b <= b +1;
+			when "0010" => 
+				c <= c +1;
+			when others => null;
+		end case;
+		if a = "0011" then 
+		  d <= d +1;
+		 end if;
+	end process;
+
+	usig_a <= "1000"; -- 8
+	usig_b <= "1001"; -- 9
+	sig_a  <= "1000"; -- -8
+	sig_b  <= "1001"; -- -7
+	
+process
+begin
+wait for time_30;
+  if usig_a = "1000" then
+   temp <=	"0001";
+     end if;
+wait for time_30;     
+  if usig_a > "1000" then
+   temp <= "0010";
+     end if;
+  wait for time_30;   
+  if usig_a < "1000" then
+   temp <= "0100";
+  end if;
+  
+  
+wait for time_30;
+temp <= "0000";
+wait for time_30;
+  if usig_b = "1001" then
+   temp <=	"0001";
+   end if;
+ wait for time_30;  
+  if usig_b > "1001" then
+   temp <= "0010";
+   end if;
+  wait for time_30; 
+  if usig_b < "1001" then
+   temp <= "0100";
+ end if;  
+end process;	
+	
+end beh;

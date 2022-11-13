@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="multi">
+		<CBX_INST_ENTRY INSTANCE_NAME="|alu|lpm_clshift:arith_shift" CBX_FILE_NAME="lpm_clshift_duc.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|alu|lpm_clshift:logical_shift" CBX_FILE_NAME="lpm_clshift_ujc.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

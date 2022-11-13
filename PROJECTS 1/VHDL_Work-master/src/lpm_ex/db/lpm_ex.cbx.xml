@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="lpm_ex">
+		<CBX_INST_ENTRY INSTANCE_NAME="|lpm_ex|LPM_ADD_SUB:add1" CBX_FILE_NAME="add_sub_qgg.tdf"/>
+		<CBX_INST_ENTRY INSTANCE_NAME="|lpm_ex|LPM_ROM:rom1|altrom:srom|altsyncram:rom_block" CBX_FILE_NAME="altsyncram_2201.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

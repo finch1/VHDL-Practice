@@ -1,0 +1,14 @@
+               __________               __   ___.
+     Open      \______   \ ____   ____ |  | _\_ |__   _______  ___
+     Source     |       _//  _ \_/ ___\|  |/ /| __ \ /  _ \  \/  /
+     Jukebox    |    |   (  <_> )  \___|    < | \_\ (  <_> > <  <
+     Firmware   |____|_  /\____/ \___  >__|_ \|___  /\____/__/\_ \
+                       \/            \/     \/    \/            \/
+
+The FAT filesystem code contained in this directory was garnered from the 
+Rockbox project, licenced under the GPL.  It has been modified to some 
+degree to work with Nios II and the Nios II Compact Flash controller hardware.
+If copying this code, be sure to keep the files "COPYING", "CREDITS", and 
+this file "README" with it.
+
+For more information on the Rockbox project, visit http://www.rockbox.org/

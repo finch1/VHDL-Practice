@@ -1,0 +1,243 @@
+//IP Functional Simulation Model
+//VERSION_BEGIN 8.0SP1 cbx_mgl 2008:06:02:292401 cbx_simgen 2008:06:02:292401  VERSION_END
+// synthesis VERILOG_INPUT_VERSION VERILOG_2001
+// altera message_off 10463
+
+
+
+// Legal Notice: © 2003 Altera Corporation. All rights reserved.
+// You may only use these  simulation  model  output files for simulation
+// purposes and expressly not for synthesis or any other purposes (in which
+// event  Altera disclaims all warranties of any kind). Your use of  Altera
+// Corporation's design tools, logic functions and other software and tools,
+// and its AMPP partner logic functions, and any output files any of the
+// foregoing (including device programming or simulation files), and any
+// associated documentation or information  are expressly subject to the
+// terms and conditions of the  Altera Program License Subscription Agreement
+// or other applicable license agreement, including, without limitation, that
+// your use is for the sole purpose of programming logic devices manufactured
+// by Altera and sold by Altera or its authorized distributors.  Please refer
+// to the applicable agreement for further details.
+
+
+//synopsys translate_off
+
+//synthesis_resources = lut 27 mux21 16 oper_decoder 1 
+`timescale 1 ps / 1 ps
+module  DFA_before_console
+	( 
+	clk,
+	in_data,
+	in_ready,
+	in_valid,
+	out_data,
+	out_ready,
+	out_valid,
+	reset_n) /* synthesis synthesis_clearbox=1 */;
+	input   clk;
+	input   [15:0]  in_data;
+	output   in_ready;
+	input   in_valid;
+	output   [7:0]  out_data;
+	input   out_ready;
+	output   out_valid;
+	input   reset_n;
+
+	reg	dfa_before_console_out_data_0_reg0_84q;
+	reg	dfa_before_console_out_data_1_reg0_83q;
+	reg	dfa_before_console_out_data_2_reg0_82q;
+	reg	dfa_before_console_out_data_3_reg0_81q;
+	reg	dfa_before_console_out_data_4_reg0_80q;
+	reg	dfa_before_console_out_data_5_reg0_79q;
+	reg	dfa_before_console_out_data_6_reg0_78q;
+	reg	dfa_before_console_out_data_7_reg0_77q;
+	reg	dfa_before_console_out_valid_reg0_76q;
+	reg	dfa_before_console_state_register_75q;
+	reg	dfa_before_console_a_data0_0_29q;
+	reg	dfa_before_console_a_data0_1_28q;
+	reg	dfa_before_console_a_data0_2_27q;
+	reg	dfa_before_console_a_data0_3_26q;
+	reg	dfa_before_console_a_data0_4_25q;
+	reg	dfa_before_console_a_data0_5_24q;
+	reg	dfa_before_console_a_data0_6_23q;
+	reg	dfa_before_console_a_data0_7_22q;
+	reg	dfa_before_console_a_data1_0_37q;
+	reg	dfa_before_console_a_data1_1_36q;
+	reg	dfa_before_console_a_data1_2_35q;
+	reg	dfa_before_console_a_data1_3_34q;
+	reg	dfa_before_console_a_data1_4_33q;
+	reg	dfa_before_console_a_data1_5_32q;
+	reg	dfa_before_console_a_data1_6_31q;
+	reg	dfa_before_console_a_data1_7_30q;
+	reg	dfa_before_console_a_valid_21q;
+	wire	wire_dfa_before_console_a_ready_60m_dataout;
+	wire	wire_dfa_before_console_b_data_0_58m_dataout;
+	wire	wire_dfa_before_console_b_data_1_57m_dataout;
+	wire	wire_dfa_before_console_b_data_2_56m_dataout;
+	wire	wire_dfa_before_console_b_data_3_55m_dataout;
+	wire	wire_dfa_before_console_b_data_4_54m_dataout;
+	wire	wire_dfa_before_console_b_data_5_53m_dataout;
+	wire	wire_dfa_before_console_b_data_6_52m_dataout;
+	wire	wire_dfa_before_console_b_data_7_51m_dataout;
+	wire	wire_dfa_before_console_b_valid_0_46m_dataout;
+	wire	wire_dfa_before_console_new_state_0_44m_dataout;
+	wire	wire_dfa_before_console_new_state_1_47m_dataout;
+	wire	wire_dfa_before_console_new_state_2_49m_dataout;
+	wire	wire_dfa_before_console_new_state_3_50m_dataout;
+	wire	wire_dfa_before_console_new_state_62m_dataout;
+	wire	wire_dfa_before_console_out_valid_1_115m_dataout;
+	wire  [1:0]   wire_dfa_before_console_decoder0_59_o;
+	wire  s_wire_dfa_before_console_always4_0_41_dataout;
+	wire  s_wire_dfa_before_console_in_ready_0_64_dataout;
+	wire  s_wire_vcc;
+
+	initial
+	begin
+		dfa_before_console_out_data_0_reg0_84q = 0;
+		dfa_before_console_out_data_1_reg0_83q = 0;
+		dfa_before_console_out_data_2_reg0_82q = 0;
+		dfa_before_console_out_data_3_reg0_81q = 0;
+		dfa_before_console_out_data_4_reg0_80q = 0;
+		dfa_before_console_out_data_5_reg0_79q = 0;
+		dfa_before_console_out_data_6_reg0_78q = 0;
+		dfa_before_console_out_data_7_reg0_77q = 0;
+	end
+	always @ ( posedge clk or  negedge reset_n)
+	begin
+		if (reset_n == 1'b0) 
+		begin
+			dfa_before_console_out_data_0_reg0_84q <= 0;
+			dfa_before_console_out_data_1_reg0_83q <= 0;
+			dfa_before_console_out_data_2_reg0_82q <= 0;
+			dfa_before_console_out_data_3_reg0_81q <= 0;
+			dfa_before_console_out_data_4_reg0_80q <= 0;
+			dfa_before_console_out_data_5_reg0_79q <= 0;
+			dfa_before_console_out_data_6_reg0_78q <= 0;
+			dfa_before_console_out_data_7_reg0_77q <= 0;
+		end
+		else if  (s_wire_dfa_before_console_always4_0_41_dataout == 1'b1) 
+		begin
+			dfa_before_console_out_data_0_reg0_84q <= wire_dfa_before_console_b_data_0_58m_dataout;
+			dfa_before_console_out_data_1_reg0_83q <= wire_dfa_before_console_b_data_1_57m_dataout;
+			dfa_before_console_out_data_2_reg0_82q <= wire_dfa_before_console_b_data_2_56m_dataout;
+			dfa_before_console_out_data_3_reg0_81q <= wire_dfa_before_console_b_data_3_55m_dataout;
+			dfa_before_console_out_data_4_reg0_80q <= wire_dfa_before_console_b_data_4_54m_dataout;
+			dfa_before_console_out_data_5_reg0_79q <= wire_dfa_before_console_b_data_5_53m_dataout;
+			dfa_before_console_out_data_6_reg0_78q <= wire_dfa_before_console_b_data_6_52m_dataout;
+			dfa_before_console_out_data_7_reg0_77q <= wire_dfa_before_console_b_data_7_51m_dataout;
+		end
+	end
+	initial
+	begin
+		dfa_before_console_out_valid_reg0_76q = 0;
+		dfa_before_console_state_register_75q = 0;
+	end
+	always @ ( posedge clk or  negedge reset_n)
+	begin
+		if (reset_n == 1'b0) 
+		begin
+			dfa_before_console_out_valid_reg0_76q <= 0;
+			dfa_before_console_state_register_75q <= 0;
+		end
+		else 
+		begin
+			dfa_before_console_out_valid_reg0_76q <= wire_dfa_before_console_out_valid_1_115m_dataout;
+			dfa_before_console_state_register_75q <= wire_dfa_before_console_new_state_62m_dataout;
+		end
+	end
+	initial
+	begin
+		dfa_before_console_a_data0_0_29q = 0;
+		dfa_before_console_a_data0_1_28q = 0;
+		dfa_before_console_a_data0_2_27q = 0;
+		dfa_before_console_a_data0_3_26q = 0;
+		dfa_before_console_a_data0_4_25q = 0;
+		dfa_before_console_a_data0_5_24q = 0;
+		dfa_before_console_a_data0_6_23q = 0;
+		dfa_before_console_a_data0_7_22q = 0;
+		dfa_before_console_a_data1_0_37q = 0;
+		dfa_before_console_a_data1_1_36q = 0;
+		dfa_before_console_a_data1_2_35q = 0;
+		dfa_before_console_a_data1_3_34q = 0;
+		dfa_before_console_a_data1_4_33q = 0;
+		dfa_before_console_a_data1_5_32q = 0;
+		dfa_before_console_a_data1_6_31q = 0;
+		dfa_before_console_a_data1_7_30q = 0;
+		dfa_before_console_a_valid_21q = 0;
+	end
+	always @ ( posedge clk or  negedge reset_n)
+	begin
+		if (reset_n == 1'b0) 
+		begin
+			dfa_before_console_a_data0_0_29q <= 0;
+			dfa_before_console_a_data0_1_28q <= 0;
+			dfa_before_console_a_data0_2_27q <= 0;
+			dfa_before_console_a_data0_3_26q <= 0;
+			dfa_before_console_a_data0_4_25q <= 0;
+			dfa_before_console_a_data0_5_24q <= 0;
+			dfa_before_console_a_data0_6_23q <= 0;
+			dfa_before_console_a_data0_7_22q <= 0;
+			dfa_before_console_a_data1_0_37q <= 0;
+			dfa_before_console_a_data1_1_36q <= 0;
+			dfa_before_console_a_data1_2_35q <= 0;
+			dfa_before_console_a_data1_3_34q <= 0;
+			dfa_before_console_a_data1_4_33q <= 0;
+			dfa_before_console_a_data1_5_32q <= 0;
+			dfa_before_console_a_data1_6_31q <= 0;
+			dfa_before_console_a_data1_7_30q <= 0;
+			dfa_before_console_a_valid_21q <= 0;
+		end
+		else if  (s_wire_dfa_before_console_in_ready_0_64_dataout == 1'b1) 
+		begin
+			dfa_before_console_a_data0_0_29q <= in_data[8];
+			dfa_before_console_a_data0_1_28q <= in_data[9];
+			dfa_before_console_a_data0_2_27q <= in_data[10];
+			dfa_before_console_a_data0_3_26q <= in_data[11];
+			dfa_before_console_a_data0_4_25q <= in_data[12];
+			dfa_before_console_a_data0_5_24q <= in_data[13];
+			dfa_before_console_a_data0_6_23q <= in_data[14];
+			dfa_before_console_a_data0_7_22q <= in_data[15];
+			dfa_before_console_a_data1_0_37q <= in_data[0];
+			dfa_before_console_a_data1_1_36q <= in_data[1];
+			dfa_before_console_a_data1_2_35q <= in_data[2];
+			dfa_before_console_a_data1_3_34q <= in_data[3];
+			dfa_before_console_a_data1_4_33q <= in_data[4];
+			dfa_before_console_a_data1_5_32q <= in_data[5];
+			dfa_before_console_a_data1_6_31q <= in_data[6];
+			dfa_before_console_a_data1_7_30q <= in_data[7];
+			dfa_before_console_a_valid_21q <= in_valid;
+		end
+	end
+	and(wire_dfa_before_console_a_ready_60m_dataout, s_wire_dfa_before_console_always4_0_41_dataout, wire_dfa_before_console_decoder0_59_o[1]);
+	assign		wire_dfa_before_console_b_data_0_58m_dataout = (wire_dfa_before_console_decoder0_59_o[1] === 1'b1) ? dfa_before_console_a_data1_0_37q : dfa_before_console_a_data0_0_29q;
+	assign		wire_dfa_before_console_b_data_1_57m_dataout = (wire_dfa_before_console_decoder0_59_o[1] === 1'b1) ? dfa_before_console_a_data1_1_36q : dfa_before_console_a_data0_1_28q;
+	assign		wire_dfa_before_console_b_data_2_56m_dataout = (wire_dfa_before_console_decoder0_59_o[1] === 1'b1) ? dfa_before_console_a_data1_2_35q : dfa_before_console_a_data0_2_27q;
+	assign		wire_dfa_before_console_b_data_3_55m_dataout = (wire_dfa_before_console_decoder0_59_o[1] === 1'b1) ? dfa_before_console_a_data1_3_34q : dfa_before_console_a_data0_3_26q;
+	assign		wire_dfa_before_console_b_data_4_54m_dataout = (wire_dfa_before_console_decoder0_59_o[1] === 1'b1) ? dfa_before_console_a_data1_4_33q : dfa_before_console_a_data0_4_25q;
+	assign		wire_dfa_before_console_b_data_5_53m_dataout = (wire_dfa_before_console_decoder0_59_o[1] === 1'b1) ? dfa_before_console_a_data1_5_32q : dfa_before_console_a_data0_5_24q;
+	assign		wire_dfa_before_console_b_data_6_52m_dataout = (wire_dfa_before_console_decoder0_59_o[1] === 1'b1) ? dfa_before_console_a_data1_6_31q : dfa_before_console_a_data0_6_23q;
+	assign		wire_dfa_before_console_b_data_7_51m_dataout = (wire_dfa_before_console_decoder0_59_o[1] === 1'b1) ? dfa_before_console_a_data1_7_30q : dfa_before_console_a_data0_7_22q;
+	and(wire_dfa_before_console_b_valid_0_46m_dataout, dfa_before_console_a_valid_21q, s_wire_dfa_before_console_always4_0_41_dataout);
+	or(wire_dfa_before_console_new_state_0_44m_dataout, dfa_before_console_state_register_75q, dfa_before_console_a_valid_21q);
+	assign		wire_dfa_before_console_new_state_1_47m_dataout = (s_wire_dfa_before_console_always4_0_41_dataout === 1'b1) ? wire_dfa_before_console_new_state_0_44m_dataout : dfa_before_console_state_register_75q;
+	and(wire_dfa_before_console_new_state_2_49m_dataout, dfa_before_console_state_register_75q, ~{dfa_before_console_a_valid_21q});
+	assign		wire_dfa_before_console_new_state_3_50m_dataout = (s_wire_dfa_before_console_always4_0_41_dataout === 1'b1) ? wire_dfa_before_console_new_state_2_49m_dataout : dfa_before_console_state_register_75q;
+	assign		wire_dfa_before_console_new_state_62m_dataout = (wire_dfa_before_console_decoder0_59_o[1] === 1'b1) ? wire_dfa_before_console_new_state_3_50m_dataout : wire_dfa_before_console_new_state_1_47m_dataout;
+	assign		wire_dfa_before_console_out_valid_1_115m_dataout = (s_wire_dfa_before_console_always4_0_41_dataout === 1'b1) ? wire_dfa_before_console_b_valid_0_46m_dataout : dfa_before_console_out_valid_reg0_76q;
+	oper_decoder   dfa_before_console_decoder0_59
+	( 
+	.i({dfa_before_console_state_register_75q}),
+	.o(wire_dfa_before_console_decoder0_59_o));
+	defparam
+		dfa_before_console_decoder0_59.width_i = 1,
+		dfa_before_console_decoder0_59.width_o = 2;
+	assign
+		in_ready = s_wire_dfa_before_console_in_ready_0_64_dataout,
+		out_data = {dfa_before_console_out_data_7_reg0_77q, dfa_before_console_out_data_6_reg0_78q, dfa_before_console_out_data_5_reg0_79q, dfa_before_console_out_data_4_reg0_80q, dfa_before_console_out_data_3_reg0_81q, dfa_before_console_out_data_2_reg0_82q, dfa_before_console_out_data_1_reg0_83q, dfa_before_console_out_data_0_reg0_84q},
+		out_valid = dfa_before_console_out_valid_reg0_76q,
+		s_wire_dfa_before_console_always4_0_41_dataout = ((~ dfa_before_console_out_valid_reg0_76q) | out_ready),
+		s_wire_dfa_before_console_in_ready_0_64_dataout = ((~ dfa_before_console_a_valid_21q) | wire_dfa_before_console_a_ready_60m_dataout),
+		s_wire_vcc = 1'b1;
+endmodule //DFA_before_console
+//synopsys translate_on
+//VALID FILE

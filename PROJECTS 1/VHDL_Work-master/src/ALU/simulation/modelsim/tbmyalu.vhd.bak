@@ -1,0 +1,112 @@
+LIBRARY ieee  ; 
+LIBRARY std  ; 
+USE ieee.NUMERIC_STD.all  ; 
+USE ieee.std_logic_1164.all  ; 
+USE ieee.std_logic_textio.all  ; 
+USE ieee.std_logic_unsigned.all  ; 
+USE std.textio.all  ; 
+USE work.random_generators.all  ; 
+ENTITY tbmyalu  IS 
+  GENERIC (
+    n  : INTEGER   := 3 ); 
+END ; 
+ 
+ARCHITECTURE tbmyalu_arch OF tbmyalu IS
+  SIGNAL sel   :  STD_LOGIC  ; 
+  SIGNAL y   :  std_logic_vector (3 downto 0)  ; 
+  SIGNAL a   :  std_logic_vector (3 downto 0)  ; 
+  SIGNAL cin   :  STD_LOGIC  ; 
+  SIGNAL b   :  std_logic_vector (3 downto 0)  ; 
+  SIGNAL cout   :  STD_LOGIC  ; 
+  COMPONENT myalu  
+    GENERIC ( 
+      n  : INTEGER  );  
+    PORT ( 
+      sel  : in STD_LOGIC ; 
+      y  : out std_logic_vector (3 downto 0) ; 
+      a  : in std_logic_vector (3 downto 0) ; 
+      cin  : in STD_LOGIC ; 
+      b  : in std_logic_vector (3 downto 0) ; 
+      cout  : out STD_LOGIC ); 
+  END COMPONENT ; 
+BEGIN
+  DUT  : myalu  
+    GENERIC MAP ( 
+      n  => n   )
+    PORT MAP ( 
+      sel   => sel  ,
+      y   => y  ,
+      a   => a  ,
+      cin   => cin  ,
+      b   => b  ,
+      cout   => cout   ) ; 
+
+
+
+-- "Random Pattern"(Normal) : seed = 5
+-- Start Time = 0 ns, End Time = 10 us, Period = 50 ns
+  Process
+	variable max_rand : real := pow(2.0, real(a'length))-1.0;
+	variable iv : genstatus1;
+	variable iy : genstatus2;
+	variable rndval : real;
+	variable mean : real := 0.0;
+	variable seed : integer := 5 ;
+	Begin
+	iv(NTAB) := 0;
+	iv(NTAB+1) := 0;
+	 a  <= "1000"  ;
+	wait for 10 ns ;
+-- dumped values till 10 ns
+	wait;
+ End Process;
+
+
+-- "Random Pattern"(Normal) : seed = 7
+-- Start Time = 0 ns, End Time = 10 us, Period = 50 ns
+  Process
+	variable max_rand : real := pow(2.0, real(b'length))-1.0;
+	variable iv : genstatus1;
+	variable iy : genstatus2;
+	variable rndval : real;
+	variable mean : real := 0.0;
+	variable seed : integer := 7 ;
+	Begin
+	iv(NTAB) := 0;
+	iv(NTAB+1) := 0;
+	 b  <= "1110"  ;
+	wait for 10 ns ;
+-- dumped values till 10 ns
+	wait;
+ End Process;
+
+
+-- "Constant Pattern"
+-- Start Time = 0 ns, End Time = 10 us, Period = 0 ns
+  Process
+	Begin
+	 cin  <= '0'  ;
+	wait for 10 ns ;
+-- dumped values till 10 ns
+	wait;
+ End Process;
+
+
+-- "Random Pattern"(Normal) : seed = 7
+-- Start Time = 0 ns, End Time = 10 us, Period = 50 ns
+  Process
+	variable max_rand : real := 1.0;
+	variable iv : genstatus1;
+	variable iy : genstatus2;
+	variable rndval : real;
+	variable mean : real := 0.0;
+	variable seed : integer := 7 ;
+	Begin
+	iv(NTAB) := 0;
+	iv(NTAB+1) := 0;
+	 sel  <= '0'  ;
+	wait for 10 ns ;
+-- dumped values till 10 ns
+	wait;
+ End Process;
+END;

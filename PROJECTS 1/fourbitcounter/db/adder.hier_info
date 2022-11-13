@@ -1,0 +1,15 @@
+|adder
+clk => c[0].CLK
+clk => c[1].CLK
+clk => c[2].CLK
+clk => c[3].CLK
+reset => c[0].ACLR
+reset => c[1].ACLR
+reset => c[2].ACLR
+reset => c[3].ACLR
+count[0] <= c[0].DB_MAX_OUTPUT_PORT_TYPE
+count[1] <= c[1].DB_MAX_OUTPUT_PORT_TYPE
+count[2] <= c[2].DB_MAX_OUTPUT_PORT_TYPE
+count[3] <= c[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

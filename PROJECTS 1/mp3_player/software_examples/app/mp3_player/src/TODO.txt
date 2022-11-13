@@ -1,0 +1,11 @@
+
+ X Save Playlist to SD Card so it doesnt have to index it each time
+ - Port to uCOSII
+ - Create Playlist
+ - Add Playlist controls ( random, repeat )
+ - Port to 2 Nios
+ - Scroll Title and Artist
+
+
+
+

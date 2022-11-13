@@ -1,0 +1,126 @@
+Assembler report for reconfig_mif
+Tue Jan 29 07:14:18 2008
+Quartus II Version 8.0 Internal Build 143 01/22/2008 SJ Full Version
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Assembler Summary
+  3. Assembler Settings
+  4. Assembler Generated Files
+  5. Assembler Device Options: D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.sof
+  6. Assembler Device Options: D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.pof
+  7. Assembler Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2007 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++---------------------------------------------------------------+
+; Assembler Summary                                             ;
++-----------------------+---------------------------------------+
+; Assembler Status      ; Successful - Tue Jan 29 07:14:18 2008 ;
+; Revision Name         ; reconfig_mif                          ;
+; Top-level Entity Name ; reconfig_mif                          ;
+; Family                ; Cyclone III                           ;
+; Device                ; EP3C25F256C7                          ;
++-----------------------+---------------------------------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Assembler Settings                                                                                     ;
++-----------------------------------------------------------------------------+----------+---------------+
+; Option                                                                      ; Setting  ; Default Value ;
++-----------------------------------------------------------------------------+----------+---------------+
+; Use smart compilation                                                       ; Off      ; Off           ;
+; Maximum processors allowed for parallel compilation                         ; 1        ; 1             ;
+; Generate compressed bitstreams                                              ; On       ; On            ;
+; Compression mode                                                            ; Off      ; Off           ;
+; Clock source for configuration device                                       ; Internal ; Internal      ;
+; Clock frequency of the configuration device                                 ; 10 MHZ   ; 10 MHz        ;
+; Divide clock frequency by                                                   ; 1        ; 1             ;
+; JTAG user code for target device                                            ; Ffffffff ; Ffffffff      ;
+; Auto user code                                                              ; Off      ; Off           ;
+; Use configuration device                                                    ; On       ; On            ;
+; Configuration device                                                        ; Auto     ; Auto          ;
+; JTAG user code for configuration device                                     ; Ffffffff ; Ffffffff      ;
+; Configuration device auto user code                                         ; Off      ; Off           ;
+; Generate Tabular Text File (.ttf) For Target Device                         ; Off      ; Off           ;
+; Generate Raw Binary File (.rbf) For Target Device                           ; Off      ; Off           ;
+; Generate Hexadecimal (Intel-Format) Output File (.hexout) for Target Device ; Off      ; Off           ;
+; Hexadecimal Output File start address                                       ; 0        ; 0             ;
+; Hexadecimal Output File count direction                                     ; Up       ; Up            ;
+; Release clears before tri-states                                            ; Off      ; Off           ;
+; Auto-restart configuration after error                                      ; On       ; On            ;
+; Enable OCT_DONE                                                             ; Off      ; Off           ;
++-----------------------------------------------------------------------------+----------+---------------+
+
+
++--------------------------------------------------------------------------------------------------------+
+; Assembler Generated Files                                                                              ;
++--------------------------------------------------------------------------------------------------------+
+; File Name                                                                                              ;
++--------------------------------------------------------------------------------------------------------+
+; D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.sof ;
+; D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.pof ;
++--------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.sof ;
++----------------+-----------------------------------------------------------------------------------------------------------------+
+; Option         ; Setting                                                                                                         ;
++----------------+-----------------------------------------------------------------------------------------------------------------+
+; Device         ; EP3C25F256C7                                                                                                    ;
+; JTAG usercode  ; 0xFFFFFFFF                                                                                                      ;
+; Checksum       ; 0x0015C45C                                                                                                      ;
++----------------+-----------------------------------------------------------------------------------------------------------------+
+
+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Assembler Device Options: D:/data/Collateral/CycloneIII/CIII_PLL_Reconfig_AN/Design/cycloneiii_pll_reconfig_mif/reconfig_mif.pof ;
++--------------------+-------------------------------------------------------------------------------------------------------------+
+; Option             ; Setting                                                                                                     ;
++--------------------+-------------------------------------------------------------------------------------------------------------+
+; Device             ; EPCS16                                                                                                      ;
+; JTAG usercode      ; 0x00000000                                                                                                  ;
+; Checksum           ; 0x1CEF0BF0                                                                                                  ;
+; Compression Ratio  ; 3                                                                                                           ;
++--------------------+-------------------------------------------------------------------------------------------------------------+
+
+
++--------------------+
+; Assembler Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Assembler
+    Info: Version 8.0 Internal Build 143 01/22/2008 SJ Full Version
+    Info: Processing started: Tue Jan 29 07:13:55 2008
+Info: Command: quartus_asm --read_settings_files=off --write_settings_files=off reconfig_mif -c reconfig_mif
+Info: Writing out detailed assembly data for power analysis
+Info: Assembler is generating device programming files
+Info: Quartus II Assembler was successful. 0 errors, 0 warnings
+    Info: Allocated 187 megabytes of memory during processing
+    Info: Processing ended: Tue Jan 29 07:14:19 2008
+    Info: Elapsed time: 00:00:24
+
+

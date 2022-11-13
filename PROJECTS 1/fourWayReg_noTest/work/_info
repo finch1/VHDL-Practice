@@ -1,0 +1,229 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+dC:/altera/15.0
+Pinstructions
+Z0 DPx4 work 7 log_pkg 0 22 Jzz6bQK90<FVNFhRPW<522
+Z1 DPx4 ieee 11 numeric_std 0 22 :ASDNFgHXf_ih3J@9F3Ze1
+Z2 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z3 DPx4 ieee 14 std_logic_1164 0 22 eNV`TJ_GofJTzYa?f<@Oe1
+Z4 w1528058029
+Z5 dC:/altera/15.0/PROJECTS/fourWayReg_noTest
+Z6 8C:\altera\15.0\PROJECTS\fourWayReg_noTest\tb_serParRegtxt.vhd
+Z7 FC:\altera\15.0\PROJECTS\fourWayReg_noTest\tb_serParRegtxt.vhd
+l0
+L16
+VGR3LLLVi5DRK[;;F?ZhG@1
+!s100 fW@KegO]WD>0DS<51i@j`1
+Z8 OV;C;10.3d;59
+32
+b1
+Z9 !s110 1528058033
+!i10b 1
+Z10 !s108 1528058033.798000
+Z11 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\altera\15.0\PROJECTS\fourWayReg_noTest\tb_serParRegtxt.vhd|
+Z12 !s107 C:\altera\15.0\PROJECTS\fourWayReg_noTest\tb_serParRegtxt.vhd|
+!i113 1
+Z13 o-work work -2002 -explicit
+Z14 tExplicit 1
+Bbody
+DPx4 work 12 instructions 0 22 GR3LLLVi5DRK[;;F?ZhG@1
+R0
+R1
+R2
+R3
+l0
+L26
+V6l:OOk=VP^X4lQ01SZT?S1
+!s100 [iVfR?jRWziN=@fm`eih13
+R8
+32
+R9
+!i10b 1
+R10
+R11
+R12
+!i113 1
+R13
+R14
+Z15 nbody
+Pinstructions_pkg
+R1
+R2
+R3
+Z16 w1528059779
+R5
+Z17 8C:/altera/15.0/PROJECTS/fourWayReg_noTest/instructions_pkg.vhd
+Z18 FC:/altera/15.0/PROJECTS/fourWayReg_noTest/instructions_pkg.vhd
+l0
+L8
+VLjZjFnl8]QZ8KRJJW9ICZ1
+!s100 >bTRfnfS@3`DP[;h@2Rhc2
+R8
+32
+b1
+Z19 !s110 1528063898
+!i10b 1
+Z20 !s108 1528063898.451000
+Z21 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/altera/15.0/PROJECTS/fourWayReg_noTest/instructions_pkg.vhd|
+Z22 !s107 C:/altera/15.0/PROJECTS/fourWayReg_noTest/instructions_pkg.vhd|
+!i113 1
+R13
+R14
+Bbody
+Z23 DPx4 work 16 instructions_pkg 0 22 LjZjFnl8]QZ8KRJJW9ICZ1
+R1
+R2
+R3
+l0
+L19
+VoWKC2?a7_H5G=7K>WTj2F3
+!s100 CEPN`GcR^7EIMoejHQ:5E1
+R8
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R13
+R14
+R15
+Plog_pkg
+R1
+R2
+R3
+Z24 w1528064414
+R5
+Z25 8C:\altera\15.0\PROJECTS\fourWayReg_noTest\log_pkg.vhd
+Z26 FC:\altera\15.0\PROJECTS\fourWayReg_noTest\log_pkg.vhd
+l0
+L130
+VJLQ:K_F=hzN2]<Tk@cE??0
+!s100 @^LoS4R64H2>eBF_7=:bg2
+R8
+32
+b1
+Z27 !s110 1528064420
+!i10b 1
+Z28 !s108 1528064420.569000
+Z29 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:\altera\15.0\PROJECTS\fourWayReg_noTest\log_pkg.vhd|
+Z30 !s107 C:\altera\15.0\PROJECTS\fourWayReg_noTest\log_pkg.vhd|
+!i113 1
+R13
+R14
+Bbody
+Z31 DPx4 work 7 log_pkg 0 22 JLQ:K_F=hzN2]<Tk@cE??0
+R1
+R2
+R3
+l0
+L214
+VXfGfn_7gQ283JV1KiRkNN0
+!s100 [e<@PlODnb03EZa4zHCUV3
+R8
+32
+R27
+!i10b 1
+R28
+R29
+R30
+!i113 1
+R13
+R14
+R15
+Eserparreg
+Z32 w1528064301
+R1
+R23
+R2
+R3
+R5
+Z33 8C:/altera/15.0/PROJECTS/fourWayReg_noTest/serParReg.vhd
+Z34 FC:/altera/15.0/PROJECTS/fourWayReg_noTest/serParReg.vhd
+l0
+L10
+Vh@hmgHXMiYaSYhNLOT9OP1
+!s100 Hz>0SORd2QVS11JmXRL=13
+R8
+32
+Z35 !s110 1528064307
+!i10b 1
+Z36 !s108 1528064307.979000
+Z37 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|C:/altera/15.0/PROJECTS/fourWayReg_noTest/serParReg.vhd|
+Z38 !s107 C:/altera/15.0/PROJECTS/fourWayReg_noTest/serParReg.vhd|
+!i113 1
+R13
+R14
+Aarch
+R1
+R23
+R2
+R3
+DEx4 work 9 serparreg 0 22 h@hmgHXMiYaSYhNLOT9OP1
+l21
+L19
+VeJ:ben^z5[;_?ggm>3B[G2
+!s100 2n72QV4OM[baP<<EM>So]1
+R8
+32
+R35
+!i10b 1
+R36
+R37
+R38
+!i113 1
+R13
+R14
+Etb_addertxt
+Z39 w1528064204
+R31
+R23
+R1
+R2
+R3
+R5
+R6
+R7
+l0
+L17
+VYjEdWgfdKlfX@8BFN@Y=D0
+!s100 7<jk5:T22:YUakS2l761W1
+R8
+32
+Z40 !s110 1528064207
+!i10b 1
+Z41 !s108 1528064207.563000
+R11
+R12
+!i113 1
+R13
+R14
+Abehavioural
+R31
+R23
+R1
+R2
+R3
+DEx4 work 11 tb_addertxt 0 22 YjEdWgfdKlfX@8BFN@Y=D0
+l45
+L20
+VaG@91]E7hSolFMPl5Hn<91
+!s100 @c5kU6gjaB`K=CT1GaNZ<3
+R8
+32
+R40
+!i10b 1
+R41
+R11
+R12
+!i113 1
+R13
+R14

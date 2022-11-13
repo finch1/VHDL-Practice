@@ -1,0 +1,153 @@
+<sld_project_info>
+  <hub_info ir_width="2" node_count="2"/>
+  <node_info>
+    <node hpath="test_sys_sopc:test_sys_sopc_inst|console_master:the_console_master|altera_jtag_avalon_master:the_altera_jtag_avalon_master|altera_jtag_avalon_master_jtag_interface:the_altera_jtag_avalon_master_jtag_interface|altera_jtag_dc_streaming:the_altera_jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|altera_jtag_phy:phy|sld_virtual_jtag_basic:sld_virtual_jtag_component|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" instance_id="0" mfg_id="110" node_id="132" sld_node_info="0x4206E00" version="0">
+      <parameters>
+        <parameter name="sld_mfg_id" type="dec" value="110"/>
+        <parameter name="sld_type_id" type="dec" value="132"/>
+        <parameter name="sld_version" type="dec" value="0"/>
+        <parameter name="sld_instance_index" type="dec" value="0"/>
+        <parameter name="sld_auto_instance_index" type="string" value="YES"/>
+        <parameter name="sld_ir_width" type="dec" value="2"/>
+        <parameter name="SLD_NODE_INFO" type="dec" value="69234176"/>
+      </parameters>
+      <inputs>
+        <port name="usr_tdo" source="test_sys_sopc:test_sys_sopc_inst|console_master:the_console_master|altera_jtag_avalon_master:the_altera_jtag_avalon_master|altera_jtag_avalon_master_jtag_interface:the_altera_jtag_avalon_master_jtag_interface|altera_jtag_dc_streaming:the_altera_jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|altera_jtag_phy:phy|sld_virtual_jtag_basic:sld_virtual_jtag_component|tdo"/>
+        <port name="usr_ir_out[0]" source="test_sys_sopc:test_sys_sopc_inst|console_master:the_console_master|altera_jtag_avalon_master:the_altera_jtag_avalon_master|altera_jtag_avalon_master_jtag_interface:the_altera_jtag_avalon_master_jtag_interface|altera_jtag_dc_streaming:the_altera_jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|altera_jtag_phy:phy|sld_virtual_jtag_basic:sld_virtual_jtag_component|ir_out[0]"/>
+        <port name="usr_ir_out[1]" source="test_sys_sopc:test_sys_sopc_inst|console_master:the_console_master|altera_jtag_avalon_master:the_altera_jtag_avalon_master|altera_jtag_avalon_master_jtag_interface:the_altera_jtag_avalon_master_jtag_interface|altera_jtag_dc_streaming:the_altera_jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|altera_jtag_phy:phy|sld_virtual_jtag_basic:sld_virtual_jtag_component|ir_out[1]"/>
+        <port name="raw_tck" source="altera_internal_jtag"/>
+        <port name="raw_tms" source="altera_internal_jtag"/>
+        <port name="tdi" source="altera_internal_jtag"/>
+        <port name="jtag_state_tlr" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[0]"/>
+        <port name="jtag_state_rti" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[1]"/>
+        <port name="jtag_state_sdrs" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[2]"/>
+        <port name="jtag_state_cdr" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[3]"/>
+        <port name="jtag_state_sdr" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[4]"/>
+        <port name="jtag_state_e1dr" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[5]"/>
+        <port name="jtag_state_pdr" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[6]"/>
+        <port name="jtag_state_e2dr" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[7]"/>
+        <port name="jtag_state_udr" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[8]"/>
+        <port name="jtag_state_sirs" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[9]"/>
+        <port name="jtag_state_cir" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[10]"/>
+        <port name="jtag_state_sir" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[11]"/>
+        <port name="jtag_state_e1ir" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[12]"/>
+        <port name="jtag_state_pir" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[13]"/>
+        <port name="jtag_state_e2ir" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[14]"/>
+        <port name="jtag_state_uir" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[15]"/>
+        <port name="usr1" source="sld_hub:sld_hub_inst|jtag_debug_mode_usr1"/>
+        <port name="clrn" source="sld_hub:sld_hub_inst|CLR_SIGNAL"/>
+        <port name="ena" source="sld_hub:sld_hub_inst|node_ena~1"/>
+        <port name="ir_in[0]" source="sld_hub:sld_hub_inst|sld_dffex:\GEN_IRF:1:IRF|Q[0]"/>
+        <port name="ir_in[1]" source="sld_hub:sld_hub_inst|sld_dffex:\GEN_IRF:1:IRF|Q[1]"/>
+      </inputs>
+      <outputs>
+        <port name="usr_tck"/>
+        <port name="usr_tdi"/>
+        <port name="usr_ir_in[0]"/>
+        <port name="usr_ir_in[1]"/>
+        <port name="usr_virtual_state_cdr"/>
+        <port name="usr_virtual_state_sdr"/>
+        <port name="usr_virtual_state_e1dr"/>
+        <port name="usr_virtual_state_pdr"/>
+        <port name="usr_virtual_state_e2dr"/>
+        <port name="usr_virtual_state_udr"/>
+        <port name="usr_virtual_state_cir"/>
+        <port name="usr_virtual_state_uir"/>
+        <port name="usr_tms"/>
+        <port name="usr_jtag_state_tlr"/>
+        <port name="usr_jtag_state_rti"/>
+        <port name="usr_jtag_state_sdrs"/>
+        <port name="usr_jtag_state_cdr"/>
+        <port name="usr_jtag_state_sdr"/>
+        <port name="usr_jtag_state_e1dr"/>
+        <port name="usr_jtag_state_pdr"/>
+        <port name="usr_jtag_state_e2dr"/>
+        <port name="usr_jtag_state_udr"/>
+        <port name="usr_jtag_state_sirs"/>
+        <port name="usr_jtag_state_cir"/>
+        <port name="usr_jtag_state_sir"/>
+        <port name="usr_jtag_state_e1ir"/>
+        <port name="usr_jtag_state_pir"/>
+        <port name="usr_jtag_state_e2ir"/>
+        <port name="usr_jtag_state_uir"/>
+        <port name="tdo"/>
+        <port name="ir_out[0]"/>
+        <port name="ir_out[1]"/>
+      </outputs>
+    </node>
+    <node hpath="test_sys_sopc:test_sys_sopc_inst|console_stream:the_console_stream|altera_jtag_dc_streaming:the_altera_jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|altera_jtag_phy:phy|sld_virtual_jtag_basic:sld_virtual_jtag_component|sld_virtual_jtag_impl:sld_virtual_jtag_impl_inst" instance_id="1" mfg_id="110" node_id="132" sld_node_info="0x4206E01" version="0">
+      <parameters>
+        <parameter name="sld_mfg_id" type="dec" value="110"/>
+        <parameter name="sld_type_id" type="dec" value="132"/>
+        <parameter name="sld_version" type="dec" value="0"/>
+        <parameter name="sld_instance_index" type="dec" value="0"/>
+        <parameter name="sld_auto_instance_index" type="string" value="YES"/>
+        <parameter name="sld_ir_width" type="dec" value="2"/>
+        <parameter name="SLD_NODE_INFO" type="dec" value="69234176"/>
+      </parameters>
+      <inputs>
+        <port name="usr_tdo" source="test_sys_sopc:test_sys_sopc_inst|console_stream:the_console_stream|altera_jtag_dc_streaming:the_altera_jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|altera_jtag_phy:phy|sld_virtual_jtag_basic:sld_virtual_jtag_component|tdo"/>
+        <port name="usr_ir_out[0]" source="test_sys_sopc:test_sys_sopc_inst|console_stream:the_console_stream|altera_jtag_dc_streaming:the_altera_jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|altera_jtag_phy:phy|sld_virtual_jtag_basic:sld_virtual_jtag_component|ir_out[0]"/>
+        <port name="usr_ir_out[1]" source="test_sys_sopc:test_sys_sopc_inst|console_stream:the_console_stream|altera_jtag_dc_streaming:the_altera_jtag_dc_streaming|altera_jtag_streaming:jtag_streaming|altera_jtag_phy:phy|sld_virtual_jtag_basic:sld_virtual_jtag_component|ir_out[1]"/>
+        <port name="raw_tck" source="altera_internal_jtag"/>
+        <port name="raw_tms" source="altera_internal_jtag"/>
+        <port name="tdi" source="altera_internal_jtag"/>
+        <port name="jtag_state_tlr" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[0]"/>
+        <port name="jtag_state_rti" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[1]"/>
+        <port name="jtag_state_sdrs" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[2]"/>
+        <port name="jtag_state_cdr" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[3]"/>
+        <port name="jtag_state_sdr" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[4]"/>
+        <port name="jtag_state_e1dr" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[5]"/>
+        <port name="jtag_state_pdr" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[6]"/>
+        <port name="jtag_state_e2dr" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[7]"/>
+        <port name="jtag_state_udr" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[8]"/>
+        <port name="jtag_state_sirs" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[9]"/>
+        <port name="jtag_state_cir" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[10]"/>
+        <port name="jtag_state_sir" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[11]"/>
+        <port name="jtag_state_e1ir" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[12]"/>
+        <port name="jtag_state_pir" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[13]"/>
+        <port name="jtag_state_e2ir" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[14]"/>
+        <port name="jtag_state_uir" source="sld_hub:sld_hub_inst|sld_jtag_state_machine:jtag_state_machine|state[15]"/>
+        <port name="usr1" source="sld_hub:sld_hub_inst|jtag_debug_mode_usr1"/>
+        <port name="clrn" source="sld_hub:sld_hub_inst|CLR_SIGNAL"/>
+        <port name="ena" source="sld_hub:sld_hub_inst|node_ena~0"/>
+        <port name="ir_in[0]" source="sld_hub:sld_hub_inst|sld_dffex:\GEN_IRF:2:IRF|Q[0]"/>
+        <port name="ir_in[1]" source="sld_hub:sld_hub_inst|sld_dffex:\GEN_IRF:2:IRF|Q[1]"/>
+      </inputs>
+      <outputs>
+        <port name="usr_tck"/>
+        <port name="usr_tdi"/>
+        <port name="usr_ir_in[0]"/>
+        <port name="usr_ir_in[1]"/>
+        <port name="usr_virtual_state_cdr"/>
+        <port name="usr_virtual_state_sdr"/>
+        <port name="usr_virtual_state_e1dr"/>
+        <port name="usr_virtual_state_pdr"/>
+        <port name="usr_virtual_state_e2dr"/>
+        <port name="usr_virtual_state_udr"/>
+        <port name="usr_virtual_state_cir"/>
+        <port name="usr_virtual_state_uir"/>
+        <port name="usr_tms"/>
+        <port name="usr_jtag_state_tlr"/>
+        <port name="usr_jtag_state_rti"/>
+        <port name="usr_jtag_state_sdrs"/>
+        <port name="usr_jtag_state_cdr"/>
+        <port name="usr_jtag_state_sdr"/>
+        <port name="usr_jtag_state_e1dr"/>
+        <port name="usr_jtag_state_pdr"/>
+        <port name="usr_jtag_state_e2dr"/>
+        <port name="usr_jtag_state_udr"/>
+        <port name="usr_jtag_state_sirs"/>
+        <port name="usr_jtag_state_cir"/>
+        <port name="usr_jtag_state_sir"/>
+        <port name="usr_jtag_state_e1ir"/>
+        <port name="usr_jtag_state_pir"/>
+        <port name="usr_jtag_state_e2ir"/>
+        <port name="usr_jtag_state_uir"/>
+        <port name="tdo"/>
+        <port name="ir_out[0]"/>
+        <port name="ir_out[1]"/>
+      </outputs>
+    </node>
+  </node_info>
+</sld_project_info>

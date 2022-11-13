@@ -1,0 +1,90 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity tb_i2c_ctrl is
+end tb_i2c_ctrl;
+
+architecture beh of tb_i2c_ctrl is
+	component i2c_ctrl is port(
+
+		data_cnt : in natural range 0 to 10;
+
+		clk, rst  : in std_logic;	
+		ena       : out std_logic;                    --latch in command
+		addr      : out std_logic_vector(7 downto 0); --address of target slave
+		data_wr   : out std_logic_vector(7 downto 0); --data to write to slave
+		add_inc	 : out std_logic;
+		busy      : in  std_logic;                    --indicates transaction in progress
+		data_rd   : in  std_logic_vector(7 downto 0); --data read from slave    
+		ack_error : in  std_logic;                    --flag if improper acknowledge from slave	
+		wr_req      : in  std_logic; 
+		rd_req	   : in  std_logic;
+		data_wr_req : in  std_logic_vector(7 downto 0);
+		data_rd_req : out std_logic_vector(7 downto 0));
+	end component;
+	
+	signal data_cnt :  natural range 0 to 10;
+
+	signal clk, rst  	 :  std_logic;	
+	signal ena       	 :  std_logic;                    --latch in command
+	signal addr      	 :  std_logic_vector(7 downto 0); --address of target slave
+	signal data_wr   	 :  std_logic_vector(7 downto 0); --data to write to slave
+	signal add_inc	 	 :  std_logic;
+	signal busy      	 :   std_logic;                    --indicates transaction in progress
+	signal data_rd   	 :   std_logic_vector(7 downto 0); --data read from slave    
+	signal ack_error 	 :   std_logic;                    --flag if improper acknowledge from slave	
+	signal wr_req      :   std_logic := '0'; 
+	signal rd_req	    :   std_logic;
+	signal data_wr_req :   std_logic_vector(7 downto 0);
+	signal data_rd_req :  std_logic_vector(7 downto 0);
+
+	constant period : time := 50 ps;
+	constant strobe : time := 25 ps;
+	
+begin
+
+	rst <= '0', '1' after period *3;
+	
+	process
+	begin
+		clk <= '1'; wait for period;
+		clk <= '0'; wait for period;
+	end process;
+	
+	wr_req <= '1' after period *5;
+
+
+	process
+	  begin 
+	    
+	end process;
+	    
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	i2c_ctrl_0 : i2c_ctrl
+	port map(data_cnt => data_cnt,
+				clk => clk,
+				rst => rst,
+				ena => ena,
+				addr => addr,
+				data_wr => data_wr,
+				add_inc => add_inc,
+				busy => busy,
+				data_rd => data_rd,
+				ack_error => ack_error,
+				wr_req => wr_req,
+				rd_req => rd_req,
+				data_wr_req => data_wr_req,
+				data_rd_req => data_rd_req);
+	
+	
+end beh;

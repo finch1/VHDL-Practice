@@ -1,0 +1,92 @@
+Mon Aug 18 15:48:40 EDT 2008  [debug] AvalonLogSystem initialized using logfile 'C:\bytestream_example\separated_hw/DFA_before_ingress_fifo_state_ram.v.log'
+Mon Aug 18 15:48:40 EDT 2008   [info] ************************************************************** 
+Mon Aug 18 15:48:40 EDT 2008   [info] Starting Jakarta Velocity v1.4
+Mon Aug 18 15:48:40 EDT 2008   [info] RuntimeInstance initializing.
+Mon Aug 18 15:48:40 EDT 2008   [info] Default Properties File: org\apache\velocity\runtime\defaults\velocity.properties
+Mon Aug 18 15:48:40 EDT 2008   [info] Trying to use logger class org.apache.velocity.runtime.log.AvalonLogSystem
+Mon Aug 18 15:48:40 EDT 2008   [info] Using logger class org.apache.velocity.runtime.log.AvalonLogSystem
+Mon Aug 18 15:48:40 EDT 2008   [info] Default ResourceManager initializing. (class org.apache.velocity.runtime.resource.ResourceManagerImpl)
+Mon Aug 18 15:48:40 EDT 2008   [info] Resource Loader Instantiated: org.apache.velocity.runtime.resource.loader.FileResourceLoader
+Mon Aug 18 15:48:40 EDT 2008   [info] FileResourceLoader : initialization starting.
+Mon Aug 18 15:48:40 EDT 2008   [info] FileResourceLoader : adding path '.'
+Mon Aug 18 15:48:40 EDT 2008   [info] FileResourceLoader : initialization complete.
+Mon Aug 18 15:48:40 EDT 2008   [info] ResourceCache : initialized. (class org.apache.velocity.runtime.resource.ResourceCacheImpl)
+Mon Aug 18 15:48:40 EDT 2008   [info] Default ResourceManager initialization complete.
+Mon Aug 18 15:48:40 EDT 2008   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Literal
+Mon Aug 18 15:48:40 EDT 2008   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Macro
+Mon Aug 18 15:48:40 EDT 2008   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Parse
+Mon Aug 18 15:48:40 EDT 2008   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Include
+Mon Aug 18 15:48:40 EDT 2008   [info] Loaded System Directive: org.apache.velocity.runtime.directive.Foreach
+Mon Aug 18 15:48:40 EDT 2008   [info] Created: 20 parsers.
+Mon Aug 18 15:48:40 EDT 2008   [info] Velocimacro : initialization starting.
+Mon Aug 18 15:48:40 EDT 2008   [info] Velocimacro : adding VMs from VM library template : VM_global_library.vm
+Mon Aug 18 15:48:40 EDT 2008  [error] ResourceManager : unable to find resource 'VM_global_library.vm' in any resource loader.
+Mon Aug 18 15:48:40 EDT 2008   [info] Velocimacro : error using  VM library template VM_global_library.vm : org.apache.velocity.exception.ResourceNotFoundException: Unable to find resource 'VM_global_library.vm'
+Mon Aug 18 15:48:40 EDT 2008   [info] Velocimacro :  VM library template macro registration complete.
+Mon Aug 18 15:48:40 EDT 2008   [info] Velocimacro : allowInline = true : VMs can be defined inline in templates
+Mon Aug 18 15:48:40 EDT 2008   [info] Velocimacro : allowInlineToOverride = false : VMs defined inline may NOT replace previous VM definitions
+Mon Aug 18 15:48:40 EDT 2008   [info] Velocimacro : allowInlineLocal = false : VMs defined inline will be  global in scope if allowed.
+Mon Aug 18 15:48:40 EDT 2008   [info] Velocimacro : messages on  : VM system will output logging messages
+Mon Aug 18 15:48:40 EDT 2008   [info] Velocimacro : autoload off  : VM system will not automatically reload global library macros
+Mon Aug 18 15:48:40 EDT 2008   [info] Velocimacro : initialization complete.
+Mon Aug 18 15:48:40 EDT 2008   [info] Velocity successfully started.
+Mon Aug 18 15:48:40 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 188,column 7] : $finish is not a valid reference.
+Mon Aug 18 15:48:40 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 251,column 30] : $random is not a valid reference.
+Mon Aug 18 15:48:40 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 252,column 33] : $random is not a valid reference.
+Mon Aug 18 15:48:40 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 253,column 34] : $random is not a valid reference.
+Mon Aug 18 15:48:40 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 264,column 37] : $random is not a valid reference.
+Mon Aug 18 15:48:40 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 301,column 24] : $random is not a valid reference.
+Mon Aug 18 15:48:40 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 305,column 26] : $random is not a valid reference.
+Mon Aug 18 15:48:40 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 306,column 31] : $dist_uniform is not a valid reference.
+Mon Aug 18 15:48:40 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 326,column 13] : $display is not a valid reference.
+Mon Aug 18 15:48:40 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 326,column 32] : $time is not a valid reference.
+Mon Aug 18 15:48:40 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 340,column 13] : $display is not a valid reference.
+Mon Aug 18 15:48:40 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 340,column 45] : $time is not a valid reference.
+Mon Aug 18 15:48:40 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 342,column 13] : $display is not a valid reference.
+Mon Aug 18 15:48:40 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 342,column 45] : $time is not a valid reference.
+Mon Aug 18 15:48:41 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 188,column 7] : $finish is not a valid reference.
+Mon Aug 18 15:48:41 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 251,column 30] : $random is not a valid reference.
+Mon Aug 18 15:48:41 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 252,column 33] : $random is not a valid reference.
+Mon Aug 18 15:48:41 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 253,column 34] : $random is not a valid reference.
+Mon Aug 18 15:48:41 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 264,column 37] : $random is not a valid reference.
+Mon Aug 18 15:48:41 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 301,column 24] : $random is not a valid reference.
+Mon Aug 18 15:48:41 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 305,column 26] : $random is not a valid reference.
+Mon Aug 18 15:48:41 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 306,column 31] : $dist_uniform is not a valid reference.
+Mon Aug 18 15:48:41 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 326,column 13] : $display is not a valid reference.
+Mon Aug 18 15:48:41 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 326,column 32] : $time is not a valid reference.
+Mon Aug 18 15:48:41 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 340,column 13] : $display is not a valid reference.
+Mon Aug 18 15:48:41 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 340,column 45] : $time is not a valid reference.
+Mon Aug 18 15:48:41 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 342,column 13] : $display is not a valid reference.
+Mon Aug 18 15:48:41 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 342,column 45] : $time is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 188,column 7] : $finish is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 251,column 30] : $random is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 252,column 33] : $random is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 253,column 34] : $random is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 264,column 37] : $random is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 301,column 24] : $random is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 305,column 26] : $random is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 306,column 31] : $dist_uniform is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 326,column 13] : $display is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 326,column 32] : $time is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 340,column 13] : $display is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 340,column 45] : $time is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 342,column 13] : $display is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 342,column 45] : $time is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 188,column 7] : $finish is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 251,column 30] : $random is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 252,column 33] : $random is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 253,column 34] : $random is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 264,column 37] : $random is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 301,column 24] : $random is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 305,column 26] : $random is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 306,column 31] : $dist_uniform is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 326,column 13] : $display is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 326,column 32] : $time is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 340,column 13] : $display is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 340,column 45] : $time is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 342,column 13] : $display is not a valid reference.
+Mon Aug 18 15:48:53 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 342,column 45] : $time is not a valid reference.
+Mon Aug 18 15:48:56 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 42,column 7] : $display is not a valid reference.
+Mon Aug 18 15:49:00 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 42,column 7] : $display is not a valid reference.
+Mon Aug 18 15:49:00 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 53,column 7] : $display is not a valid reference.
+Mon Aug 18 15:49:02 EDT 2008   [warn] org.apache.velocity.runtime.exception.ReferenceException: reference : template = Velocity [line 42,column 7] : $display is not a valid reference.

@@ -1,0 +1,15 @@
+|forGen
+a[0] => x.IN0
+a[1] => x.IN0
+a[2] => x.IN0
+a[3] => x.IN0
+b[0] => x.IN1
+b[1] => x.IN1
+b[2] => x.IN1
+b[3] => x.IN1
+x[0] <= x.DB_MAX_OUTPUT_PORT_TYPE
+x[1] <= x.DB_MAX_OUTPUT_PORT_TYPE
+x[2] <= x.DB_MAX_OUTPUT_PORT_TYPE
+x[3] <= x.DB_MAX_OUTPUT_PORT_TYPE
+
+

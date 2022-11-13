@@ -1,0 +1,29 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+entity sign_add_sub is
+    generic(	n : integer := 4); -- number of input bits
+    port(a, b: in std_logic_vector(n-1 downto 0);
+    		cin: in std_logic := '0';
+    		sum, sub: out std_logic_vector(n-1 downto 0);
+    		cout_sum, cout_sub: out std_logic);
+end sign_add_sub;
+
+architecture add_sub of sign_add_sub is
+    signal a_sig, b_sig: unsigned(n-1 downto 0);
+    signal sum_sig, sub_sig: unsigned(n downto 0);
+begin
+    --convert to unsigned
+    a_sig <= unsigned(a);
+    b_sig <= unsigned(b);
+    --add and subtract
+    sum_sig <= (a_sig(n-1) & a_sig) + (b_sig(n-1) & b_sig) + ('0' & cin);
+    sub_sig <= (a_sig(n-1) & a_sig) - (b_sig(n-1) & b_sig) + ('0' & cin);
+
+    sum <= std_logic_vector(sum_sig(n-1 downto 0));
+    cout_sum <= std_logic(sum_sig(n));
+
+    sub <= std_logic_vector(sub_sig(n-1 downto 0));
+    cout_sub <= std_logic(sub_sig(n));
+end add_sub;

@@ -1,0 +1,2 @@
+Info (10281): Verilog HDL Declaration information at stream_back_pressure_gate.v(4): object "TRIGGER_DEPTH" differs only in case from object "trigger_depth" in the same scope
+Warning (10262): Verilog HDL Event Control warning at pll.v(95): event expression is a constant

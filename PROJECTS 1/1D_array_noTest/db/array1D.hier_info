@@ -1,0 +1,30 @@
+|array1D
+row[0] => Mux2.IN2
+row[0] => Mux3.IN5
+row[0] => Mux4.IN5
+row[0] => Mux5.IN5
+row[0] => slice2[1].DATAIN
+row[0] => slice3[1].DATAIN
+row[1] => Mux2.IN1
+row[1] => Mux3.IN4
+row[1] => Mux4.IN4
+row[1] => Mux5.IN4
+row[1] => slice3[0].DATAIN
+col[0] => Mux0.IN5
+col[0] => Mux1.IN5
+col[0] => Mux2.IN5
+col[0] => slice4[3].DATAIN
+col[1] => Mux0.IN4
+col[1] => Mux1.IN4
+slice1 <= Mux2.DB_MAX_OUTPUT_PORT_TYPE
+slice2[2] <= Mux3.DB_MAX_OUTPUT_PORT_TYPE
+slice2[1] <= row[0].DB_MAX_OUTPUT_PORT_TYPE
+slice3[3] <= Mux5.DB_MAX_OUTPUT_PORT_TYPE
+slice3[2] <= Mux4.DB_MAX_OUTPUT_PORT_TYPE
+slice3[1] <= row[0].DB_MAX_OUTPUT_PORT_TYPE
+slice3[0] <= row[1].DB_MAX_OUTPUT_PORT_TYPE
+slice4[3] <= col[0].DB_MAX_OUTPUT_PORT_TYPE
+slice4[2] <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+slice4[1] <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+

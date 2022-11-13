@@ -1,0 +1,31 @@
+|scalar
+control[0] => LessThan0.IN6
+control[0] => LessThan1.IN6
+control[0] => Equal3.IN2
+control[0] => Equal4.IN0
+control[1] => LessThan0.IN5
+control[1] => LessThan1.IN5
+control[1] => Equal3.IN1
+control[1] => Equal4.IN2
+control[2] => LessThan0.IN4
+control[2] => LessThan1.IN4
+control[2] => Equal3.IN0
+control[2] => Equal4.IN1
+dout[0] <= <GND>
+dout[1] <= dout.DB_MAX_OUTPUT_PORT_TYPE
+dout[2] <= dout[2].DB_MAX_OUTPUT_PORT_TYPE
+x[0] => RotateRight0.IN4
+x[0] => Equal2.IN3
+x[0] => Equal0.IN0
+x[0] => Equal1.IN1
+x[1] => RotateRight0.IN3
+x[1] => Equal2.IN2
+x[1] => Equal0.IN1
+x[1] => Equal1.IN0
+y1 <= RotateRight0.DB_MAX_OUTPUT_PORT_TYPE
+y2 <= Equal2.DB_MAX_OUTPUT_PORT_TYPE
+y3 <= y3.DB_MAX_OUTPUT_PORT_TYPE
+y4 <= y4.DB_MAX_OUTPUT_PORT_TYPE
+y5 <= y5.DB_MAX_OUTPUT_PORT_TYPE
+
+

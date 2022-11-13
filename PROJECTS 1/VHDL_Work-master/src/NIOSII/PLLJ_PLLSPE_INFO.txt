@@ -1,0 +1,5 @@
+PLL_Name	nios_ddr_sdram:ddr_sdram|nios_ddr_sdram_controller_phy:nios_ddr_sdram_controller_phy_inst|nios_ddr_sdram_phy:nios_ddr_sdram_phy_inst|nios_ddr_sdram_phy_alt_mem_phy:nios_ddr_sdram_phy_alt_mem_phy_inst|nios_ddr_sdram_phy_alt_mem_phy_clk_reset:clk|nios_ddr_sdram_phy_alt_mem_phy_pll:pll|altpll:altpll_component|altpll_65k3:auto_generated|pll1
+PLLJITTER	37
+PLLSPEmax	84
+PLLSPEmin	-53
+

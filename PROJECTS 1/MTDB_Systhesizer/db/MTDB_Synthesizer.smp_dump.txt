@@ -1,0 +1,6 @@
+
+State Machine - |MTDB_Synthesizer|I2C_AV_Config:u3|mSetup_ST
+Name mSetup_ST.0010 mSetup_ST.0000 mSetup_ST.0011 
+mSetup_ST.0000 0 0 0 
+mSetup_ST.0010 1 1 0 
+mSetup_ST.0011 0 1 1 

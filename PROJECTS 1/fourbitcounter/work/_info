@@ -1,0 +1,194 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\13.1
+Eadder
+Z0 w1526149743
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\altera\15.0\fourbitcounter
+Z5 8C:/altera/15.0/fourbitcounter/adder.vhd
+Z6 FC:/altera/15.0/fourbitcounter/adder.vhd
+l0
+L10
+V0f7MQMa8RSR]6493z8?O21
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1526161011.336000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/15.0/fourbitcounter/adder.vhd|
+Z10 !s107 C:/altera/15.0/fourbitcounter/adder.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 3dgdb6?3Uzj0giI1LSZcF1
+!i10b 1
+Abehavioral
+R1
+R2
+R3
+DEx4 work 5 adder 0 22 0f7MQMa8RSR]6493z8?O21
+l23
+L17
+VNij9<AF7NC3zj544oKzEY1
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 ijdOh`00zN<46K1Cj40CT2
+!i10b 1
+Plog_pkg
+R1
+R2
+R3
+Z13 w1526133601
+R4
+Z14 8C:/altera/15.0/fourbitcounter/log_pkg.vhd
+Z15 FC:/altera/15.0/fourbitcounter/log_pkg.vhd
+l0
+L130
+VJN>ShfVm:g5UMRFWP@VAF0
+!s100 :Z;2B1WVFMP`lPZ03kTAU3
+R7
+32
+b1
+!i10b 1
+Z16 !s108 1526161011.672000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/15.0/fourbitcounter/log_pkg.vhd|
+Z18 !s107 C:/altera/15.0/fourbitcounter/log_pkg.vhd|
+R11
+R12
+Bbody
+Z19 DPx4 work 7 log_pkg 0 22 JN>ShfVm:g5UMRFWP@VAF0
+R1
+R2
+R3
+l0
+L210
+Z20 Vz[i0R@VD8ffC_@9FS3Q6M2
+Z21 !s100 NUfjj]4[AYPHe]h`;eX4c1
+R7
+32
+!i10b 1
+R16
+R17
+R18
+R11
+R12
+nbody
+Etb_adder
+Z22 w1526158717
+R1
+R2
+R3
+R4
+Z23 8C:/altera/15.0/fourbitcounter/tb_adder.vhd
+Z24 FC:/altera/15.0/fourbitcounter/tb_adder.vhd
+l0
+L15
+VS6jZkS^mCFD[T0]akPe4B1
+R7
+32
+Z25 !s108 1526161011.467000
+Z26 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/15.0/fourbitcounter/tb_adder.vhd|
+Z27 !s107 C:/altera/15.0/fourbitcounter/tb_adder.vhd|
+R11
+R12
+!s100 TXIADKiMkNSeVCMJBZnHI1
+!i10b 1
+Abehavioural
+R1
+R2
+R3
+Z28 DEx4 work 8 tb_adder 0 22 S6jZkS^mCFD[T0]akPe4B1
+l38
+L18
+VVLUd[DL6oOzA_iI5K=2eb3
+R7
+32
+R25
+R26
+R27
+R11
+R12
+!s100 VcFW:g6U2gIAznl[L`d;U1
+!i10b 1
+Abehaviour
+R1
+R2
+R3
+R28
+l38
+L18
+VbgbS2n97idcTjgWO:ScAU0
+R7
+32
+R26
+R11
+R12
+w1526124765
+R27
+!s108 1526124775.644000
+!s100 YX?:B30m==kZ<TLTAgmm82
+!i10b 1
+Etb_addertxt
+Z29 w1526159224
+R19
+R1
+R2
+R3
+R4
+Z30 8C:/altera/15.0/fourbitcounter/tb_addertxt.vhd
+Z31 FC:/altera/15.0/fourbitcounter/tb_addertxt.vhd
+l0
+L17
+Vo2Nb88=O6ejSGRMMhG6Pb2
+R7
+32
+Z32 !s108 1526161011.572000
+Z33 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/15.0/fourbitcounter/tb_addertxt.vhd|
+Z34 !s107 C:/altera/15.0/fourbitcounter/tb_addertxt.vhd|
+R11
+R12
+!s100 z^m]7>MXjT4g@EeDZL0@[0
+!i10b 1
+Abehavioural
+R19
+R1
+R2
+R3
+Z35 DEx4 work 11 tb_addertxt 0 22 o2Nb88=O6ejSGRMMhG6Pb2
+l39
+L20
+V`dGzMmV;IQUYUXb;iWzYW3
+R7
+32
+R32
+R33
+R34
+R11
+R12
+!s100 =KZ]cGW7eKUPLj0TOToIX2
+!i10b 1
+Abehaviour
+R19
+R1
+R2
+R3
+R35
+l40
+L20
+VI7h`3ccRW8R:9]W9:P3M<0
+R7
+32
+R33
+R11
+R12
+w1526148308
+!s108 1526148311.627000
+R34
+!s100 hanJ4`?906mlGYmLWHc_>1
+!i10b 1

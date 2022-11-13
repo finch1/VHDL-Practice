@@ -1,0 +1,26 @@
+
+
+C:/Users/GOKU/Downloads/an507_de1_display/reconfig_mif_restored/In100MHz_out200MHz.v
+
+Sep 23 04AM:15:42>: Megafunction ALTSYNCRAM is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/GOKU/Downloads/an507_de1_display/reconfig_mif_restored/In100MHz_out200MHz.v
+
+Sep 23 04AM:15:45>: Megafunction ALTSYNCRAM is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/GOKU/Downloads/an507_de1_display/reconfig_mif_restored/In100MHz_out100MHz.v
+
+Sep 23 04AM:16:05>: Megafunction ALTSYNCRAM is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/GOKU/Downloads/an507_de1_display/reconfig_mif_restored/In100MHz_out100MHz.v
+
+Sep 23 04AM:16:21>: Megafunction ALTSYNCRAM is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted
+
+C:/Users/GOKU/Downloads/cyclone 3 pllrec/reconfig_mif_restored/In100MHz_out300MHz.v
+
+Sep 23 04AM:17:55>: Megafunction ALTSYNCRAM is not listed in any 
+wizard.lst file in the specified library path(s).Wizard launch aborted

@@ -1,0 +1,610 @@
+<?xml version="1.0" encoding="UTF-8"?><system name="test_sys_sopc">
+    <parameter name="bonusData">bonusData 
+{
+   element ingress_fifo.out_csr
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "long";
+      }
+   }
+   element DFA_before_console
+   {
+      datum _sortIndex
+      {
+         value = "9";
+         type = "int";
+      }
+   }
+   element TA_before_ingress_fifo
+   {
+      datum _sortIndex
+      {
+         value = "6";
+         type = "int";
+      }
+   }
+   element gate
+   {
+      datum _sortIndex
+      {
+         value = "12";
+         type = "int";
+      }
+   }
+   element build_id.s0
+   {
+      datum baseAddress
+      {
+         value = "12";
+         type = "long";
+      }
+   }
+   element DFA_before_ingress_fifo
+   {
+      datum _sortIndex
+      {
+         value = "7";
+         type = "int";
+      }
+   }
+   element test_sys_sopc
+   {
+   }
+   element build_id
+   {
+      datum _sortIndex
+      {
+         value = "2";
+         type = "int";
+      }
+   }
+   element sysid
+   {
+      datum _sortIndex
+      {
+         value = "1";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element pll.c1
+   {
+      datum _clockDomain
+      {
+         value = "fast_clk";
+         type = "String";
+      }
+   }
+   element TA_before_gate
+   {
+      datum _sortIndex
+      {
+         value = "14";
+         type = "int";
+      }
+   }
+   element ingress_fifo
+   {
+      datum _sortIndex
+      {
+         value = "8";
+         type = "int";
+      }
+   }
+   element egress_pipeline_fifo
+   {
+      datum _sortIndex
+      {
+         value = "11";
+         type = "int";
+      }
+   }
+   element pll.s1
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "long";
+      }
+   }
+   element egress_fifo
+   {
+      datum _sortIndex
+      {
+         value = "10";
+         type = "int";
+      }
+   }
+   element console_stream
+   {
+      datum _sortIndex
+      {
+         value = "5";
+         type = "int";
+      }
+   }
+   element pll_master
+   {
+      datum _sortIndex
+      {
+         value = "3";
+         type = "int";
+      }
+   }
+   element pll.c0
+   {
+      datum _clockDomain
+      {
+         value = "slow_clk";
+         type = "String";
+      }
+   }
+   element TA_before_dut
+   {
+      datum _sortIndex
+      {
+         value = "13";
+         type = "int";
+      }
+   }
+   element console_master
+   {
+      datum _sortIndex
+      {
+         value = "0";
+         type = "int";
+      }
+   }
+   element dut
+   {
+      datum _sortIndex
+      {
+         value = "16";
+         type = "int";
+      }
+   }
+   element gate.s0
+   {
+      datum baseAddress
+      {
+         value = "8";
+         type = "long";
+      }
+   }
+   element pll
+   {
+      datum _sortIndex
+      {
+         value = "4";
+         type = "int";
+      }
+      datum megawizard_uipreferences
+      {
+         value = "{}";
+         type = "String";
+      }
+   }
+   element clk
+   {
+      datum _sortIndex
+      {
+         value = "15";
+         type = "int";
+      }
+   }
+   element sysid.control_slave
+   {
+      datum baseAddress
+      {
+         value = "0";
+         type = "long";
+      }
+   }
+}
+</parameter>
+    <parameter name="deviceFamily" value="CYCLONEIII" />
+    <parameter name="generateLegacySim" value="false" />
+    <parameter name="hardcopyCompatible" value="false" />
+    <parameter name="hdlLanguage" value="VERILOG" />
+    <parameter name="projectName" value="test_project.qpf" />
+    <parameter name="systemHash" value="-35249748398" />
+    <parameter name="timeStamp" value="1219068716193" />
+    <module name="clk" kind="clock_source" version="8.0" enabled="1">
+        <parameter name="clockFrequency" value="50000000" />
+        <parameter name="clockFrequencyKnown" value="true" />
+    </module>
+    <module name="console_master" kind="altera_jtag_avalon_master" version="8.0" enabled="1" />
+    <module name="sysid" kind="altera_avalon_sysid" version="8.0" enabled="1" />
+    <module name="pll" kind="altera_avalon_pll" version="8.0" enabled="1">
+        <parameter name="c0">tap c0 mult 1 div 2 phase 0 enabled true inputfreq 50000000 outputfreq 25000000 
+</parameter>
+        <parameter name="c1">tap c1 mult 19 div 5 phase 0 enabled true inputfreq 50000000 outputfreq 190000000 
+</parameter>
+        <parameter name="c2">tap c2 mult 1 div 1 phase 0 enabled false inputfreq 0 outputfreq 0 
+</parameter>
+        <parameter name="c3">tap c3 mult 1 div 1 phase 0 enabled false inputfreq 0 outputfreq 0 
+</parameter>
+        <parameter name="c4">tap c4 mult 1 div 1 phase 0 enabled false inputfreq 0 outputfreq 0 
+</parameter>
+        <parameter name="c5">tap c5 mult 1 div 1 phase 0 enabled false inputfreq 0 outputfreq 0 
+</parameter>
+        <parameter name="c6">tap c6 mult 1 div 1 phase 0 enabled false inputfreq 0 outputfreq 0 
+</parameter>
+        <parameter name="c7">tap c7 mult 1 div 1 phase 0 enabled false inputfreq 0 outputfreq 0 
+</parameter>
+        <parameter name="c8">tap c8 mult 1 div 1 phase 0 enabled false inputfreq 0 outputfreq 0 
+</parameter>
+        <parameter name="c9">tap c9 mult 1 div 1 phase 0 enabled false inputfreq 0 outputfreq 0 
+</parameter>
+        <parameter name="deviceFamily" value="CYCLONEIII" />
+        <parameter name="e0">tap e0 mult 1 div 1 phase 0 enabled false inputfreq 0 outputfreq 0 
+</parameter>
+        <parameter name="e1">tap e1 mult 1 div 1 phase 0 enabled false inputfreq 0 outputfreq 0 
+</parameter>
+        <parameter name="e2">tap e2 mult 1 div 1 phase 0 enabled false inputfreq 0 outputfreq 0 
+</parameter>
+        <parameter name="e3">tap e3 mult 1 div 1 phase 0 enabled false inputfreq 0 outputfreq 0 
+</parameter>
+        <parameter name="inputClockFrequency" value="50000000" />
+        <parameter name="lockedOutputPortOption" value="Export" />
+        <parameter name="pfdenaInputPortOption" value="Register" />
+        <parameter name="pllHdl">//  megafunction wizard: %ALTPLL%
+//  GENERATION: STANDARD
+//  VERSION: WM1.0
+//  MODULE: altpll
+
+// ============================================================
+// CNX file retrieval info
+// ============================================================
+// Retrieval info: PRIVATE: ACTIVECLK_CHECK STRING "0"
+// Retrieval info: PRIVATE: BANDWIDTH STRING "1.000"
+// Retrieval info: PRIVATE: BANDWIDTH_FEATURE_ENABLED STRING "1"
+// Retrieval info: PRIVATE: BANDWIDTH_FREQ_UNIT STRING "MHz"
+// Retrieval info: PRIVATE: BANDWIDTH_PRESET STRING "Low"
+// Retrieval info: PRIVATE: BANDWIDTH_USE_AUTO STRING "1"
+// Retrieval info: PRIVATE: BANDWIDTH_USE_PRESET STRING "0"
+// Retrieval info: PRIVATE: CLKBAD_SWITCHOVER_CHECK STRING "0"
+// Retrieval info: PRIVATE: CLKLOSS_CHECK STRING "0"
+// Retrieval info: PRIVATE: CLKSWITCH_CHECK STRING "0"
+// Retrieval info: PRIVATE: CNX_NO_COMPENSATE_RADIO STRING "0"
+// Retrieval info: PRIVATE: CREATE_CLKBAD_CHECK STRING "0"
+// Retrieval info: PRIVATE: CREATE_INCLK1_CHECK STRING "0"
+// Retrieval info: PRIVATE: CUR_DEDICATED_CLK STRING "c0"
+// Retrieval info: PRIVATE: CUR_FBIN_CLK STRING "e0"
+// Retrieval info: PRIVATE: DEVICE_SPEED_GRADE STRING "Any"
+// Retrieval info: PRIVATE: DIV_FACTOR0 NUMERIC "1"
+// Retrieval info: PRIVATE: DIV_FACTOR1 NUMERIC "1"
+// Retrieval info: PRIVATE: DUTY_CYCLE0 STRING "50.00000000"
+// Retrieval info: PRIVATE: DUTY_CYCLE1 STRING "50.00000000"
+// Retrieval info: PRIVATE: EXPLICIT_SWITCHOVER_COUNTER STRING "0"
+// Retrieval info: PRIVATE: EXT_FEEDBACK_RADIO STRING "0"
+// Retrieval info: PRIVATE: GLOCKED_COUNTER_EDIT_CHANGED STRING "1"
+// Retrieval info: PRIVATE: GLOCKED_FEATURE_ENABLED STRING "0"
+// Retrieval info: PRIVATE: GLOCKED_MODE_CHECK STRING "0"
+// Retrieval info: PRIVATE: GLOCK_COUNTER_EDIT NUMERIC "1048575"
+// Retrieval info: PRIVATE: HAS_MANUAL_SWITCHOVER STRING "1"
+// Retrieval info: PRIVATE: INCLK0_FREQ_EDIT STRING "50.0"
+// Retrieval info: PRIVATE: INCLK0_FREQ_UNIT_COMBO STRING "MHz"
+// Retrieval info: PRIVATE: INCLK1_FREQ_EDIT STRING "100.000"
+// Retrieval info: PRIVATE: INCLK1_FREQ_EDIT_CHANGED STRING "1"
+// Retrieval info: PRIVATE: INCLK1_FREQ_UNIT_CHANGED STRING "1"
+// Retrieval info: PRIVATE: INCLK1_FREQ_UNIT_COMBO STRING "MHz"
+// Retrieval info: PRIVATE: INTENDED_DEVICE_FAMILY STRING "Cyclone III"
+// Retrieval info: PRIVATE: INT_FEEDBACK__MODE_RADIO STRING "1"
+// Retrieval info: PRIVATE: LOCKED_OUTPUT_CHECK STRING "0"
+// Retrieval info: PRIVATE: LONG_SCAN_RADIO STRING "1"
+// Retrieval info: PRIVATE: LVDS_MODE_DATA_RATE STRING "Not Available"
+// Retrieval info: PRIVATE: LVDS_MODE_DATA_RATE_DIRTY NUMERIC "0"
+// Retrieval info: PRIVATE: LVDS_PHASE_SHIFT_UNIT0 STRING "ps"
+// Retrieval info: PRIVATE: LVDS_PHASE_SHIFT_UNIT1 STRING "ps"
+// Retrieval info: PRIVATE: MIG_DEVICE_SPEED_GRADE STRING "Any"
+// Retrieval info: PRIVATE: MIRROR_CLK0 STRING "0"
+// Retrieval info: PRIVATE: MIRROR_CLK1 STRING "0"
+// Retrieval info: PRIVATE: MULT_FACTOR0 NUMERIC "1"
+// Retrieval info: PRIVATE: MULT_FACTOR1 NUMERIC "1"
+// Retrieval info: PRIVATE: NORMAL_MODE_RADIO STRING "1"
+// Retrieval info: PRIVATE: OUTPUT_FREQ0 STRING "25.00000000"
+// Retrieval info: PRIVATE: OUTPUT_FREQ1 STRING "190.00000000"
+// Retrieval info: PRIVATE: OUTPUT_FREQ_MODE0 STRING "1"
+// Retrieval info: PRIVATE: OUTPUT_FREQ_MODE1 STRING "1"
+// Retrieval info: PRIVATE: OUTPUT_FREQ_UNIT0 STRING "MHz"
+// Retrieval info: PRIVATE: OUTPUT_FREQ_UNIT1 STRING "MHz"
+// Retrieval info: PRIVATE: PHASE_RECONFIG_FEATURE_ENABLED STRING "1"
+// Retrieval info: PRIVATE: PHASE_RECONFIG_INPUTS_CHECK STRING "0"
+// Retrieval info: PRIVATE: PHASE_SHIFT0 STRING "0.00000000"
+// Retrieval info: PRIVATE: PHASE_SHIFT1 STRING "0.00000000"
+// Retrieval info: PRIVATE: PHASE_SHIFT_STEP_ENABLED_CHECK STRING "0"
+// Retrieval info: PRIVATE: PHASE_SHIFT_UNIT0 STRING "ps"
+// Retrieval info: PRIVATE: PHASE_SHIFT_UNIT1 STRING "ps"
+// Retrieval info: PRIVATE: PLL_ADVANCED_PARAM_CHECK STRING "0"
+// Retrieval info: PRIVATE: PLL_ARESET_CHECK STRING "0"
+// Retrieval info: PRIVATE: PLL_AUTOPLL_CHECK NUMERIC "1"
+// Retrieval info: PRIVATE: PLL_ENHPLL_CHECK NUMERIC "0"
+// Retrieval info: PRIVATE: PLL_FASTPLL_CHECK NUMERIC "0"
+// Retrieval info: PRIVATE: PLL_FBMIMIC_CHECK STRING "0"
+// Retrieval info: PRIVATE: PLL_LVDS_PLL_CHECK NUMERIC "0"
+// Retrieval info: PRIVATE: PLL_PFDENA_CHECK STRING "0"
+// Retrieval info: PRIVATE: PLL_TARGET_HARCOPY_CHECK NUMERIC "0"
+// Retrieval info: PRIVATE: PRIMARY_CLK_COMBO STRING "inclk0"
+// Retrieval info: PRIVATE: RECONFIG_FILE STRING "altpllpll.mif"
+// Retrieval info: PRIVATE: SACN_INPUTS_CHECK STRING "0"
+// Retrieval info: PRIVATE: SCAN_FEATURE_ENABLED STRING "1"
+// Retrieval info: PRIVATE: SELF_RESET_LOCK_LOSS STRING "0"
+// Retrieval info: PRIVATE: SHORT_SCAN_RADIO STRING "0"
+// Retrieval info: PRIVATE: SPREAD_FEATURE_ENABLED STRING "0"
+// Retrieval info: PRIVATE: SPREAD_FREQ STRING "50.000"
+// Retrieval info: PRIVATE: SPREAD_FREQ_UNIT STRING "KHz"
+// Retrieval info: PRIVATE: SPREAD_PERCENT STRING "0.500"
+// Retrieval info: PRIVATE: SPREAD_USE STRING "0"
+// Retrieval info: PRIVATE: SRC_SYNCH_COMP_RADIO STRING "0"
+// Retrieval info: PRIVATE: STICKY_CLK0 STRING "1"
+// Retrieval info: PRIVATE: STICKY_CLK1 STRING "1"
+// Retrieval info: PRIVATE: SWITCHOVER_COUNT_EDIT NUMERIC "1"
+// Retrieval info: PRIVATE: SWITCHOVER_FEATURE_ENABLED STRING "1"
+// Retrieval info: PRIVATE: SYNTH_WRAPPER_GEN_POSTFIX STRING "0"
+// Retrieval info: PRIVATE: USE_CLK0 STRING "1"
+// Retrieval info: PRIVATE: USE_CLK1 STRING "1"
+// Retrieval info: PRIVATE: USE_CLKENA0 STRING "0"
+// Retrieval info: PRIVATE: USE_CLKENA1 STRING "0"
+// Retrieval info: PRIVATE: USE_MIL_SPEED_GRADE NUMERIC "0"
+// Retrieval info: PRIVATE: ZERO_DELAY_RADIO STRING "0"
+// Retrieval info: LIBRARY: altera_mf altera_mf.altera_mf_components.all
+// Retrieval info: CONSTANT: BANDWIDTH_TYPE STRING "AUTO"
+// Retrieval info: CONSTANT: CLK0_DIVIDE_BY NUMERIC "2"
+// Retrieval info: CONSTANT: CLK0_DUTY_CYCLE NUMERIC "50"
+// Retrieval info: CONSTANT: CLK0_MULTIPLY_BY NUMERIC "1"
+// Retrieval info: CONSTANT: CLK0_PHASE_SHIFT STRING "0"
+// Retrieval info: CONSTANT: CLK1_DIVIDE_BY NUMERIC "5"
+// Retrieval info: CONSTANT: CLK1_DUTY_CYCLE NUMERIC "50"
+// Retrieval info: CONSTANT: CLK1_MULTIPLY_BY NUMERIC "19"
+// Retrieval info: CONSTANT: CLK1_PHASE_SHIFT STRING "0"
+// Retrieval info: CONSTANT: COMPENSATE_CLOCK STRING "CLK0"
+// Retrieval info: CONSTANT: INCLK0_INPUT_FREQUENCY NUMERIC "20000"
+// Retrieval info: CONSTANT: INTENDED_DEVICE_FAMILY STRING "CYCLONEIII"
+// Retrieval info: CONSTANT: LPM_TYPE STRING "altpll"
+// Retrieval info: CONSTANT: OPERATION_MODE STRING "NORMAL"
+// Retrieval info: CONSTANT: PLL_TYPE STRING "Fast"
+// Retrieval info: CONSTANT: PORT_ACTIVECLOCK STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_ARESET STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_CLKBAD0 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_CLKBAD1 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_CLKLOSS STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_CLKSWITCH STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_CONFIGUPDATE STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_FBIN STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_INCLK0 STRING "PORT_USED"
+// Retrieval info: CONSTANT: PORT_INCLK1 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_LOCKED STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_PFDENA STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_PHASECOUNTERSELECT STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_PHASEDONE STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_PHASESTEP STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_PHASEUPDOWN STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_PLLENA STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_SCANACLR STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_SCANCLK STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_SCANCLKENA STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_SCANDATA STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_SCANDATAOUT STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_SCANDONE STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_SCANREAD STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_SCANWRITE STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_clk0 STRING "PORT_USED"
+// Retrieval info: CONSTANT: PORT_clk1 STRING "PORT_USED"
+// Retrieval info: CONSTANT: PORT_clk2 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_clk3 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_clk4 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_clk5 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_clkena0 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_clkena1 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_clkena2 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_clkena3 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_clkena4 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_clkena5 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_extclk0 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_extclk1 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_extclk2 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: PORT_extclk3 STRING "PORT_UNUSED"
+// Retrieval info: CONSTANT: WIDTH_CLOCK NUMERIC "5"
+// Retrieval info: USED_PORT: c0 0 0 0 0 OUTPUT_CLK_EXT VCC "c0"
+// Retrieval info: USED_PORT: c1 0 0 0 0 OUTPUT_CLK_EXT VCC "c1"
+// Retrieval info: USED_PORT: inclk0 0 0 0 0 INPUT_CLK_EXT GND "inclk0"
+// Retrieval info: GEN_FILE: TYPE_NORMAL altpllpll.v TRUE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL altpllpll.ppf TRUE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL altpllpll.inc FALSE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL altpllpll.cmp FALSE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL altpllpll.bsf FALSE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL altpllpll_inst.v FALSE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL altpllpll_bb.v FALSE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL altpllpll_waveforms.html FALSE FALSE
+// Retrieval info: GEN_FILE: TYPE_NORMAL altpllpll_wave*.jpg FALSE FALSE
+</parameter>
+        <parameter name="resetInputPortOption" value="Register" />
+    </module>
+    <module name="pll_master" kind="dummy_master" version="1.0" enabled="1">
+        <parameter name="MASTER_ADDRESS_WIDTH" value="5" />
+    </module>
+    <module name="console_stream" kind="altera_jtag_dc_streaming" version="8.0" enabled="1">
+        <parameter name="PURPOSE" value="0" />
+    </module>
+    <module name="ingress_fifo" kind="altera_avalon_dc_fifo" version="8.0" enabled="1">
+        <parameter name="SYMBOLS_PER_BEAT" value="2" />
+        <parameter name="BITS_PER_SYMBOL" value="8" />
+        <parameter name="FIFO_DEPTH" value="1024" />
+        <parameter name="CHANNEL_WIDTH" value="0" />
+        <parameter name="ERROR_WIDTH" value="0" />
+        <parameter name="USE_PACKETS" value="0" />
+        <parameter name="USE_IN_FILL_LEVEL" value="0" />
+        <parameter name="USE_OUT_FILL_LEVEL" value="1" />
+    </module>
+    <module name="egress_fifo" kind="altera_avalon_dc_fifo" version="8.0" enabled="1">
+        <parameter name="SYMBOLS_PER_BEAT" value="2" />
+        <parameter name="USE_OUT_FILL_LEVEL" value="0" />
+        <parameter name="USE_PACKETS" value="0" />
+        <parameter name="CHANNEL_WIDTH" value="0" />
+        <parameter name="USE_IN_FILL_LEVEL" value="0" />
+        <parameter name="BITS_PER_SYMBOL" value="8" />
+        <parameter name="ERROR_WIDTH" value="0" />
+        <parameter name="FIFO_DEPTH" value="1024" />
+    </module>
+    <module name="egress_pipeline_fifo" kind="altera_avalon_dc_fifo" version="8.0" enabled="1">
+        <parameter name="SYMBOLS_PER_BEAT" value="2" />
+        <parameter name="USE_OUT_FILL_LEVEL" value="0" />
+        <parameter name="USE_PACKETS" value="0" />
+        <parameter name="CHANNEL_WIDTH" value="0" />
+        <parameter name="USE_IN_FILL_LEVEL" value="0" />
+        <parameter name="BITS_PER_SYMBOL" value="8" />
+        <parameter name="ERROR_WIDTH" value="0" />
+        <parameter name="FIFO_DEPTH" value="512" />
+    </module>
+    <module name="gate" kind="stream_back_pressure_gate" version="1.0" enabled="1">
+        <parameter name="TRIGGER_DEPTH" value="1024" />
+        <parameter name="DATA_WIDTH" value="16" />
+        <parameter name="USE_CSR_PORT" value="1" />
+    </module>
+    <module name="DFA_before_ingress_fifo" kind="data_format_adapter" version="8.0" enabled="1">
+        <parameter name="generationLanguage" value="VERILOG" />
+        <parameter name="inBitsPerSymbol" value="8" />
+        <parameter name="inChannelWidth" value="0" />
+        <parameter name="inErrorDescriptor" value="" />
+        <parameter name="inErrorWidth" value="0" />
+        <parameter name="inMaxChannel" value="0" />
+        <parameter name="inReadyLatency" value="0" />
+        <parameter name="inSymbolsPerBeat" value="1" />
+        <parameter name="inUseEmpty" value="false" />
+        <parameter name="inUsePackets" value="false" />
+        <parameter name="inUseReady" value="true" />
+        <parameter name="moduleName" value="" />
+        <parameter name="outSymbolsPerBeat" value="2" />
+        <parameter name="outUseEmpty" value="false" />
+    </module>
+    <module name="DFA_before_console" kind="data_format_adapter" version="8.0" enabled="1">
+        <parameter name="inReadyLatency" value="0" />
+        <parameter name="outUseEmpty" value="false" />
+        <parameter name="outSymbolsPerBeat" value="1" />
+        <parameter name="inChannelWidth" value="0" />
+        <parameter name="moduleName" value="" />
+        <parameter name="inUseReady" value="true" />
+        <parameter name="inErrorDescriptor" value="" />
+        <parameter name="inSymbolsPerBeat" value="2" />
+        <parameter name="inBitsPerSymbol" value="8" />
+        <parameter name="inUseEmpty" value="false" />
+        <parameter name="generationLanguage" value="VERILOG" />
+        <parameter name="inMaxChannel" value="0" />
+        <parameter name="inErrorWidth" value="0" />
+        <parameter name="inUsePackets" value="false" />
+    </module>
+    <module name="TA_before_gate" kind="timing_adapter" version="8.0" enabled="1">
+        <parameter name="generationLanguage" value="VERILOG" />
+        <parameter name="inBitsPerSymbol" value="8" />
+        <parameter name="inChannelWidth" value="0" />
+        <parameter name="inErrorDescriptor" value="" />
+        <parameter name="inErrorWidth" value="0" />
+        <parameter name="inMaxChannel" value="0" />
+        <parameter name="inReadyLatency" value="0" />
+        <parameter name="inSymbolsPerBeat" value="2" />
+        <parameter name="inUseEmpty" value="false" />
+        <parameter name="inUsePackets" value="false" />
+        <parameter name="inUseReady" value="false" />
+        <parameter name="inUseValid" value="false" />
+        <parameter name="moduleName" value="" />
+        <parameter name="outReadyLatency" value="0" />
+        <parameter name="outUseReady" value="false" />
+        <parameter name="outUseValid" value="true" />
+    </module>
+    <module name="TA_before_dut" kind="timing_adapter" version="8.0" enabled="1">
+        <parameter name="inReadyLatency" value="0" />
+        <parameter name="inUseValid" value="true" />
+        <parameter name="inChannelWidth" value="0" />
+        <parameter name="moduleName" value="" />
+        <parameter name="inUseReady" value="false" />
+        <parameter name="inErrorDescriptor" value="" />
+        <parameter name="outUseReady" value="false" />
+        <parameter name="outUseValid" value="false" />
+        <parameter name="inSymbolsPerBeat" value="2" />
+        <parameter name="inBitsPerSymbol" value="8" />
+        <parameter name="inUseEmpty" value="false" />
+        <parameter name="generationLanguage" value="VERILOG" />
+        <parameter name="inMaxChannel" value="0" />
+        <parameter name="inErrorWidth" value="0" />
+        <parameter name="outReadyLatency" value="0" />
+        <parameter name="inUsePackets" value="false" />
+    </module>
+    <module name="TA_before_ingress_fifo" kind="timing_adapter" version="8.0" enabled="1">
+        <parameter name="inReadyLatency" value="0" />
+        <parameter name="inUseValid" value="true" />
+        <parameter name="inChannelWidth" value="0" />
+        <parameter name="moduleName" value="" />
+        <parameter name="inUseReady" value="false" />
+        <parameter name="inErrorDescriptor" value="" />
+        <parameter name="outUseReady" value="true" />
+        <parameter name="outUseValid" value="true" />
+        <parameter name="inSymbolsPerBeat" value="1" />
+        <parameter name="inBitsPerSymbol" value="8" />
+        <parameter name="inUseEmpty" value="false" />
+        <parameter name="generationLanguage" value="VERILOG" />
+        <parameter name="inMaxChannel" value="0" />
+        <parameter name="inErrorWidth" value="0" />
+        <parameter name="outReadyLatency" value="0" />
+        <parameter name="inUsePackets" value="false" />
+    </module>
+    <module name="build_id" kind="dummy_build_id" version="1.0" enabled="1" />
+    <module name="dut" kind="dummy_dut" version="1.0" enabled="1" />
+    <connection kind="avalon" version="6.1" start="console_master.master" end="sysid.control_slave">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x0000" />
+    </connection>
+    <connection kind="clock" version="8.0" start="clk.clk" end="pll.inclk0" />
+    <connection kind="avalon" version="6.1" start="pll_master.m0" end="pll.s1">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x0000" />
+    </connection>
+    <connection kind="clock" version="8.0" start="pll.c0" end="console_master.clk" />
+    <connection kind="clock" version="8.0" start="pll.c0" end="sysid.clk" />
+    <connection kind="clock" version="8.0" start="clk.clk" end="pll_master.master_clk" />
+    <connection kind="clock" version="8.0" start="pll.c0" end="console_stream.clock" />
+    <connection kind="clock" version="8.0" start="pll.c0" end="ingress_fifo.in_clk" />
+    <connection kind="clock" version="8.0" start="pll.c1" end="ingress_fifo.out_clk" />
+    <connection kind="avalon_streaming" version="8.0" start="egress_pipeline_fifo.out" end="egress_fifo.in" />
+    <connection kind="avalon" version="6.1" start="console_master.master" end="gate.s0">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x0008" />
+    </connection>
+    <connection kind="clock" version="8.0" start="pll.c1" end="egress_fifo.in_clk" />
+    <connection kind="avalon" version="6.1" start="gate.m0" end="ingress_fifo.out_csr">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x0000" />
+    </connection>
+    <connection kind="avalon_streaming" version="8.0" start="gate.egress_src" end="egress_pipeline_fifo.in" />
+    <connection kind="avalon_streaming" version="8.0" start="ingress_fifo.out" end="gate.ingress_snk" />
+    <connection kind="clock" version="8.0" start="pll.c1" end="gate.clock" />
+    <connection kind="clock" version="8.0" start="pll.c1" end="egress_pipeline_fifo.out_clk" />
+    <connection kind="clock" version="8.0" start="pll.c1" end="egress_pipeline_fifo.in_clk" />
+    <connection kind="clock" version="8.0" start="pll.c0" end="egress_fifo.out_clk" />
+    <connection kind="avalon_streaming" version="8.0" start="DFA_before_ingress_fifo.out" end="ingress_fifo.in" />
+    <connection kind="clock" version="8.0" start="pll.c0" end="DFA_before_ingress_fifo.clk" />
+    <connection kind="avalon_streaming" version="8.0" start="egress_fifo.out" end="DFA_before_console.in" />
+    <connection kind="avalon_streaming" version="8.0" start="DFA_before_console.out" end="console_stream.sink" />
+    <connection kind="clock" version="8.0" start="pll.c0" end="DFA_before_console.clk" />
+    <connection kind="avalon_streaming" version="8.0" start="TA_before_gate.out" end="gate.egress_snk" />
+    <connection kind="clock" version="8.0" start="pll.c1" end="TA_before_gate.clk" />
+    <connection kind="avalon_streaming" version="8.0" start="gate.ingress_src" end="TA_before_dut.in" />
+    <connection kind="clock" version="8.0" start="pll.c1" end="TA_before_dut.clk" />
+    <connection kind="avalon_streaming" version="8.0" start="console_stream.src" end="TA_before_ingress_fifo.in" />
+    <connection kind="avalon_streaming" version="8.0" start="TA_before_ingress_fifo.out" end="DFA_before_ingress_fifo.in" />
+    <connection kind="clock" version="8.0" start="pll.c0" end="TA_before_ingress_fifo.clk" />
+    <connection kind="clock" version="8.0" start="pll.c0" end="build_id.clock" />
+    <connection kind="avalon" version="6.1" start="console_master.master" end="build_id.s0">
+        <parameter name="arbitrationPriority" value="1" />
+        <parameter name="baseAddress" value="0x000c" />
+    </connection>
+    <connection kind="avalon_streaming" version="8.0" start="TA_before_dut.out" end="dut.in0" />
+    <connection kind="avalon_streaming" version="8.0" start="dut.out0" end="TA_before_gate.in" />
+    <connection kind="clock" version="8.0" start="pll.c1" end="dut.clock" />
+</system>

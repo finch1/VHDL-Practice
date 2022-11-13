@@ -1,0 +1,35 @@
+# do multi.do 
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu
+# 
+# Top level modules:
+# 	cpu
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module cpu_vlg_sample_tst
+# -- Compiling module cpu_vlg_check_tst
+# -- Compiling module cpu_vlg_vec_tst
+# 
+# Top level modules:
+# 	cpu_vlg_vec_tst
+# vsim -L cycloneiii_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate -c -voptargs=\"+acc\" -t 1ps -novopt work.cpu_vlg_vec_tst 
+# Loading work.cpu_vlg_vec_tst
+# Loading work.cpu
+# Loading cycloneiii_ver.cycloneiii_io_obuf
+# Loading cycloneiii_ver.cycloneiii_io_ibuf
+# Loading cycloneiii_ver.cycloneiii_pll
+# Loading cycloneiii_ver.cycloneiii_m_cntr
+# Loading cycloneiii_ver.cycloneiii_n_cntr
+# Loading cycloneiii_ver.cycloneiii_scale_cntr
+# Loading cycloneiii_ver.cycloneiii_lcell_comb
+# Loading altera_ver.dffeas
+# Loading cycloneiii_ver.cycloneiii_ram_block
+# Loading cycloneiii_ver.cycloneiii_ram_register
+# Loading cycloneiii_ver.cycloneiii_ram_pulse_generator
+# Loading work.cpu_vlg_sample_tst
+# Loading work.cpu_vlg_check_tst
+# Loading altera_ver.PRIM_GDFF_LOW
+# Warning : Input clock freq. is under VCO range. Cyclone III PLL may lose lock
+# Time: 10000.000 ps  Instance: cpu_vlg_vec_tst.i1.\inst1|altpll_component|auto_generated|pll1 
+# Simulation passed !
+# ** Note: $finish    : CPU_Wform.vwf.vt(275)
+#    Time: 1 us  Iteration: 0  Instance: /cpu_vlg_vec_tst/tb_out

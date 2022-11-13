@@ -1,0 +1,149 @@
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+package conversion is
+	type instruction is (add, sub, st, ld);
+	type instr_src is(imm, dir, indx, ext);
+	type reg_dest is(a, b, c, d, e, f, x, y);
+	
+--	function to_instruction (data :std_logic_vector) return instruction;
+--	function to_mode (data :std_logic_vector) return instr_src;
+--	function to_reg (data :std_logic_vector) return reg_dest;
+--	
+--	function to_regsel (data :reg_dest) return natural;
+
+end conversion;
+
+package body conversion is
+  
+--	function to_instruction (data :std_logic_vector) return instruction is
+--    variable result :natural; 
+--      begin 
+--       result := to_integer(unsigned(data));
+--      return instruction'val(result);
+--	end function;
+--	
+--	function to_mode (data :std_logic_vector) return instr_src is
+--    variable result :natural; 
+--      begin 
+--       result := to_integer(unsigned(data));
+--      return instr_src'val(result);
+--	end function;
+--	
+--	function to_reg (data :std_logic_vector) return integer is
+--    variable result :integer; 
+--      begin 
+--       result := to_integer(unsigned(data));
+--      return reg_dest'val(result);
+--	end function;
+--	
+--	function to_regsel (data :reg_dest) return natural is
+--	 variable result :natural; 
+--		begin
+--			result := reg_dest'pos(data);
+--			return result;
+--	end function;
+end conversion;
+
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+use work.conversion.all;
+
+entity decoder is port(
+    opcode : in std_logic_vector(7 downto 0);
+	 a_mux_sel : out std_logic;
+	 b_mux_sel : out std_logic;
+	 func : out std_logic_vector(3 downto 0);
+	 reg_sel : out integer range 0 to 7;
+	 reg_wren : out std_logic;
+	 ram_reg_mux : out std_logic);
+end decoder;
+
+architecture mp of decoder is
+	signal destination : natural := to_integer(unsigned(opcode(7 downto 4)));
+begin	
+  destination <= 0;
+	with opcode(7 downto 4) select reg_sel <=	reg_dest'pos(a) when "1000",
+															reg_dest'pos(b) when "1001",
+															reg_dest'pos(c) when "1010",
+															reg_dest'pos(d) when "1011",
+															reg_dest'pos(e) when "1100",
+															reg_dest'pos(f) when "1101",
+															reg_dest'pos(x) when "1110",
+															reg_dest'pos(y) when "1111",
+															0 				 when others;
+--	reg_sel <= to_reg(opcode(7 downto 4));													--register address select
+	reg_wren <= '1' when opcode(7) & opcode(3 downto 0) = "11011" else '0';		--register write enable
+	
+		
+--	process(opcode)
+--	begin
+--		instr := to_instruction(opcode(2 downto 0));
+--		source := to_mode(opcode(5 downto 4));
+--		destination := to_reg(opcode(6) & opcode(3));
+--		a_mux_sel <= '1';
+--		ram_mux <= '0';
+--		reg_mux <= '0';
+--		
+--        --select instruction to execute
+--			func <= 
+--			case instr is
+--            when add =>
+--   
+--            when sub =>
+--
+--            when st =>
+--
+--				when ld =>	--function
+--        end case;
+--		  
+--		  --select source of data
+--        case source is
+--            when imm =>	--function
+--					a_mux_sel <= '0';-- when source = imm else '0';
+--					a_mux_sel <= not(opcode(5) and opcode(4)); --00
+--            when dir =>
+--					ram_reg_mux <= '0' when (opcode(5) & opcode(4)) = "01" else '1';--01
+--            when indx =>
+--   
+--            when ext =>
+--
+--		  end case;
+--
+--        --select destination for data
+--        case destination is
+--            when a =>	--function
+--					reg_sel <= to_regsel(destination);
+--            when b =>
+--
+--            when x =>
+--   
+--            when y =>
+--				
+--        end case;
+--    end process;
+end mp;
+
+--library ieee;
+--    use ieee.std_logic_1164.all;
+--entity decoder is port (
+--    x: in integer range 0 to 2;
+--    y1, y2, y3, y4, y5: out bit);
+--end decoder;
+--
+--architecture arch of decoder is
+--    type color is (red, green, blue);
+--    signal z : color;
+--    signal z2, z3 : integer;
+--begin
+--    z <= red when x = 0 else green when x = 1 else blue;
+--    y1 <= '1' when color'val(x)= blue else '0'; 			-- T'Val(s) Base type of T value at position x in T (x is integer)
+--    y2 <= '1' when x = color'pos(blue) else '0'; 		-- T'Pos(s) Universal integer Position number of s in T
+--    z2 <= color'pos(color'val(x));
+----    y3 <= '1' when color'rightof(z)= blue else '0';	-- T'Rightof(s) Base type of T Value at position one to the right of s in T
+----    y4 <= '1' when color'pred(z)=green else '0';		-- T'Pred(s) Base type of T Value at position one less than s in T
+----    y5 <= '1' when color'pred(green)=z else '0';
+--end arch;

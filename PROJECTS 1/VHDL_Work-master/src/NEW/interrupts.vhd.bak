@@ -1,0 +1,27 @@
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity interrupts is port(
+	clk, rst : in std_logic;
+	int_in : std_logic_vector(7 downto 0);
+	int_ena: in std_logic;
+	int_reg: std_logic_vector(7 downto 0));
+end interrupts;
+
+architecture rtl of interrupts is
+	signal int_trig : std_logic_vector(3 downto 0);
+begin
+	G0: for i in 0 to 7 generate
+		int_trig(i) <= int_in(i) and int_ena;
+	end generate;
+	
+	process(clk, rst)
+	begin
+		if rst = '0' then
+			int_trig <= (others => '0');
+		elsif rising_edge(clk) then
+			int_reg <= int_trig;
+		end if;
+	end process;
+end rtl;
+		

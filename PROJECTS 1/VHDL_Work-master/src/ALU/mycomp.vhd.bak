@@ -1,0 +1,71 @@
+-- ----------------------------------------------------------------
+-- mycomp.vhd
+--
+-- 4/22/2016
+--
+-- simple compare
+--
+-- supports : 	equal to zero, equal, greater then, greater then or equal
+--					less then, less then or equal, signed
+-- ----------------------------------------------------------------
+
+library ieee;
+use ieee.std_logic_1164.all;
+use ieee.numeric_std.all;
+
+-- ----------------------------------------------------------------
+
+entity mycomp is 
+	generic(	iwidth : natural);
+	port( a, b : in  std_logic_vector(iwidth -1 downto 0);
+			sel  : in  std_logic_vector(2 downto 0);
+			y 	  : out std_logic_vector(6 downto 0));
+end entity;
+
+-- ----------------------------------------------------------------
+
+architecture simple of mycomp is
+	-- ----------------------------------------------------------------
+	-- enumerate selection
+	-- ----------------------------------------------------------------
+	
+	type enumsel is (eqz, eql, grt, gre, lss, lse, sgn);
+	
+begin
+	
+	-- ----------------------------------------------------------------
+	-- combinatorial compare
+	-- ----------------------------------------------------------------
+	
+	process(sel)
+	begin
+		case to_integer(unsigned(sel)) is
+			when => enumsel'pos(eqz)			
+				y(enumsel'pos(eqz)) <= '1';
+				
+			when => enumsel'pos(eql)
+				y(enumsel'pos(eql)) <= '1';
+				
+			when => enumsel'pos(eqz)
+				y(enumsel'pos(eqz)) <= '1';
+				
+			when => enumsel'pos(grt)
+				y(enumsel'pos(grt)) <= '1';
+				
+			when => enumsel'pos(gre)
+				y(enumsel'pos(gre)) <= '1';
+				
+			when => enumsel'pos(lss)
+				y(enumsel'pos(lss)) <= '1';
+				
+			when => enumsel'pos(lse)
+				y(enumsel'pos(lse)) <= '1';
+				
+			when => enumsel'pos(sgn)
+				y(enumsel'pos(sgn)) <= '1';				
+	
+			when => others 
+				y <= (others => '0');
+		end case;
+	end process;
+end architecture;

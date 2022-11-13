@@ -1,0 +1,34 @@
+library std;
+use std.textio.all;
+
+entity sqaure is port(
+	go : in std_logic);
+end entity;
+
+architecture simple of square is
+begin
+	process(go)
+		file infile : text is in "infile1.txt";
+		file outfile: text is out "outfile1.txt";
+		
+		variable out_line, my_line : line;
+		variable int_val : integer;
+	begin
+		while not endfile(infile) loop
+			--read a line from the input file
+			readline(infile, my_line);
+			
+			--read a value from the line
+			read(my_line, int_val);
+			
+			--square the value
+			int_val := int_val **2;
+			
+			--write the squared value to the line
+			write(out_line, int_val);
+			
+			--write the line to the output file
+			writeline(outfile, out_line);
+		end loop;
+	end process;
+end simple;

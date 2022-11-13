@@ -1,0 +1,16 @@
+Fitter Status : Successful - Tue Jan 29 07:13:50 2008
+Quartus II Version : 8.0 Internal Build 143 01/22/2008 SJ Full Version
+Revision Name : reconfig_mif
+Top-level Entity Name : reconfig_mif
+Family : Cyclone III
+Device : EP3C25F256C7
+Timing Models : Final
+Total logic elements : 232 / 24,624 ( < 1 % )
+    Total combinational functions : 221 / 24,624 ( < 1 % )
+    Dedicated logic registers : 136 / 24,624 ( < 1 % )
+Total registers : 136
+Total pins : 43 / 157 ( 27 % )
+Total virtual pins : 0
+Total memory bits : 912 / 608,256 ( < 1 % )
+Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )
+Total PLLs : 1 / 4 ( 25 % )

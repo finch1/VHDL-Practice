@@ -1,0 +1,120 @@
+m255
+K3
+13
+cModel Technology
+dC:\altera\15.0\accumulator
+Eadd_with_carry
+Z0 w1526165234
+Z1 DPx4 ieee 11 numeric_std 0 22 O3PF8EB`?j9=z7KT`fn941
+Z2 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z3 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z4 dC:\altera\15.0\addwithcarry
+Z5 8C:/altera/15.0/addwithcarry/add_with_carry.vhd
+Z6 FC:/altera/15.0/addwithcarry/add_with_carry.vhd
+l0
+L10
+VBaH3UaP0lf[L=idX0g3eQ3
+Z7 OV;C;10.1d;51
+32
+Z8 !s108 1526202605.861000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/15.0/addwithcarry/add_with_carry.vhd|
+Z10 !s107 C:/altera/15.0/addwithcarry/add_with_carry.vhd|
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1
+!s100 ojdPI@NjdikVRcAdTY>gm0
+!i10b 1
+Aconst_arch
+R1
+R2
+R3
+DEx4 work 14 add_with_carry 0 22 BaH3UaP0lf[L=idX0g3eQ3
+l21
+L16
+Vd;QShc9WB10e_iCczlP>]3
+R7
+32
+R8
+R9
+R10
+R11
+R12
+!s100 B>=JKOC0ZT;PRGOYahfk^1
+!i10b 1
+Plog_pkg
+R1
+R2
+R3
+Z13 w1526133601
+R4
+Z14 8C:/altera/15.0/addwithcarry/log_pkg.vhd
+Z15 FC:/altera/15.0/addwithcarry/log_pkg.vhd
+l0
+L130
+VJN>ShfVm:g5UMRFWP@VAF0
+R7
+32
+b1
+Z16 !s108 1526202605.974000
+Z17 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/15.0/addwithcarry/log_pkg.vhd|
+Z18 !s107 C:/altera/15.0/addwithcarry/log_pkg.vhd|
+R11
+R12
+!s100 :Z;2B1WVFMP`lPZ03kTAU3
+!i10b 1
+Bbody
+Z19 DPx4 work 7 log_pkg 0 22 JN>ShfVm:g5UMRFWP@VAF0
+R1
+R2
+R3
+l0
+L210
+Vz[i0R@VD8ffC_@9FS3Q6M2
+R7
+32
+R16
+R17
+R18
+R11
+R12
+nbody
+!s100 NUfjj]4[AYPHe]h`;eX4c1
+!i10b 1
+Etb_addertxt
+Z20 w1526204568
+R19
+R1
+R2
+R3
+R4
+Z21 8C:/altera/15.0/addwithcarry/tb_add_with_carrytxt.vhd
+Z22 FC:/altera/15.0/addwithcarry/tb_add_with_carrytxt.vhd
+l0
+L17
+Vo2Nb88=O6ejSGRMMhG6Pb2
+!s100 z^m]7>MXjT4g@EeDZL0@[0
+R7
+32
+!i10b 1
+Z23 !s108 1526204601.422000
+Z24 !s90 -reportprogress|300|-work|work|-2002|-explicit|C:/altera/15.0/addwithcarry/tb_add_with_carrytxt.vhd|
+Z25 !s107 C:/altera/15.0/addwithcarry/tb_add_with_carrytxt.vhd|
+R11
+R12
+Abehavioural
+R19
+R1
+R2
+R3
+Z26 DEx4 work 11 tb_addertxt 0 22 o2Nb88=O6ejSGRMMhG6Pb2
+l40
+L20
+V^jg2l[AEaIId]>l8>nM2C2
+!s100 G6A61BNzODz?RzT`XD^aK3
+R7
+32
+!i10b 1
+R23
+R24
+R25
+R11
+R12

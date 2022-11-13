@@ -1,0 +1,36 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do alu_run_msim_rtl_vhdl.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vcom -93 -work work {C:/altera/13.1/ALU/myalu.vhd}
+# Model Technology ModelSim ALTERA vcom 10.1d Compiler 2012.11 Nov  2 2012
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package NUMERIC_STD
+# -- Compiling entity myalu
+# -- Compiling architecture beh of myalu
+# 
+wave create -pattern none -portmode in -language vhdl -range 3 0 /myalu/a
+# myalu
+wave create -pattern none -portmode in -language vhdl -range 3 0 /myalu/b
+# myalu
+wave create -pattern none -portmode in -language vhdl /myalu/cin
+# myalu
+wave create -pattern none -portmode in -language vhdl /myalu/sel
+# myalu
+wave create -pattern none -portmode out -language vhdl /myalu/cout
+# myalu
+wave create -pattern none -portmode out -language vhdl -range 3 0 /myalu/y
+# myalu
+wave modify -driver freeze -pattern constant -value 0 -starttime 0ns -endtime 10000ns NewSig:/myalu/cin
+# myalu
+wave export -file tbmyalu -starttime 0 -endtime 10000 -format vhdl -designunit myalu
